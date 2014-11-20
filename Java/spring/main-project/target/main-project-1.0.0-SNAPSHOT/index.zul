@@ -1,0 +1,40 @@
+<?page title="Selamat datang di FIFBook" contentType="text/html;charset=UTF-8"?>
+<?meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"?>
+<zk>
+	<window border="none" width="100%" height="100%" id="main"
+		apply="com.fif.fifbook.main.controller.IndexController">
+		<h:form id="f" name="f">
+					<grid style="border:none;">
+						<columns>
+							<column width="120px" align="right"
+								valign="top" />
+							<column />
+						</columns>
+						<rows>
+							<row>
+								<label id="l_user" value="Username"
+									sclass="form-label" />
+								<textbox id="u" name="j_username"
+									focus="true" width="180px" maxlength="50" />
+							</row>
+							<row>
+								<label id="l_password" value="password"
+									sclass="form-label" />
+								<textbox id="p" type="password"
+									name="j_password" width="180px" maxlength="50" />
+							</row>
+							<row>
+								<label></label>
+								<hbox id="hboxLogin">
+									<button id="btnLogin" label="Login"
+										width="80px" image="${labels.image.link.power}" />
+									<button id="btnSignup"
+										label="Sign Up" width="80px" />
+								</hbox>
+							</row>
+						</rows>
+					</grid>
+				
+		</h:form>
+	</window>
+</zk>
