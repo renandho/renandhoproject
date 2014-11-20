@@ -1,0 +1,52 @@
+<?page title="Selamat datang di FIFBook" contentType="text/html;charset=UTF-8"?>
+<?meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"?>
+<zk>
+	<window border="none" width="400px" height="25%" position="center"
+		mode="overlapped" style="margin: 70px 0px 0px 10px;"
+		apply="com.fif.fifbook.main.controller.IndexController">
+
+		<borderlayout id="mainlayout">
+			<center border="normal">
+				<div id="Screen">
+					<grid style="border:none;">
+						<columns>
+							<column width="120px" align="right"
+								valign="top" />
+							<column />
+						</columns>
+						<rows>
+							<row spans="2">
+								<div style="text-align:center;">
+									<label id="l_us" value="ITSM"
+									sclass="form-label" style="font-size:20px; font-style: normal; font-weight: bold;" />
+								</div>
+							</row>
+							<row>
+								<label id="l_user" value="Username"
+									sclass="form-label" />
+								<textbox id="u" name="j_username"
+									focus="true" width="180px" maxlength="50" />
+							</row>
+							<row>
+								<label id="l_password" value="Password"
+									sclass="form-label" />
+								<textbox id="p" type="password"
+									name="j_password" width="180px" maxlength="50" />
+							</row>
+							<row>
+								<label></label>
+								<hbox id="hboxLogin">
+									<button id="btnLogin" label="Login"
+										width="80px" image="${labels.image.link.power}" />
+									<button id="btnSignup"
+										label="Sign Up" width="80px" />
+								</hbox>
+							</row>
+						</rows>
+					</grid>
+				</div>
+			</center>
+
+		</borderlayout>
+	</window>
+</zk>

@@ -1,0 +1,85 @@
+<?page id="workspace" title="Human Capital Management System"?>
+<zk>
+	<style src="styles/css/default.css" />
+	<window id="mainWindow" width="100%" height="100%"
+		apply="com.fif.hcms.fifbook.controller.WorkspaceMainComposer">
+		<borderlayout height="100%">
+			<north height="60px" border="normal">
+				<div sclass="title-container">
+					<label sclass="title" />
+					<div sclass="title-menu" align="right"
+						style="padding:5px;  color:white">
+						<div style="padding-bottom:10px">
+							( Logged in as
+							<label id="lblUsername"
+								style="font-weight:bold;" />
+							|
+							<a href="/j_spring_security_logout"
+								style="color:white">
+								Logout
+							</a>
+							|
+							<label id="lblLastLogin" />
+						</div>
+						<div align="right">
+							<label id="lblScope" />
+							<listbox mold="select" id="cbCompany">
+								<template name="model">
+									<listitem
+										label="${each.description}" value="${each.key }" />
+								</template>
+
+							</listbox>
+						</div>
+					</div>
+				</div>
+			</north>
+			<west width="250px" flex="true" splittable="true"
+				border="normal" collapsible="true" title="Navigator">
+				<tabbox>
+					<tabs>
+						<tab label="Responsibility" id="tbResp"
+							selected="true" />
+						<tab label="Menu" id="tbMenu" />
+					</tabs>
+					<tabpanels>
+						<tabpanel>
+							<groupbox mold="3d" height="100%">
+								<caption label="Responsibilities" />
+								<listbox
+									style="border: 0px; overflow: auto;" id="respListBox"
+									vflex="1">
+									<template name="model">
+										<listitem label="${each.value}"
+											value="${each.key }" />
+									</template>
+								</listbox>
+							</groupbox>
+						</tabpanel>
+						<tabpanel>
+
+							<groupbox mold="3d" height="100%"
+								closable="false">
+								<caption id="lblCaption" label="Menus" />
+								<div style="overflow: auto"
+									height="100%">
+									<tree id="tree" style="border:0px;" />
+								</div>
+							</groupbox>
+						</tabpanel>
+					</tabpanels>
+				</tabbox>
+			</west>
+
+			<!-- Main -->
+			<center border="normal">
+				<tabbox id="tabBox" height="100%">
+					<tabs id="tabs"></tabs>
+
+					<tabpanels id="tabPanels"></tabpanels>
+				</tabbox>
+
+			</center>
+		</borderlayout>
+	</window>
+</zk>
