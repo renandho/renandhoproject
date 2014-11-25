@@ -1,85 +1,127 @@
-<?page id="workspace" title="Human Capital Management System"?>
-<zk>
-	<style src="styles/css/default.css" />
-	<window id="mainWindow" width="100%" height="100%"
-		apply="com.fif.hcms.fifbook.controller.WorkspaceMainComposer">
-		<borderlayout height="100%">
-			<north height="60px" border="normal">
-				<div sclass="title-container">
-					<label sclass="title" />
-					<div sclass="title-menu" align="right"
-						style="padding:5px;  color:white">
-						<div style="padding-bottom:10px">
-							( Logged in as
-							<label id="lblUsername"
-								style="font-weight:bold;" />
-							|
-							<a href="/j_spring_security_logout"
-								style="color:white">
-								Logout
-							</a>
-							|
-							<label id="lblLastLogin" />
-						</div>
-						<div align="right">
-							<label id="lblScope" />
-							<listbox mold="select" id="cbCompany">
-								<template name="model">
-									<listitem
-										label="${each.description}" value="${each.key }" />
-								</template>
+<?page title="ZK 7 with Bootstrap Demo"?>
+<?component name="button" extends="button" width="44px" height="44px"?>
+<?link rel="stylesheet" type="text/css"	href="/applications/bootstrap/css/bootstrap.css" ?>
+<?link rel="stylesheet" type="text/css" href="/applications/css/index.css.dsp" ?>
+<?link rel="stylesheet" type="text/css"
+	href="/applications/css/user-nav.css.dsp" ?>
+<?link rel="stylesheet" type="text/css"
+	href="/applications/css/sidebar.css.dsp" ?>
+<?link rel="stylesheet" type="text/css"
+	href="/applications/css/search.css.dsp" ?>
+<?link rel="stylesheet" type="text/css"
+	href="/applications/css/content-header.css.dsp" ?>
+<?link id="theme" rel="stylesheet" type="text/css"
+	href="/applications/css/grey.css.dsp"  if="${param.theme eq 'grey' or empty param.theme}"?>
+<?link id="theme" rel="stylesheet" type="text/css"
+	href="/applications/css/red.css.dsp"  if="${param.theme eq 'red'}"?>
+<?link id="theme" rel="stylesheet" type="text/css"
+	href="/applications/css/light-blue.css.dsp"  if="${param.theme eq 'light-blue'}"?>
 
-							</listbox>
-						</div>
-					</div>
-				</div>
-			</north>
-			<west width="250px" flex="true" splittable="true"
-				border="normal" collapsible="true" title="Navigator">
-				<tabbox>
-					<tabs>
-						<tab label="Responsibility" id="tbResp"
-							selected="true" />
-						<tab label="Menu" id="tbMenu" />
-					</tabs>
-					<tabpanels>
-						<tabpanel>
-							<groupbox mold="3d" height="100%">
-								<caption label="Responsibilities" />
-								<listbox
-									style="border: 0px; overflow: auto;" id="respListBox"
-									vflex="1">
-									<template name="model">
-										<listitem label="${each.value}"
-											value="${each.key }" />
-									</template>
-								</listbox>
-							</groupbox>
-						</tabpanel>
-						<tabpanel>
+<zk xmlns:n="native">
+	<popup id="btntip" sclass="btn-tip" style="margin-top: 10px">
+		<label id="msg" value="Manage Files"></label>
+		<attribute name="onOpen">	
+</attribute>
+	</popup>
 
-							<groupbox mold="3d" height="100%"
-								closable="false">
-								<caption id="lblCaption" label="Menus" />
-								<div style="overflow: auto"
-									height="100%">
-									<tree id="tree" style="border:0px;" />
-								</div>
-							</groupbox>
-						</tabpanel>
-					</tabpanels>
-				</tabbox>
-			</west>
+	<div sclass="header">
+		<n:h1>
+			<a>Admin</a>
+		</n:h1>
+	</div>
 
-			<!-- Main -->
-			<center border="normal">
-				<tabbox id="tabBox" height="100%">
-					<tabs id="tabs"></tabs>
+	<div sclass="search">
+		<bandbox placeholder="Search here..." />
+	</div>
+	<div sclass="user-nav">
+		<menubar>
+			<menuitem iconSclass="icon icon-white icon-user"
+				label="Profile" />
+			<menu iconSclass="icon icon-white icon-envelope"
+				label="Messages">
+				<menupopup sclass="navpp">
+					<menuitem label="new message" />
+					<menuitem label="inbox" />
+					<menuitem label="outbox" />
+					<menuitem label="trash" />
+				</menupopup>
+			</menu>
+			<menuitem iconSclass="icon icon-white icon-cog"
+				label="Settings" />
+			<menuitem iconSclass="icon icon-white icon-share-alt"
+				label="Logout" />
+		</menubar>
+	</div>
 
-					<tabpanels id="tabPanels"></tabpanels>
-				</tabbox>
+	<navbar orient="vertical" sclass="sidebar">
+		<navitem iconSclass="icon icon-white icon-home"
+			label="Dashboard" selected="true" />
+		<nav iconSclass="icon icon-white icon-th-list"
+			label="Form elements" badgeText="3">
+			<navitem label="Common elements" />
+			<navitem label="Validation" />
+			<navitem label="Wizard" />
+		</nav>
+		<navitem iconSclass="icon icon-white icon-tint"
+			label="Buttons &amp; icons" />
+		<navitem iconSclass="icon icon-white icon-pencil"
+			label="Interface elements" />
+		<navitem iconSclass="icon icon-white icon-th" label="Tables" />
+		<navitem iconSclass="icon icon-white icon-th-list"
+			label="Grid Layout" />
+		<nav iconSclass="icon icon-white icon-file" label="Sample pages"
+			badgeText="4">
+			<navitem label="Invoice" />
+			<navitem label="Support chat" />
+			<navitem label="Calendar" />
+			<navitem label="Gallery" />
+		</nav>
+	</navbar>
 
-			</center>
-		</borderlayout>
-	</window>
+	<div sclass="style-switcher">
+		<n:i class="icon-arrow-left icon-white"></n:i>
+		<label>Style:</label>
+		<a id="grey" href="javascript: changeTheme('grey');"
+			style="background-color: #555555; border-color: #AAAAAA;">
+		</a>
+		<a id="light-blue" href="javascript: changeTheme('light-blue');"
+			style="background-color: #8399b0;">
+		</a>
+		<a id="red" href="javascript: changeTheme('red');"
+			style="background-color: #673232;">
+		</a>
+	</div>
+
+	<div sclass="content">
+		<div sclass="content-header">
+			<n:h1>Dashboard</n:h1>
+			<div class="btn-group">
+				<button zclass="btn" iconSclass="icon-file"
+					tooltip="btntip,after_center">
+					<custom-attributes title="Manage Files" />
+				</button>
+				<button zclass="btn" iconSclass="icon-user"
+					tooltip="btntip,after_center">
+					<custom-attributes title="Manage Users" />
+				</button>
+				<button zclass="btn" iconSclass="icon-comment"
+					tooltip="btntip,after_center">
+					<custom-attributes title="Manage Comments" />
+				</button>
+				<button zclass="btn" iconSclass="icon-shopping-cart"
+					tooltip="btntip,after_center">
+					<custom-attributes title="Manage Orders" />
+				</button>
+			</div>
+		</div>
+		<div sclass="breadcrumb">
+			<a href="#" tooltip="btntip,after_center"
+				iconSclass="icon-home">
+				Home
+				<custom-attributes title="Go to Home" />
+			</a>
+			<a href="#">Dashboard</a>
+		</div>
+		<include src="zk/content.zul" />
+	</div>
 </zk>

@@ -1,29 +1,127 @@
-<?page title=".:FIFBOOK:." contentType="text/html;charset=UTF-8"?>
-<zk>
-<window id="winWorkspace" title=".:FIFBOOK:." border="normal"
-		apply="com.fif.fifbook.main.controller.WorkspaceController">
+<?page title="ZK 7 with Bootstrap Demo"?>
+<?component name="button" extends="button" width="44px" height="44px"?>
+<?link rel="stylesheet" type="text/css"	href="/bootstrap/css/bootstrap.css" ?>
+<?link rel="stylesheet" type="text/css" href="/css/index.css.dsp" ?>
+<?link rel="stylesheet" type="text/css"
+	href="/css/user-nav.css.dsp" ?>
+<?link rel="stylesheet" type="text/css"
+	href="/css/sidebar.css.dsp" ?>
+<?link rel="stylesheet" type="text/css"
+	href="/css/search.css.dsp" ?>
+<?link rel="stylesheet" type="text/css"
+	href="/css/content-header.css.dsp" ?>
+<?link id="theme" rel="stylesheet" type="text/css"
+	href="/css/grey.css.dsp"  if="${param.theme eq 'grey' or empty param.theme}"?>
+<?link id="theme" rel="stylesheet" type="text/css"
+	href="/css/red.css.dsp"  if="${param.theme eq 'red'}"?>
+<?link id="theme" rel="stylesheet" type="text/css"
+	href="/css/light-blue.css.dsp"  if="${param.theme eq 'light-blue'}"?>
 
-<groupbox closable="false" mold="3d">
-			<grid style="border:none;">
-				<columns>
-					<column width="600px" align="left" valign="top" />
-					<column />
-				</columns>
-				<rows>
-					<row>
-						<label id="lblWelcome" value="Selamat Datang di FIFBOOK, "
-							sclass="form-label" />
-						<label id="lblUsername" 
-							sclass="form-label" />
-					</row>
-					<row>
-						<hbox id="hboxLogout">
-							<button id="btnLogout" label="Logout"
-								width="80px" image="${labels.image.link.power}" />
-						</hbox>
-					</row>
-				</rows>
-			</grid>
-			</groupbox>
-</window>
+<zk xmlns:n="native">
+	<popup id="btntip" sclass="btn-tip" style="margin-top: 10px">
+		<label id="msg" value="Manage Files"></label>
+		<attribute name="onOpen">	
+</attribute>
+	</popup>
+
+	<div sclass="header">
+		<n:h1>
+			<a>Admin</a>
+		</n:h1>
+	</div>
+
+	<div sclass="search">
+		<bandbox placeholder="Search here..." />
+	</div>
+	<div sclass="user-nav">
+		<menubar>
+			<menuitem iconSclass="icon icon-white icon-user"
+				label="Profile" />
+			<menu iconSclass="icon icon-white icon-envelope"
+				label="Messages">
+				<menupopup sclass="navpp">
+					<menuitem label="new message" />
+					<menuitem label="inbox" />
+					<menuitem label="outbox" />
+					<menuitem label="trash" />
+				</menupopup>
+			</menu>
+			<menuitem iconSclass="icon icon-white icon-cog"
+				label="Settings" />
+			<menuitem iconSclass="icon icon-white icon-share-alt"
+				label="Logout" />
+		</menubar>
+	</div>
+
+	<navbar orient="vertical" sclass="sidebar">
+		<navitem iconSclass="icon icon-white icon-home"
+			label="Dashboard" selected="true" />
+		<nav iconSclass="icon icon-white icon-th-list"
+			label="Form elements" badgeText="3">
+			<navitem label="Common elements" />
+			<navitem label="Validation" />
+			<navitem label="Wizard" />
+		</nav>
+		<navitem iconSclass="icon icon-white icon-tint"
+			label="Buttons &amp; icons" />
+		<navitem iconSclass="icon icon-white icon-pencil"
+			label="Interface elements" />
+		<navitem iconSclass="icon icon-white icon-th" label="Tables" />
+		<navitem iconSclass="icon icon-white icon-th-list"
+			label="Grid Layout" />
+		<nav iconSclass="icon icon-white icon-file" label="Sample pages"
+			badgeText="4">
+			<navitem label="Invoice" />
+			<navitem label="Support chat" />
+			<navitem label="Calendar" />
+			<navitem label="Gallery" />
+		</nav>
+	</navbar>
+
+	<div sclass="style-switcher">
+		<n:i class="icon-arrow-left icon-white"></n:i>
+		<label>Style:</label>
+		<a id="grey" href="javascript: changeTheme('grey');"
+			style="background-color: #555555; border-color: #AAAAAA;">
+		</a>
+		<a id="light-blue" href="javascript: changeTheme('light-blue');"
+			style="background-color: #8399b0;">
+		</a>
+		<a id="red" href="javascript: changeTheme('red');"
+			style="background-color: #673232;">
+		</a>
+	</div>
+
+	<div sclass="content">
+		<div sclass="content-header">
+			<n:h1>Dashboard</n:h1>
+			<div class="btn-group">
+				<button zclass="btn" iconSclass="icon-file"
+					tooltip="btntip,after_center">
+					<custom-attributes title="Manage Files" />
+				</button>
+				<button zclass="btn" iconSclass="icon-user"
+					tooltip="btntip,after_center">
+					<custom-attributes title="Manage Users" />
+				</button>
+				<button zclass="btn" iconSclass="icon-comment"
+					tooltip="btntip,after_center">
+					<custom-attributes title="Manage Comments" />
+				</button>
+				<button zclass="btn" iconSclass="icon-shopping-cart"
+					tooltip="btntip,after_center">
+					<custom-attributes title="Manage Orders" />
+				</button>
+			</div>
+		</div>
+		<div sclass="breadcrumb">
+			<a href="#" tooltip="btntip,after_center"
+				iconSclass="icon-home">
+				Home
+				<custom-attributes title="Go to Home" />
+			</a>
+			<a href="#">Dashboard</a>
+		</div>
+		<include src="zk/content.zul" />
+	</div>
 </zk>
