@@ -11,11 +11,12 @@
 	<name>Maven Main Web Module</name>
 	<artifactId>main-project</artifactId>
 	<packaging>war</packaging>
+	
+	<properties>
+		<zk.version>7.0.0</zk.version>
+		<mybatis.generator.overwrite>true</mybatis.generator.overwrite>
+	</properties>
 
-	<!-- <properties> <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
-		<junit.disableXmlReport>true</junit.disableXmlReport> <junit.skipTests>true</junit.skipTests> 
-		<maven.compiler.source>1.7</maven.compiler.source> <maven.compiler.target>1.7</maven.compiler.target> 
-		<jetty.port>8080</jetty.port> </properties> -->
 
 	<dependencies>
 		<!-- Project Dependencies -->
@@ -23,7 +24,6 @@
 			<groupId>com.mvn.project</groupId>
 			<artifactId>core-project</artifactId>
 		</dependency>
-		
 
 		<!-- Spring Dependencies -->
 		<dependency>
@@ -69,6 +69,11 @@
 			<groupId>org.zkoss.theme</groupId>
 			<artifactId>sapphire</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.zkoss.zk</groupId>
+			<artifactId>zkmax</artifactId>
+			<version>${zk.version}</version>
+		</dependency>
 
 		<!-- ckeditor -->
 		<dependency>
@@ -99,18 +104,6 @@
 			<groupId>com.artofsolving</groupId>
 			<artifactId>jodconverter</artifactId>
 		</dependency>
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.openoffice</groupId> -->
-<!-- 			<artifactId>juh</artifactId> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.openoffice</groupId> -->
-<!-- 			<artifactId>ridl</artifactId> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.openoffice</groupId> -->
-<!-- 			<artifactId>unoil</artifactId> -->
-<!-- 		</dependency> -->
 	</dependencies>
 
 </project>
