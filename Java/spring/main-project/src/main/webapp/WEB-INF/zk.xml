@@ -26,7 +26,7 @@
 		<ui-factory-class>
 			org.zkoss.zk.ui.http.SerializableUiFactory
 		</ui-factory-class>
-		<disable-zscript>true</disable-zscript>
+		<disable-zscript>false</disable-zscript>
 	</system-config>
 
 	<session-config>
