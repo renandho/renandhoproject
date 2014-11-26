@@ -1,127 +1,190 @@
-<?page title="ZK 7 with Bootstrap Demo"?>
-<?component name="button" extends="button" width="44px" height="44px"?>
-<?link rel="stylesheet" type="text/css"	href="/bootstrap/css/bootstrap.css" ?>
-<?link rel="stylesheet" type="text/css" href="/css/index.css.dsp" ?>
-<?link rel="stylesheet" type="text/css"
-	href="/css/user-nav.css.dsp" ?>
-<?link rel="stylesheet" type="text/css"
-	href="/css/sidebar.css.dsp" ?>
-<?link rel="stylesheet" type="text/css"
-	href="/css/search.css.dsp" ?>
-<?link rel="stylesheet" type="text/css"
-	href="/css/content-header.css.dsp" ?>
-<?link id="theme" rel="stylesheet" type="text/css"
-	href="/css/grey.css.dsp"  if="${param.theme eq 'grey' or empty param.theme}"?>
-<?link id="theme" rel="stylesheet" type="text/css"
-	href="/css/red.css.dsp"  if="${param.theme eq 'red'}"?>
-<?link id="theme" rel="stylesheet" type="text/css"
-	href="/css/light-blue.css.dsp"  if="${param.theme eq 'light-blue'}"?>
+<?page title="Dashboard - ZK Admin"?>
+<?link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"?>
+
+<!-- Google Open Sans font -->
+<!-- Load fonts from local -->
+<?link href="css/fonts.css" rel="stylesheet" type="text/css"?>
+
+<!-- Unmark if we want to use fonts from google server
+<?link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'?>
+-->
+
+<?link href="less/index.css.dsp" rel="stylesheet" type="text/css"?>
 
 <zk xmlns:n="native">
-	<popup id="btntip" sclass="btn-tip" style="margin-top: 10px">
-		<label id="msg" value="Manage Files"></label>
-		<attribute name="onOpen">	
-</attribute>
-	</popup>
+	<include src="navbar.zul"/>             
+	<hlayout id="main" spacing="0">
+		<include src="sidebar.zul"/>    
+		<vlayout spacing="0" hflex="1">
+			<include src="breadcrumbs.zul"/>
+			<include src="page.zul"/>
+		</vlayout>
+	</hlayout>
 
-	<div sclass="header">
-		<n:h1>
-			<a>Admin</a>
-		</n:h1>
-	</div>
+	<!-- Include the jQuery plugins to draw the chart -->
+	<script src="js/excanvas.min.js" if="${zk.ie lt 9}"/>
+	<script src="js/jquery.easy-pie-chart.min.js"></script>
+	<script src="js/jquery.flot.min.js"/>
+	<script src="js/jquery.flot.pie.js"/>
+	<script src="js/jquery.sparkline.min.js"></script>
+	<script><![CDATA[
+zk.afterMount(function(){
+	// Draw easy pie chart
+	if (!zk.ie || zk.ie > 8) { // Easy pie chart does not work in IE8
+		$('.easy-pie-chart.percentage').each(function(){
+			var $box = $(this).closest('.infobox');
+			var barColor = $(this).data('color') || (!$box.hasClass('infobox-dark') ? $box.css('color') : 'rgba(255,255,255,0.95)');
+			var trackColor = barColor == 'rgba(255,255,255,0.95)' ? 'rgba(255,255,255,0.25)' : '#E2E2E2';
+			var size = parseInt($(this).data('size')) || 50;
+			$(this).easyPieChart({
+				barColor: barColor,
+				trackColor: trackColor,
+				scaleColor: false,
+				lineCap: 'butt',
+				lineWidth: parseInt(size/10),
+				animate: /msie\s*(8|7|6)/.test(navigator.userAgent.toLowerCase()) ? false : 1000,
+				size: size
+			});
+		});
+	}
 
-	<div sclass="search">
-		<bandbox placeholder="Search here..." />
-	</div>
-	<div sclass="user-nav">
-		<menubar>
-			<menuitem iconSclass="icon icon-white icon-user"
-				label="Profile" />
-			<menu iconSclass="icon icon-white icon-envelope"
-				label="Messages">
-				<menupopup sclass="navpp">
-					<menuitem label="new message" />
-					<menuitem label="inbox" />
-					<menuitem label="outbox" />
-					<menuitem label="trash" />
-				</menupopup>
-			</menu>
-			<menuitem iconSclass="icon icon-white icon-cog"
-				label="Settings" />
-			<menuitem iconSclass="icon icon-white icon-share-alt"
-				label="Logout" />
-		</menubar>
-	</div>
+	// Draw Sparkline
+	$('.sparkline').each(function(){
+		var $box = $(this).closest('.infobox');
+		var barColor = !$box.hasClass('infobox-dark') ? $box.css('color') : '#FFF';
+		$(this).sparkline('html', {tagValuesAttribute:'data-values', type: 'bar', barColor: barColor , chartRangeMin:$(this).data('min') || 0} );
+	});
 
-	<navbar orient="vertical" sclass="sidebar">
-		<navitem iconSclass="icon icon-white icon-home"
-			label="Dashboard" selected="true" />
-		<nav iconSclass="icon icon-white icon-th-list"
-			label="Form elements" badgeText="3">
-			<navitem label="Common elements" />
-			<navitem label="Validation" />
-			<navitem label="Wizard" />
-		</nav>
-		<navitem iconSclass="icon icon-white icon-tint"
-			label="Buttons &amp; icons" />
-		<navitem iconSclass="icon icon-white icon-pencil"
-			label="Interface elements" />
-		<navitem iconSclass="icon icon-white icon-th" label="Tables" />
-		<navitem iconSclass="icon icon-white icon-th-list"
-			label="Grid Layout" />
-		<nav iconSclass="icon icon-white icon-file" label="Sample pages"
-			badgeText="4">
-			<navitem label="Invoice" />
-			<navitem label="Support chat" />
-			<navitem label="Calendar" />
-			<navitem label="Gallery" />
-		</nav>
-	</navbar>
+	// Draw Traffic Source Pie Chart
 
-	<div sclass="style-switcher">
-		<n:i class="icon-arrow-left icon-white"></n:i>
-		<label>Style:</label>
-		<a id="grey" href="javascript: changeTheme('grey');"
-			style="background-color: #555555; border-color: #AAAAAA;">
-		</a>
-		<a id="light-blue" href="javascript: changeTheme('light-blue');"
-			style="background-color: #8399b0;">
-		</a>
-		<a id="red" href="javascript: changeTheme('red');"
-			style="background-color: #673232;">
-		</a>
-	</div>
+	var placeholder = $('.piechart-placeholder').css({'width':'90%' , 'min-height':'150px'});
+	var data = [
+	{ label: "social networks",  data: 38.7, color: "#68BC31"},
+	{ label: "search engines",  data: 24.5, color: "#2091CF"},
+	{ label: "ad campaigns",  data: 8.2, color: "#AF4E96"},
+	{ label: "direct traffic",  data: 18.6, color: "#DA5430"},
+	{ label: "other",  data: 10, color: "#FEE074"}
+	]
+	function drawPieChart(placeholder, data, position) {
+		  $.plot(placeholder, data, {
+		series: {
+			pie: {
+				show: true,
+				tilt:0.8,
+				highlight: {
+					opacity: 0.25
+				},
+				stroke: {
+					color: '#fff',
+					width: 2
+				},
+				startAngle: 2
+			}
+		},
+		legend: {
+			show: true,
+			position: position || "ne", 
+			labelBoxBorderColor: null,
+			margin:[-30,15]
+		}
+		,
+		grid: {
+			hoverable: true,
+			clickable: true
+		}
+	 })
+	}
+	drawPieChart(placeholder, data);
 
-	<div sclass="content">
-		<div sclass="content-header">
-			<n:h1>Dashboard</n:h1>
-			<div class="btn-group">
-				<button zclass="btn" iconSclass="icon-file"
-					tooltip="btntip,after_center">
-					<custom-attributes title="Manage Files" />
-				</button>
-				<button zclass="btn" iconSclass="icon-user"
-					tooltip="btntip,after_center">
-					<custom-attributes title="Manage Users" />
-				</button>
-				<button zclass="btn" iconSclass="icon-comment"
-					tooltip="btntip,after_center">
-					<custom-attributes title="Manage Comments" />
-				</button>
-				<button zclass="btn" iconSclass="icon-shopping-cart"
-					tooltip="btntip,after_center">
-					<custom-attributes title="Manage Orders" />
-				</button>
-			</div>
-		</div>
-		<div sclass="breadcrumb">
-			<a href="#" tooltip="btntip,after_center"
-				iconSclass="icon-home">
-				Home
-				<custom-attributes title="Go to Home" />
-			</a>
-			<a href="#">Dashboard</a>
-		</div>
-		<include src="zk/content.zul" />
-	</div>
+	placeholder.data('chart', data);
+	placeholder.data('draw', drawPieChart);
+
+  var $tooltip = $("<div class='tooltip top in'><div class='tooltip-inner'></div></div>").hide().appendTo('body');
+  var previousPoint = null;
+
+  // Show tooltip when hover plot
+  placeholder.on('plothover', function (event, pos, item) {
+	if(item) {
+		if (previousPoint != item.seriesIndex) {
+			previousPoint = item.seriesIndex;
+			var tip = item.series['label'] + " : " + item.series['percent']+'%';
+			$tooltip.show().children(0).text(tip);
+		}
+		$tooltip.css({top:pos.pageY + 10, left:pos.pageX + 10});
+	} else {
+		$tooltip.hide();
+		previousPoint = null;
+	}
+	
+ });
+
+
+	var d1 = [];
+	for (var i = 0; i < Math.PI * 2; i += 0.5) {
+		d1.push([i, Math.sin(i)]);
+	}
+
+	var d2 = [];
+	for (var i = 0; i < Math.PI * 2; i += 0.5) {
+		d2.push([i, Math.cos(i)]);
+	}
+
+	var d3 = [];
+	for (var i = 0; i < Math.PI * 2; i += 0.2) {
+		d3.push([i, Math.tan(i)]);
+	}
+
+	// Draw Sale Stats charts
+	var sales_chart = $('.sales-chart').css({'width':'100%' , 'height':'220px'});
+	$.plot(".sales-chart", [
+		{ label: "Domains", data: d1 },
+		{ label: "Hosting", data: d2 },
+		{ label: "Services", data: d3 }
+	], {
+		hoverable: true,
+		shadowSize: 0,
+		series: {
+			lines: { show: true },
+			points: { show: true }
+		},
+		xaxis: {
+			tickLength: 0
+		},
+		yaxis: {
+			ticks: 10,
+			min: -2,
+			max: 2,
+			tickDecimals: 3
+		},
+		grid: {
+			backgroundColor: { colors: [ "#fff", "#fff" ] },
+			borderWidth: 1,
+			borderColor:'#555'
+		}
+	});
+});
+if (zk.ie && zk.ie < 8) { 
+	jq.alert("Your browser is not supported, please use the latest one! (IE8+)");
+}
+	]]></script>
+	<script if='${execution.serverName == "www.zkoss.org" or execution.serverName == "www.potix.com"}'><![CDATA[
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+var gafn = function () {
+if (window._gat) {
+	gafn = null;
+	try {
+		var pageTracker = _gat._getTracker("UA-121377-3");
+		pageTracker._setDomainName("zkoss.org");
+		pageTracker._initData();
+		pageTracker._trackPageview();
+
+	} catch (e) {
+	}
+} else
+	setTimeout(gafn, 1000);
+};
+gafn();
+]]></script>
 </zk>
