@@ -12,11 +12,13 @@
 		
 		<plugin type="org.mybatis.generator.plugins.RowBoundsPlugin" />
 	
-		<jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
+<!-- 		<jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
 			connectionURL="jdbc:oracle:thin:@10.17.18.68:1521:sit"
 			userId="hcms"
-			password="hcms" />
-			
+			password="hcms" /> -->
+		
+		
+	   
 			
 		<javaModelGenerator targetPackage="com.fif.hcms.core.domain" targetProject="src/main/java">
 			<property name="enableSubPackages" value="true" />
