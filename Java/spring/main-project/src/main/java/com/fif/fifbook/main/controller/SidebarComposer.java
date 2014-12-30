@@ -1,4 +1,4 @@
-package applications2;
+package com.fif.fifbook.main.controller;
 
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.select.SelectorComposer;
