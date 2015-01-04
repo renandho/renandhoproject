@@ -1,7 +1,7 @@
-<?page title="Selamat datang di FIFBook" contentType="text/html;charset=UTF-8"?>
+<?page title="Medical Claim" contentType="text/html;charset=UTF-8"?>
 <?meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"?>
 <zk>
-	<window border="none" width="400px" height="25%" position="center"
+	<window border="none" width="400px" height="20%" position="center"
 		mode="overlapped" style="margin: 70px 0px 0px 10px;"
 		apply="com.fif.fifbook.main.controller.IndexController">
 
@@ -17,7 +17,7 @@
 						<rows>
 							<row spans="2">
 								<div style="text-align:center;">
-									<label id="l_us" value="ITSM"
+									<label id="l_us" 
 									sclass="form-label" style="font-size:20px; font-style: normal; font-weight: bold;" />
 								</div>
 							</row>
@@ -37,7 +37,7 @@
 								<label></label>
 								<hbox id="hboxLogin">
 									<button id="btnLogin" label="Login"
-										width="80px" image="${labels.image.link.power}" />
+										width="80px"  />
 									<button id="btnSignup"
 										label="Sign Up" width="80px" />
 								</hbox>
