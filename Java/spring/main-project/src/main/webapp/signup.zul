@@ -1,7 +1,8 @@
 <?page title="Sign Up" contentType="text/html;charset=UTF-8"?>
 <zk>
-	<window title="Ini adalah halaman Sign Up" border="solid"
-		apply="com.fif.fifbook.main.controller.SignupController">
+	<window id="signupWindow" title="Sign Up, only for Employee" border="solid"
+	
+		apply="com.fif.fifbook.main.controller.SignupController" width="400px" height="300px">
 		<grid>
 			<columns>
 				<column width="120px" />
@@ -45,19 +46,18 @@
 						<label class="error"
 							value="@load(vmsgs['email'])" />
 					</cell>
-
-
 				</row>
 				<row>
 					<cell colspan="2" style="text-align:center">
-						<vlayout>
-							<label visible="@load(empty vmsgs)"
-								value="@load(empty vmsgs ? 'Form successfully submitted!' : '', before='submit')" />
+						<hlayout>
 							<button label="Submit" id="btnSubmit"
-								 height="30px" />
-						</vlayout>
+								height="30px" />
+							<button label="Cancel" id="btnCancel"
+								height="30px" />
+						</hlayout>
 					</cell>
 				</row>
+				
 			</rows>
 		</grid>
 	</window>

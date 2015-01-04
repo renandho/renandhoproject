@@ -90,8 +90,13 @@ public class IndexController extends SelectorComposer<Window> {
 
 	@Listen("onClick = #btnSignup")
 	public void doSignup() {
-		Messagebox.show("btnSignup di click");
-		Executions.sendRedirect("/signup.zul");
+		// Messagebox.show("btnSignup di click");
+		// Executions.sendRedirect("/signup.zul");
+		// create a window programmatically and use it as a modal dialog.
+		Window window = (Window) Executions.createComponents(
+				"/signup.zul", null, null);
+		window.doModal();
+
 	}
 
 }

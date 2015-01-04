@@ -1,6 +1,6 @@
 <?page title="Sign Up" contentType="text/html;charset=UTF-8"?>
 <zk>
-	<window title="Ini adalah halaman Sign Up" border="solid"
+	<window title="Sign Up, only for Employee" border="solid"
 		apply="com.fif.fifbook.main.controller.SignupController">
 		<grid>
 			<columns>
@@ -54,10 +54,11 @@
 							<label visible="@load(empty vmsgs)"
 								value="@load(empty vmsgs ? 'Form successfully submitted!' : '', before='submit')" />
 							<button label="Submit" id="btnSubmit"
-								 height="30px" />
+								height="30px" />
 						</vlayout>
 					</cell>
 				</row>
+				
 			</rows>
 		</grid>
 	</window>

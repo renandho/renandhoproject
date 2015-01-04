@@ -18,6 +18,9 @@ public class SignupController extends SelectorComposer<Window> {
 	private static final long serialVersionUID = 5401920609229501239L;
 
 	@Wire
+	private Window signupWindow; 
+	
+	@Wire
 	private Textbox txtUsername;
 
 	@Wire
@@ -25,11 +28,14 @@ public class SignupController extends SelectorComposer<Window> {
 
 	@Wire
 	private Button btnSubmit;
+	
+	@Wire
+	private Button btnCancel;
 
 	@Override
 	public void doAfterCompose(Window comp) throws Exception {
 		super.doAfterCompose(comp);
-		this.txtUsername.setText("Testing insert Text");
+		
 	}
 
 	@Listen("onClick=#btnSubmit")
@@ -45,4 +51,9 @@ public class SignupController extends SelectorComposer<Window> {
 		}
 	}
 
+	@Listen("onClick=#btnCancel")
+	public void doCancel() {
+		signupWindow.detach();
+	}
+	
 }
