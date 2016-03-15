@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.fif.hcms.core.finder.WorkflowLookupFinder">
+<mapper namespace="com.shop.core.finder.WorkflowLookupFinder">
 
-	<resultMap type="com.fif.hcms.core.ui.lookup.KeyValue" id="BaseResult">
+	<resultMap type="com.shop.core.ui.lookup.KeyValue" id="BaseResult">
 		<id column="KEY" property="key" />
 		<result column="DESCRIPTION" property="description" />
 		<result column="VALUE" property="value" />
@@ -50,7 +50,7 @@
 			job_code value, 
 			job_name description 
 		from wos_jobs
-		where job_uuid = #{jobUUID, jdbcType=VARBINARY, typeHandler=com.fif.hcms.core.dao.mybatis.type.UUIDTypeHandler}
+		where job_uuid = #{jobUUID, jdbcType=VARBINARY, typeHandler=com.shop.core.dao.mybatis.type.UUIDTypeHandler}
 	</select>
 	
 	<select id="getLookupJob" parameterType="map" resultMap="BaseResult">
@@ -284,8 +284,8 @@
 		where loan_id = #{id}
 	</select>
 	
-	<resultMap type="com.fif.hcms.core.ui.lookup.KeyValue" id="BaseUUIDResult">
-		<id column="KEY" jdbcType="VARBINARY" property="key" typeHandler="com.fif.hcms.core.dao.mybatis.type.UUIDTypeHandler" />
+	<resultMap type="com.shop.core.ui.lookup.KeyValue" id="BaseUUIDResult">
+		<id column="KEY" jdbcType="VARBINARY" property="key" typeHandler="com.shop.core.dao.mybatis.type.UUIDTypeHandler" />
 		<result column="FULL_NAME" property="description" />
 		<result column="EMPLOYEE_NUMBER" property="value" />
 	</resultMap>
@@ -341,7 +341,7 @@
 	  from PEA_PEOPLE pp
 	  join PEA_PEOPLE_TYPES ppt on ppt.person_id = pp.person_id and trunc(sysdate) between ppt.effective_start_date and ppt.effective_end_date 
 	  join pea_personal_informations ppi on ppi.person_id = pp.person_id and ppi.company_id = ppt.company_id and trunc(sysdate) between ppi.effective_start_date and ppi.effective_end_date
-	  where pp.person_uuid = #{personUUID, jdbcType=VARBINARY,typeHandler=com.fif.hcms.core.dao.mybatis.type.UUIDTypeHandler}
+	  where pp.person_uuid = #{personUUID, jdbcType=VARBINARY,typeHandler=com.shop.core.dao.mybatis.type.UUIDTypeHandler}
 	</select>
 	
 	<select id="getApproverByName" parameterType="map" resultMap="BaseUUIDResult">

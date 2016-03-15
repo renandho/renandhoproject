@@ -1,5 +1,5 @@
 <window id="winGenericLov" title="new page title" border="normal" width="400px" height="600px" closable="true"
-apply="com.fif.hcms.core.ui.lookup.ListOfValueComposer">
+apply="com.shop.core.ui.lookup.ListOfValueComposer">
 <groupbox>
 	<caption label="Filters" />
 	<grid>
@@ -10,7 +10,7 @@ apply="com.fif.hcms.core.ui.lookup.ListOfValueComposer">
 		<rows>
 			<row>
 				<label id="lblSearchText" />
-				<textbox id="txtSearchCriteria" maxlength="50" width="90%" use="com.fif.hcms.core.ui.Searchtextbox"/>
+				<textbox id="txtSearchCriteria" maxlength="50" width="90%" use="com.shop.core.ui.Searchtextbox"/>
 			</row>
 			<row>
 				<label />

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.fif.hcms.core.finder.UploadElementFinder">
+<mapper namespace="com.shop.core.finder.UploadElementFinder">
 
-	<resultMap type="com.fif.hcms.core.domain.UploadElement" id="BaseResultMap">
+	<resultMap type="com.shop.core.domain.UploadElement" id="BaseResultMap">
 		<id column="UPLOAD_ID" property="uploadId" jdbcType="DECIMAL"/>
 		<result column="BATCH_NUMBER" property="batchNumber" jdbcType="VARCHAR"/>
 		<result column="UPLOAD_DATE" property="uploadDate" jdbcType="TIMESTAMP"/>
@@ -14,7 +14,7 @@
 		<result column="LAST_UPDATE_DATE" property="lastUpdateDate" jdbcType="TIMESTAMP"/>
 	</resultMap>
 
-	<resultMap type="com.fif.hcms.core.dto.UploadElementDTO" id="BaseResultMapDto">
+	<resultMap type="com.shop.core.dto.UploadElementDTO" id="BaseResultMapDto">
 		<id column="UPLOAD_ID" property="uploadId" jdbcType="DECIMAL"/>
 		<result column="BATCH_NUMBER" property="batchNumber" jdbcType="VARCHAR"/>
 		<result column="UPLOAD_DATE" property="uploadDate" jdbcType="TIMESTAMP"/>
@@ -25,7 +25,7 @@
 		<result column="LAST_UPDATED_BY" property="lastUpdatedBy" jdbcType="DECIMAL"/>
 		<result column="LAST_UPDATE_DATE" property="lastUpdateDate" jdbcType="TIMESTAMP"/>
 		<result column="USER_NAME" property="uploadedBy" jdbcType="VARCHAR"/>
-		<association property="batchUpload" javaType="com.fif.hcms.core.domain.BatchUpload">
+		<association property="batchUpload" javaType="com.shop.core.domain.BatchUpload">
 			<id column="BATCH_NUMBER" property="batchNumber" jdbcType="VARCHAR"/>
 			<result column="COMPANY_ID" property="companyId" jdbcType="DECIMAL"/>
 			<result column="BRANCH_ID" property="branchId" jdbcType="DECIMAL"/>

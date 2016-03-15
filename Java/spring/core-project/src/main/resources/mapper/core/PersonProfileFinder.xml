@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.fif.hcms.core.finder.PersonProfileFinder">
+<mapper namespace="com.shop.core.finder.PersonProfileFinder">
 	
-	<resultMap id="baseResult" type="com.fif.hcms.core.dto.PersonAssignmentProfileDTO">
+	<resultMap id="baseResult" type="com.shop.core.dto.PersonAssignmentProfileDTO">
 		<id column="PERSON_ID" jdbcType="DECIMAL" property="personId" />
 		<result column="PEOPLE_TYPE" jdbcType="VARCHAR" property="peopleType" />
 		<result column="EMPLOYEE_NUMBER" jdbcType="VARCHAR" property="employeeNumber" />
@@ -15,7 +15,7 @@
 		<result column="JOB_NAME" property="jobName" jdbcType="VARCHAR" />
 		<result column="JOB_GROUP_CODE" property="jobGroupCode" jdbcType="VARCHAR" />
 		<result column="PERSONAL_GRADE_CODE" property="personalGradeCode" jdbcType="VARCHAR" />
-		<collection property="contacts" ofType="com.fif.hcms.core.dto.ContactDTO" javaType="ArrayList" >
+		<collection property="contacts" ofType="com.shop.core.dto.ContactDTO" javaType="ArrayList" >
 			<id column="COMMUNICATION_ID" property="communicationId" jdbcType="NUMERIC"/>
 			<result column="COMM_TYPE" property="typeCode" jdbcType="VARCHAR" />
 			<result column="COMM_INFORMATION" property="information" jdbcType="VARCHAR"/>
@@ -28,7 +28,7 @@
 		<result column="PERSON_ID" jdbcType="DECIMAL" />
 	</resultMap>
 	
-	<resultMap id="resultPersonDTO" type="com.fif.hcms.core.dto.PersonAdapterDTO">
+	<resultMap id="resultPersonDTO" type="com.shop.core.dto.PersonAdapterDTO">
 		<result column="PERSON_ID" jdbcType="DECIMAL" property="personId"/>
 		<result column="PERSON_WORKING_SCHEDULE_ID" jdbcType="DECIMAL" property="personWorkingScheduleId"/>
 		<result column="GRADE_ID" jdbcType="DECIMAL" property="gradeId"/>

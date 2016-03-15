@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.fif.hcms.core.dao.SecurityProfileFinder">
+<mapper namespace="com.shop.core.dao.SecurityProfileFinder">
  
-  <resultMap id="KeyValueResultMap" type="com.fif.hcms.core.ui.lookup.KeyValue">
+  <resultMap id="KeyValueResultMap" type="com.shop.core.ui.lookup.KeyValue">
     <result column="KEY" jdbcType="DECIMAL" property="key" javaType="java.lang.Long" />
     <result column="VALUE" jdbcType="VARCHAR" property="value" />
     <result column="DESCRIPTION" jdbcType="VARCHAR" property="description" />
   </resultMap>
   
-  <resultMap id="AuthorizedMenuResult" type="com.fif.hcms.core.ui.AuthorizedMenuDTO">
+  <resultMap id="AuthorizedMenuResult" type="com.shop.core.ui.AuthorizedMenuDTO">
 	<result column="action_id" jdbcType="DECIMAL" property="actionId" javaType="java.lang.Long" />
 	<result column="menu_item_type" jdbcType="VARCHAR" property="menuItemType" />
 	<result column="sequence" jdbcType="VARCHAR" property="sequence" />
@@ -20,11 +20,11 @@
 	<result column="module_name" jdbcType="VARCHAR" property="moduleName" />
 </resultMap>
 
-  <resultMap id="SecurityProfileResult" type="com.fif.hcms.core.security.SecurityProfile">
+  <resultMap id="SecurityProfileResult" type="com.shop.core.security.SecurityProfile">
 	<result column="user_id" jdbcType="DECIMAL" property="userId" javaType="java.lang.Long" />
 	<result column="user_name" jdbcType="VARCHAR" property="userName" />
 	<result column="person_id" jdbcType="DECIMAL" property="personId" javaType="java.lang.Long" />
-	<result column="person_uuid" jdbcType="VARBINARY" property="personUUID" typeHandler="com.fif.hcms.core.dao.mybatis.type.UUIDTypeHandler" />
+	<result column="person_uuid" jdbcType="VARBINARY" property="personUUID" typeHandler="com.shop.core.dao.mybatis.type.UUIDTypeHandler" />
 	<result column="full_name" jdbcType="VARCHAR" property="fullName" />
 	<result column="employee_number" jdbcType="VARCHAR" property="employeeNumber" />
 	<result column="company_id" jdbcType="DECIMAL" property="companyId" javaType="java.lang.Long" />
@@ -41,7 +41,7 @@
 	<result column="branch_name" jdbcType="VARCHAR" property="branchName" />
 </resultMap>
 
- <resultMap id="SecurityResult" type="com.fif.hcms.core.security.Security">
+ <resultMap id="SecurityResult" type="com.shop.core.security.Security">
 	<result column="responsibility_id" jdbcType="DECIMAL" property="responsibilityId" />
 	<result column="responsibility_name" jdbcType="VARCHAR" property="responsibilityName" />
 	<result column="menu_id" jdbcType="DECIMAL" property="menuId" />
@@ -54,7 +54,7 @@
 	<result column="org_level" jdbcType="DECIMAL" property="organizationLevelId" />
 </resultMap>
 
-<resultMap id="FunctionPermissionResult" type="com.fif.hcms.core.security.FunctionPermission">
+<resultMap id="FunctionPermissionResult" type="com.shop.core.security.FunctionPermission">
 	<result column="function_id" jdbcType="DECIMAL" property="functionId" />
 	<result column="flag_editable" jdbcType="NUMERIC" property="editable" />
 	<result column="flag_writable" jdbcType="NUMERIC" property="createable" />

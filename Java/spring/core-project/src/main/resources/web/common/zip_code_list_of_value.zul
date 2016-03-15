@@ -1,5 +1,5 @@
 <window id="winZipCodeLov" title="${labels.common.listOfZipCode}" border="normal" width="500px" height="650px" closable="true"
-apply="com.fif.hcms.core.controller.ListOfValueZipCodeComposer">
+apply="com.shop.core.controller.ListOfValueZipCodeComposer">
 <groupbox>
 	<caption label="Filters" />
 	<grid>
@@ -10,15 +10,15 @@ apply="com.fif.hcms.core.controller.ListOfValueZipCodeComposer">
 		<rows>
 			<row>
 				<label value="${labels.address.kecamatan}"/>
-				<textbox id="txtKecamatan" use="com.fif.hcms.core.ui.Searchtextbox"/>
+				<textbox id="txtKecamatan" use="com.shop.core.ui.Searchtextbox"/>
 			</row>
 			<row>
 				<label value="${labels.address.kelurahan}"></label>
-				<textbox id="txtKelurahan" use="com.fif.hcms.core.ui.Searchtextbox"/>
+				<textbox id="txtKelurahan" use="com.shop.core.ui.Searchtextbox"/>
 			</row>
 			<row>
 				<label value="${labels.address.zipcode}"></label>
-				<textbox id="txtZipCode" use="com.fif.hcms.core.ui.Searchtextbox"/>
+				<textbox id="txtZipCode" use="com.shop.core.ui.Searchtextbox"/>
 			</row>
 			<row>
 				<label />
