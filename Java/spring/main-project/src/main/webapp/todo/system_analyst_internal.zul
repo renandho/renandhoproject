@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/shared/header.zul" />
+
+		<h:section id="main" data-layout="layout-1">
+			<include src="/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container">
+					<include src="/shared/todo_dev_env_only.zul" />
+					<div sclass="row">
+						<div sclass="col-sm-12">
+							<div sclass="block-header">
+								<h:h2>
+									<h:i
+										class="zmdi zmdi-account p-r-10 zmdi-hc-lg">
+									</h:i>
+									System Analyst To-Do List (Project
+									Internal)
+								</h:h2>
+							</div>
+						</div>
+					</div>
+
+					<div sclass="row">
+						<div sclass="col-sm-6">
+							<div sclass="card z-depth-1">
+								<div sclass="card-header ch-alt">
+									<h:h2 class="c-teal">
+										01 - User Requirement
+									</h:h2>
+								</div>
+								<div
+									sclass="card-body card-padding bgm-teal c-white">
+								</div>
+							</div>
+						</div>
+
+						<div sclass="col-sm-6">
+							<div sclass="card z-depth-1">
+								<div sclass="card-header ch-alt">
+									<h:h2 class="c-brown">
+										02 - Functional Design
+									</h:h2>
+								</div>
+								<div
+									sclass="card-body card-padding bgm-brown c-white">
+									<h:ul class="clist clist-check">
+										<h:li>
+											Membantu Business Analyst,
+											terutama bila menyangkut
+											teknis/integrasi
+											system/ketersediaan data
+										</h:li>
+									</h:ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div sclass="row">
+						<div sclass="col-sm-6">
+							<div sclass="card z-depth-1">
+								<div sclass="card-header ch-alt">
+									<h:h2 class="c-deeporange">
+										03 - Development
+									</h:h2>
+								</div>
+								<div
+									sclass="card-body card-padding bgm-deeporange c-white">
+									<h:ul class="clist clist-check">
+										<h:li>
+											Memastikan functional
+											memungkinkan untuk
+											diimplementasikan secara
+											teknis
+										</h:li>
+										<h:li>
+											Membuat technical design
+											sesuai template dan standard
+										</h:li>
+										<h:li>
+											Bersama team infrastruktur
+											mempersiapkan environment
+											development, test, dan
+											production (pesan mesin,
+											spesifikasi server, dll)
+										</h:li>
+										<h:li>
+											Sign off document Technical
+											Design
+										</h:li>
+										<h:li>
+											Koordinasi dengan Business
+											Analyst terkait development
+											(misal jika ada functional
+											yang bila diimplementasikan
+											akan berakibat ke modul
+											lain)
+										</h:li>
+										<h:li>
+											Memastikan struktur,
+											penamaan, dan management
+											source code sesuai standard
+										</h:li>
+										<h:li>
+											Memastikan bahwa source code
+											sudah di-merge di SVN
+											(termasuk comment sudah
+											sesuai)
+										</h:li>
+										<h:li>
+											Memastikan kualitas teknis
+											source code
+										</h:li>
+										<h:li>
+											Migrasi data (jika ada)
+										</h:li>
+										<h:li>
+											Screening hasil development
+											: memastikan form yang
+											dibuat vendor sudah sesuai
+											dengan Functional Design
+											(field, layout)
+										</h:li>
+										<h:li>
+											Screening hasil development
+											: memastikan security menu
+											sudah sesuai dengan
+											Functional Design (struktur
+											menu, nama menu, siapa yang
+											boleh akses)
+										</h:li>
+										<h:li>
+											Screening hasil development
+											: memastikan satu flow
+											normal dapat berjalan
+										</h:li>
+									</h:ul>
+									<h:p></h:p>
+									<h:p>
+										Catatan : Screening dapat
+										dilakukan System Analyst atau
+										Business Analyst, tergantung
+										availability
+									</h:p>
+								</div>
+							</div>
+						</div>
+
+						<div sclass="col-sm-6">
+							<div sclass="card z-depth-1">
+								<div sclass="card-header ch-alt">
+									<h:h2 class="c-indigo">
+										04 - QA
+									</h:h2>
+								</div>
+								<div
+									sclass="card-body card-padding bgm-indigo c-white">
+									<h:ul class="clist clist-check">
+										<h:li>
+											Support QA untuk pengerjaan
+											ticket
+										</h:li>
+									</h:ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div sclass="row">
+						<div sclass="col-sm-6">
+							<div sclass="card z-depth-1">
+								<div sclass="card-header ch-alt">
+									<h:h2 class="c-purple">
+										05 - UAT
+									</h:h2>
+								</div>
+								<div
+									sclass="card-body card-padding bgm-purple c-white">
+								</div>
+							</div>
+						</div>
+						<div sclass="col-sm-6">
+							<div sclass="card z-depth-1">
+								<div sclass="card-header ch-alt">
+									<h:h2 class="c-bluegray">
+										06 - Deployment
+									</h:h2>
+								</div>
+								<div
+									sclass="card-body card-padding bgm-bluegray c-white">
+									<h:ul class="clist clist-check">
+										<h:li>
+											Support deployer untuk
+											deployment ticket
+										</h:li>
+										<h:li>
+											Migrasi data (jika ada)
+										</h:li>
+										<h:li>
+											Memastikan antara
+											trunk/Source Code,
+											branches/test, dan
+											branches/production sudah
+											sama
+										</h:li>
+										<h:li>
+											Sign off deployment guide
+										</h:li>
+									</h:ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</h:section>
+		</h:section>
+
+		<include src="/shared/html_body.zul" />
+	</h:body>
+</zk>

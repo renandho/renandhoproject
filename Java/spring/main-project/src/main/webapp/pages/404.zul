@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/app/shared/html_head.zul" />
+
+	<h:body class="four-zero-content">
+		<div sclass="four-zero">
+			<h:h2>404!</h:h2>
+			<h:small>Belum dibikin...</h:small>
+
+			<h:footer>
+				<a href="/">
+					<h:i class="zmdi zmdi-home"></h:i>
+				</a>
+			</h:footer>
+		</div>
+	</h:body>
+</zk>

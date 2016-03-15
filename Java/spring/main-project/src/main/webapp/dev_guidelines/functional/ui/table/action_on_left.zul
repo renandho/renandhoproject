@@ -1,0 +1,122 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<div
+		apply="id.co.fifgroup.app.ui.table.controller.ActionOnLeftComposer">
+		<div sclass="row">
+			<div sclass="col-sm-12">
+				<div sclass="card z-depth-1">
+					<div sclass="card-header bgm-deeporange">
+						<h:h2 sclass="text-center">
+							<h:strong>
+								Posisi Link detail / view / action lain
+							</h:strong>
+						</h:h2>
+					</div>
+					<div sclass="card-body card-padding" id="myDivDo">
+						<h:div role="tabpanel">
+							<h:ul class="tab-nav" role="tablist"
+								data-tab-color="cyan">
+								<h:li class="active">
+									<h:a href="#tabDo_action_on_left"
+										class="c-green" aria-controls="tabDo_action_on_left"
+										role="tab" data-toggle="tab">
+										<h:i
+											class="zmdi zmdi-hc-lg zmdi-check p-r-10">
+										</h:i>
+										Do
+									</h:a>
+								</h:li>
+								<h:li role="presentation">
+									<h:a href="#tabDont_action_on_left"
+										class="c-red" aria-controls="tabDont_action_on_left"
+										role="tab" data-toggle="tab">
+										<h:i
+											class="zmdi zmdi-hc-lg zmdi-close p-r-10">
+										</h:i>
+										Don't
+									</h:a>
+								</h:li>
+							</h:ul>
+							<h:div class="tab-content">
+								<h:div role="tabpanel"
+									class="tab-pane active animated bounceIn in"
+									id="tabDo_action_on_left">
+									<h:p>
+										<h:ul
+											class="clist clist-check">
+											<h:li>
+												Kolom action untuk view
+												detail / edit / action
+												lain ada di paling kiri
+											</h:li>
+										</h:ul>
+									</h:p>
+
+									<div width="600px">
+										<listbox id="lstDataDo"
+											hflex="min">
+											<listhead
+												menupopup="auto">
+												<listheader
+													label="Action" hflex="min" />
+												<listheader label="Nama"
+													sort="auto(name)" hflex="min" />
+												<listheader
+													label="Tgl Lahir" sort="auto(birthDate)" hflex="min" />
+												<listheader label="Gaji"
+													sort="auto(salary)" align="right" hflex="min" />
+												<listheader
+													label="Last update by" hflex="min" />
+												<listheader
+													label="Last update date" hflex="min" />
+											</listhead>
+										</listbox>
+										<exporter
+											referenceId="lstDataDo" />
+									</div>
+								</h:div>
+								<h:div role="tabpanel"
+									class="tab-pane animated bounceIn"
+									id="tabDont_action_on_left">
+									<h:p>
+										<h:ul
+											class="clist clist-angle">
+											<h:li>
+												Kolom action untuk view
+												detail / edit / action
+												lain ada di kanan /
+												tengah
+											</h:li>
+										</h:ul>
+									</h:p>
+
+									<div width="600px">
+										<listbox id="lstDataDont"
+											hflex="min">
+											<listhead>
+												<listheader label="Nama"
+													hflex="min" />
+												<listheader
+													label="Tgl Lahir" hflex="min" />
+												<listheader label="Gaji"
+													align="right" hflex="min" />
+												<listheader
+													label="Last update by" hflex="min" />
+												<listheader
+													label="Last update date" hflex="min" />
+												<listheader
+													label="Action" hflex="min" />
+											</listhead>
+										</listbox>
+										<exporter
+											referenceId="lstDataDont" />
+									</div>
+								</h:div>
+							</h:div>
+						</h:div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

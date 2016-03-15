@@ -1,0 +1,16 @@
+.z-combobox-disabled *,.z-bandbox-disabled *,.z-datebox-disabled *,.z-timebox-disabled *,.z-spinner-disabled *,.z-doublespinner-disabled * {
+	color: black !important; 
+	background-color: white !important;
+	
+	opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100);
+}	
+.z-textbox[disabled],.z-decimalbox[disabled],.z-intbox[disabled],.z-longbox[disabled],.z-doublebox[disabled] {
+	color: black !important; 
+	background-color: white !important;
+	
+	opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100);
+}

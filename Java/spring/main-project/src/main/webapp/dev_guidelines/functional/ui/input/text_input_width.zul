@@ -1,0 +1,92 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-green">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-check p-r-10">
+						</h:i>
+						<h:strong>
+							Do : lebar komponen cukup (tidak memotong
+							content)
+						</h:strong>
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<div sclass="row">
+						<div sclass="col-sm-4 text-right">
+							<label value="Nama" />
+						</div>
+						<div sclass="col-sm-8">
+							<textbox cols="40"
+								value="PT FIFGROUP - Member of Astra" />
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-4 text-right">
+							<label value="Alamat rumah" />
+						</div>
+						<div sclass="col-sm-8">
+							<textbox cols="40"
+								value="Jl TB Simatupang kav 15, Jakarta">
+							</textbox>
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-4 text-right">
+							<label value="Profil" />
+						</div>
+						<div sclass="col-sm-8">
+							<textbox cols="40" rows="4"
+								value="Textbox profil ini berisi text yang amat sangat panjang, sehingga satu baris tidak cukup karena pasti akan terpotong. Tapi kalau dipaksa memanjang ke kanan, akan terlalu banyak makan ruang horizontal. Karena itu menggunakan text multiline untuk lebih membantu (walaupun masih terpotong tapi memperkecil resiko)" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-red">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-close p-r-10">
+						</h:i>
+						Don't
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<div sclass="row">
+						<div sclass="col-sm-4 text-right">
+							<label value="Nama" />
+						</div>
+						<div sclass="col-sm-8">
+							<textbox
+								value="PT FIFGROUP - Member of Astra" />
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-4 text-right">
+							<label value="Alamat rumah" />
+						</div>
+						<div sclass="col-sm-8">
+							<textbox
+								value="Jl TB Simatupang kav 15, Jakarta">
+							</textbox>
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-4 text-right">
+							<label value="Profil" />
+						</div>
+						<div sclass="col-sm-8">
+							<textbox cols="40"
+								value="Textbox profil ini berisi text yang amat sangat panjang, sehingga satu baris tidak cukup karena pasti akan terpotong. Tapi kalau dipaksa memanjang ke kanan, akan terlalu banyak makan ruang horizontal. Karena itu menggunakan text multiline untuk lebih membantu (walaupun masih terpotong tapi memperkecil resiko)." />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

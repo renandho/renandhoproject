@@ -1,0 +1,61 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-green">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-check p-r-10">
+						</h:i>
+						<h:strong>
+							Do : isi kolom status
+						</h:strong>
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					Kolom terkait status, menggunakan kata utuh
+					<h:p></h:p>
+					Tabel
+					<h:code>TEL_REQUESTS</h:code>
+					dengan kolom
+					<h:code>APPROVAL_STATUS</h:code>
+					, isi yang valid dari
+					<h:code>TEL_REQUESTS.APPROVAL_STATUS</h:code>
+					adalah :
+					<h:ul class="clist clist-check">
+						<h:li>SAVED</h:li>
+						<h:li>IN_PROGRESS</h:li>
+						<h:li>APPROVED</h:li>
+						<h:li>REJECTED</h:li>
+					</h:ul>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-red">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-close p-r-10">
+						</h:i>
+						Don't
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					Tidak valid karena tidak jelas statusnya apa
+					<h:ul class="clist clist-angle">
+						<h:li>S</h:li>
+						<h:li>P</h:li>
+						<h:li>A</h:li>
+						<h:li>R</h:li>
+						<h:li>1</h:li>
+						<h:li>2</h:li>
+						<h:li>3</h:li>
+						<h:li>4</h:li>
+					</h:ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

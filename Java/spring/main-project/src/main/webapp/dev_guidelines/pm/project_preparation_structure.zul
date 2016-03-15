@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/shared/header.zul" />
+
+		<h:section id="main" data-layout="layout-1">
+			<include src="/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container">
+					<div sclass="card z-depth-1">
+						<div sclass="card-header bgm-pink">
+							<h:h2 id="navTab">
+								<![CDATA[Project Preparation &
+								Structure]]>																		
+							</h:h2>
+						</div>
+						<div sclass="card-body card-padding">
+							<h:div role="tabpanel">
+								<h:ul class="tab-nav" role="tablist">
+									<h:li class="active">
+										<h:a href="#tabStandard"
+											aria-controls="tabStandard" role="tab" data-toggle="tab">
+											Standard
+										</h:a>
+									</h:li>
+									<h:li role="presentation">
+										<h:a href="#tabExample"
+											aria-controls="tabExample" role="tab" data-toggle="tab">
+											Contoh
+										</h:a>
+									</h:li>
+								</h:ul>
+								<h:div class="tab-content">
+									<h:div role="tabpanel"
+										class="tab-pane active animated zoomIn in" id="tabStandard">
+										<include
+											src="project_preparation_structure_guideline.zul" />
+									</h:div>
+									<h:div role="tabpanel"
+										class="tab-pane animated zoomIn" id="tabExample">
+										<include
+											src="project_preparation_structure_example.zul" />
+									</h:div>
+								</h:div>
+							</h:div>
+						</div>
+					</div>
+				</div>
+			</h:section>
+		</h:section>
+
+		<include src="/shared/html_body.zul" />
+	</h:body>
+</zk>

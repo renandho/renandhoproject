@@ -1,0 +1,92 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-green">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-check p-r-10">
+						</h:i>
+						<h:strong>
+							Do : button Next di kanan, Back di kiri
+						</h:strong>
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<div sclass="row text-center">
+						<div sclass="col-sm-12">
+							<button image="/icons/Cancel-16.png">
+								Cancel
+							</button>
+							<space width="10px" />
+							<button image="/icons/Left-16.png">
+								Back
+							</button>
+							<space width="10px" />
+							<button image="/icons/Right-16.png"
+								dir="reverse">
+								Next
+							</button>
+							<div sclass="row p-t-10">
+								<div sclass="col-sm-12">
+									<h:ul class="clist clist-check">
+										<h:li>
+											Rekomendasi urutan button :
+											Cancel - Back - Next
+										</h:li>
+										<h:li>
+											Perhatikan bahwa posisi icon
+											button Next ada di kanan
+										</h:li>
+									</h:ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-red">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-close p-r-10">
+						</h:i>
+						Don't
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<div sclass="row text-center">
+						<div sclass="col-sm-12">
+							<button image="/icons/Cancel-16.png">
+								Cancel
+							</button>
+							<space width="10px" />
+							<button image="/icons/Right-16.png">
+								Next
+							</button>
+							<space width="10px" />
+							<button image="/icons/Left-16.png">
+								Back
+							</button>
+							<div sclass="row p-t-10">
+								<div sclass="col-sm-12">
+									<h:ul class="clist clist-angle">
+										<h:li>Button tidak urut (button Next ada di kiri button Back)</h:li>
+										<h:li>
+											Perhatikan bahwa posisi icon
+											button Next ada di kiri
+											(default framework)
+										</h:li>
+									</h:ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

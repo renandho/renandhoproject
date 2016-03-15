@@ -1,0 +1,22 @@
+systemName,urlSvn,urlEa
+CBT (e-Psikotest NPK),https://svn.fif.co.id/svn/CBT-External,"10.17.18.95:1521/HCMDEV, schema : FIFEA, username / password : fifea / fifea"
+DMS (Document Management System), https://svn.fif.co.id/svn/DMS,Tanpa EA
+e-Psikotest CWK (external / web),https://svn.fif.co.id/svn/PSIKOTEST-EXT,"10.17.18.52:1521/EAGSMS, username / password : EAPSIKOTEST / e4ps1kot3st"
+e-Psikotest CWK (internal / admin),https://svn.fif.co.id/svn/PSIKOTEST,"10.17.18.52:1521/EAGSMS, username / password : EAPSIKOTEST / e4ps1kot3st"
+Famous (PDCA),https://svn.fif.co.id/svn/PDCA,"10.17.33.47:1521/eapdca, schema : EAPDCA, username / password : eapdca / eapdca"
+FIF SMS,https://svn.fif.co.id/svn/SMS,Tanpa EA
+FIFBooking,https://svn.fif.co.id/svn/FIFBooking,Tanpa EA
+FIFPEDIA, https://svn.fif.co.id/svn/FIFPedia,
+GSMS (General Service Management System),https://svn.fif.co.id/svn/GSMS,"10.17.18.52:1521/eagsms, schema: EAGSMS, username / password : eagsms / eagsms"
+HCMS (Human Capital Management System),https://svn.fif.co.id/svn/HCMS,"10.17.18.95:1521/HCMDEV, schema : FIFEA, username / password : fifea / fifea"
+IMS (Integrated Monitoring System),https://svn.fif.co.id/svn/IMS,Tanpa EA
+ITMS (IT Management System),https://svn.fif.co.id/svn/ITMS,"10.17.18.95:1521/REPEA, schema : REPEA username / password : eaitms / eaitms"
+Keypro (Compliance System),https://svn.fif.co.id/svn/KEPO,"10.17.33.47:1521/eapdca, schema : EAPDCA, username / password : eapdca / eapdca"
+Lalab (Law Labour for Branch),https://svn.fif.co.id/svn/HCMS,"10.17.18.95:1521/HCMDEV, schema : FIFEA, username / password : fifea / fifea"
+Rentsys (Rental System),https://svn.fif.co.id/svn/Rentsys,Tanpa EA
+TMS (Tender Management System) - External / web,https://svn.fif.co.id/svn/tms-vendor,Tanpa EA
+TMS (Tender Management System) - Internal / admin,https://svn.fif.co.id/svn/TMS,Tanpa EA
+VIP (Value Internationalization Point),https://svn.fif.co.id/svn/HCMS,"10.17.18.95:1521/HCMDEV, schema : FIFEA, username / password : fifea / fifea"
+MSSM,,Tanpa EA
+MSCM,,Tanpa EA
+_Project Tracker,https://svn.fif.co.id/svn/IT-Project,

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/shared/header.zul" />
+
+		<h:section id="main" data-layout="layout-1">
+			<include src="/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container">
+					<div sclass="card z-depth-1">
+						<div sclass="card-header bgm-lime">
+							<h:h2 class="c-black">
+								Document - Project
+							</h:h2>
+						</div>
+						<div
+							sclass="card-body card-padding bgm-lime c-white">
+							<div sclass="row">
+								<div sclass="col-sm-6">
+									<div sclass="card z-depth-1">
+										<div
+											sclass="card-header bgm-indigo">
+											<h:h2>
+												Small to Medium (tanpa
+												EA)
+											</h:h2>
+										</div>
+										<div
+											sclass="card-body bgm-indigo card-padding c-white">
+											<h:form method="get"
+												action="${p:encodeURL('/docs/template_fd_internal.rar')}">
+												<h:button
+													sclass="btn btn-block btn-default btn-icon-text">
+													<h:i
+														class="zmdi zmdi-download">
+													</h:i>
+													Template Functional Design
+												</h:button>
+											</h:form>
+											<space />
+											<h:form method="get"
+												action="${p:encodeURL('/docs/template_td_internal.rar')}">
+												<h:button
+													sclass="btn btn-block btn-default btn-icon-text">
+													<h:i
+														class="zmdi zmdi-download">
+													</h:i>
+													Template Technical Design
+												</h:button>
+											</h:form>
+										</div>
+									</div>
+								</div>
+								<div sclass="col-sm-6">
+									<div sclass="card z-depth-1">
+										<div
+											sclass="card-header bgm-red">
+											<h:h2>
+												Large (dengan EA)
+											</h:h2>
+										</div>
+										<div
+											sclass="card-body bgm-red card-padding c-white">
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</h:section>
+		</h:section>
+
+		<include src="/shared/html_body.zul" />
+	</h:body>
+</zk>

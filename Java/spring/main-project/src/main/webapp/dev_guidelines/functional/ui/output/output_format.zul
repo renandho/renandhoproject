@@ -1,0 +1,163 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-green">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-check p-r-10">
+						</h:i>
+						<h:strong>Do : output sesuai format</h:strong>
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<div sclass="row">
+						<div sclass="col-sm-4 text-right">
+							<label value="Angka / uang" />
+						</div>
+						<div sclass="col-sm-8">
+							<decimalbox cols="30" value="5199275"
+								disabled="true" format=",###" style="text-align:right;" />
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-3"></div>
+						<div sclass="col-sm-9">
+							<h:ul class="clist clist-check">
+								<h:li>
+									Menggunakan thousand separator
+								</h:li>
+								<h:li>Rata kanan</h:li>
+							</h:ul>
+						</div>
+					</div>
+					<separator bar="true"></separator>
+					<div sclass="row p-t-15">
+						<div sclass="col-sm-4 text-right">
+							<label value="Tanggal" />
+						</div>
+						<div sclass="col-sm-8">
+							<datebox format="dd-MMM-yyyy"
+								disabled="true" onCreate="self.value = new Date()" />
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-3"></div>
+						<div sclass="col-sm-9">
+							<h:ul class="clist clist-check">
+								<h:li>format dd-MMM-yyyy</h:li>
+							</h:ul>
+						</div>
+					</div>
+					<separator bar="true"></separator>
+					<div sclass="row p-t-15">
+						<div sclass="col-sm-4 text-right">
+							<label value="Jam" />
+						</div>
+						<div sclass="col-sm-8">
+							<timebox format="HH:mm" disabled="true"
+								onCreate="self.value = new Date()" />
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-3"></div>
+						<div sclass="col-sm-9">
+							<h:ul class="clist clist-check">
+								<h:li>format 24 jam (bukan AM/PM)</h:li>
+							</h:ul>
+						</div>
+					</div>
+					<separator bar="true"></separator>
+					<div sclass="row p-t-15">
+						<div sclass="col-sm-4 text-right">
+							<label value="Tanggal dan jam" />
+						</div>
+						<div sclass="col-sm-8">
+							<datebox cols="20" disabled="true"
+								format="dd-MMM-yyyy HH:mm" onCreate="self.value = new Date()" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-red">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-close p-r-10">
+						</h:i>
+						Don't
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<div sclass="row">
+						<div sclass="col-sm-4 text-right">
+							<label value="Angka / uang" />
+						</div>
+						<div sclass="col-sm-8">
+							<decimalbox cols="30" value="5199275"
+								disabled="true" />
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-3"></div>
+						<div sclass="col-sm-9">
+							<h:ul class="clist clist-angle">
+								<h:li>Tanpa thousand separator</h:li>
+								<h:li>Rata kiri</h:li>
+							</h:ul>
+						</div>
+					</div>
+					<separator bar="true"></separator>
+					<div sclass="row p-t-15">
+						<div sclass="col-sm-4 text-right">
+							<label value="Tanggal" />
+						</div>
+						<div sclass="col-sm-8">
+							<datebox onCreate="self.value = new Date()"
+								disabled="true" />
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-3"></div>
+						<div sclass="col-sm-9">
+							<h:ul class="clist clist-angle">
+								<h:li>Format default framework</h:li>
+							</h:ul>
+						</div>
+					</div>
+					<separator bar="true"></separator>
+					<div sclass="row p-t-15">
+						<div sclass="col-sm-4 text-right">
+							<label value="Jam" />
+						</div>
+						<div sclass="col-sm-8">
+							<timebox cols="10"
+								onCreate="self.value = new Date()" disabled="true" />
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-3"></div>
+						<div sclass="col-sm-9">
+							<h:ul class="clist clist-angle">
+								<h:li>Format default framework</h:li>
+							</h:ul>
+						</div>
+					</div>
+					<separator bar="true"></separator>
+					<div sclass="row p-t-15">
+						<div sclass="col-sm-4 text-right">
+							<label value="Tanggal dan jam" />
+						</div>
+						<div sclass="col-sm-8">
+							<datebox cols="20" disabled="true"
+								onCreate="self.value = new Date()" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/shared/header.zul" />
+
+		<h:section id="main" data-layout="layout-1">
+			<include src="/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container">
+					<div sclass="row">
+						<div sclass="col-sm-12">
+							<div sclass="card z-depth-1">
+								<div
+									sclass="card-header bgm-lightgreen">
+									<h:h2>PIC Project</h:h2>
+								</div>
+								<div sclass="card-body card-padding">
+									<h:ul class="clist clist-angle">
+										<h:li>
+											Adalah koordinator untuk
+											masing-masing project
+											internal.
+										</h:li>
+										<h:li>
+											Fungsi ini bisa dijalankan
+											oleh salah satu dari orang
+											yang terlibat dalam project.
+										</h:li>
+										<h:li>
+											Berkoordinasi dengan seluruh
+											team development yang
+											terlibat, team QA, dan team
+											PMO untuk melakukan
+											tugasnya.
+										</h:li>
+									</h:ul>
+									<h:p></h:p>
+									<h:p>
+										Tugas dan tanggung jawabnya (di
+										samping tugas sebagai Business
+										Analyst / System Analyst /
+										Programmer) adalah menangani :
+									</h:p>
+									<div sclass="row">
+										<div sclass="col-sm-6">
+											<div
+												sclass="card z-depth-1">
+												<div
+													sclass="card-header ch-alt">
+													<h:h2>
+														<h:i
+															class="zmdi zmdi-folder p-r-10 zmdi-hc-lg">
+														</h:i>
+														Project
+														Structure
+													</h:h2>
+												</div>
+												<div
+													sclass="card-body card-padding">
+													<h:ul
+														class="clist clist-angle">
+														<h:li>
+															Jika
+															diperlukan,
+															mempersiapkan
+															respository
+															SVN sesuai
+															<h:a
+																href="${p:encodeURL('/dev_guidelines/pm/project_preparation_structure.zul')}">
+																standard
+																project
+																structure
+															</h:a>
+														</h:li>
+													</h:ul>
+												</div>
+											</div>
+										</div>
+										<div sclass="col-sm-6">
+											<div
+												sclass="card z-depth-1">
+												<div
+													sclass="card-header ch-alt">
+													<h:h2>
+														<h:i
+															class="zmdi zmdi-flag p-r-10 zmdi-hc-lg">
+														</h:i>
+														Project Status
+														Report
+													</h:h2>
+												</div>
+												<div
+													sclass="card-body card-padding">
+													<h:p>
+														Dilakukan
+														bersama Project
+														Manager, dan
+														diupdate di
+														Project Status
+														Report.
+													</h:p>
+													<h:ul
+														class="clist clist-angle">
+														<h:li>
+															Membuat plan
+															project
+															timeline
+															development,
+															breakdown
+															detail per
+															fungsi /
+															form
+														</h:li>
+														<h:li>
+															Update
+															realisasi
+															project
+															timeline
+															secara rutin
+															(termasuk
+															jika ada
+															revisi)
+														</h:li>
+														<h:li>
+															Log jika ada
+															issue /
+															change
+															request
+															menyangkut
+															development
+															yang
+															berpotensi
+															mengganggu
+															timeline
+														</h:li>
+													</h:ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</h:section>
+		</h:section>
+
+		<include src="/shared/html_body.zul" />
+	</h:body>
+</zk>

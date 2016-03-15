@@ -1,0 +1,68 @@
+<?page title=My Shop contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<h:ul class="clist clist-check">
+		<h:li>
+			Checkout = copy workspace dari server untuk ke local
+			workspace
+		</h:li>
+		<h:li>
+			Daftar SVN repository bisa dilihat di
+			<a href="/dev_guidelines/pm/project_list.zul"
+				target="_blank">
+				sini
+			</a>
+		</h:li>
+		<h:li>Untuk username / password SVN, hubungi PIC Project</h:li>
+	</h:ul>
+	<h:p></h:p>
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header ch-alt">
+					<h:h2>Windows Explorer</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ol>
+						<h:li>Klik kanan - SVN Checkout</h:li>
+						<h:li>
+							Masukkan
+							<a
+								href="/dev_guidelines/pm/project_list.zul"
+								target="_blank">
+								URL SVN
+							</a>
+						</h:li>
+						<h:li>
+							Kalau hanya mau checkout sebagian file, klik
+							Checkout Depth - Choose Items
+						</h:li>
+					</h:ol>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header ch-alt">
+					<h:h2>Eclipse</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ol>
+						<h:li>
+							Klik kanan di SVN Repository exploring - New
+							- Repository Location
+						</h:li>
+						<h:li>
+							Masukkan
+							<a
+								href="/dev_guidelines/pm/project_list.zul"
+								target="_blank">
+								URL SVN
+							</a>
+						</h:li>
+						<h:li>Klik kanan URL - Checkout</h:li>
+					</h:ol>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

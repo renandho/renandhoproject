@@ -1,0 +1,68 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-green">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-check p-r-10">
+						</h:i>
+						<h:strong>Do : ada jarak antar button</h:strong>
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<div sclass="row text-center">
+						<div sclass="col-sm-12">
+							<button image="/icons/Word-16.png">
+								Word
+							</button>
+							<space width="10px" />
+							<button image="/icons/Excel-16.png">
+								Excel
+							</button>
+							<space width="10px" />
+							<button image="/icons/PDF-16.png">
+								PDF
+							</button>
+							<space width="10px" />
+							<button image="/icons/TXT-16.png">
+								Text
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-red">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-close p-r-10">
+						</h:i>
+						Don't
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<div sclass="row text-center">
+						<div sclass="col-sm-12">
+							<button image="/icons/Word-16.png">
+								Word
+							</button>
+							<button image="/icons/Excel-16.png">
+								Excel
+							</button>
+							<button image="/icons/PDF-16.png">
+								PDF
+							</button>
+							<button image="/icons/TXT-16.png">
+								Text
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

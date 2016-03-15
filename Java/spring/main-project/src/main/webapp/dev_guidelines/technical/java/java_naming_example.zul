@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<h:ul class="clist clist-angle">
+		<h:li>Misal ada system FIF-University</h:li>
+		<h:li>
+			Terdiri dari dua modul functional :
+			<h:code>Video</h:code>
+			dan
+			<h:code>Teleconference</h:code>
+			, berserta satu modul technical :
+			<h:code>System Administration</h:code>
+		</h:li>
+		<h:li>
+			Kode system yang digunakan untuk source code adalah
+			<h:strong>
+				<h:em>fifuniv</h:em>
+			</h:strong>
+		</h:li>
+	</h:ul><h:p></h:p>
+	<h:p>
+		<h:h4 class="text-center">
+			<h:code>Contoh</h:code>
+		</h:h4>
+	</h:p>
+	<div id="divTreeExample"
+		apply="id.co.fifgroup.app.guidelines.controller.JavaNamingExampleTreeComposer">
+		<tree rows="18" id="treeExample"
+			model="${divTreeExample$composer.treeModel}">
+			<template name="model">
+				<treeitem tooltiptext="${each.data.tooltip}">
+					<treerow>
+						<treecell>${each.data.label}</treecell>
+					</treerow>
+				</treeitem>
+			</template>
+		</tree>
+	</div>
+</zk>

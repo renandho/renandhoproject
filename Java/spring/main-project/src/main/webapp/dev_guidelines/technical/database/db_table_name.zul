@@ -1,0 +1,95 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-green">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-check p-r-10">
+						</h:i>
+						<h:strong>Do : penamaan tabel</h:strong>
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ul class="clist clist-check">
+						<h:li>
+							Nama tabel diawali dengan 3 atau 4 karakter
+							kode system/kode modul
+						</h:li>
+						<h:li>Nama tabel jelas</h:li>
+						<h:li>
+							Nama tabel non header-detail dalam bentuk
+							plural
+						</h:li>
+						<h:li>
+							Nama tabel master-detail, menggunakan aturan
+							:
+							<h:ul>
+								<h:li>
+									Nama tabel master diakhiri
+									<h:code>_HDR</h:code>
+								</h:li>
+								<h:li>
+									Nama tabel detail diakhiri
+									<h:code>_DTL</h:code>
+								</h:li>
+							</h:ul>
+						</h:li>
+					</h:ul>
+					<h:code>
+						<h:ul>
+							<h:li>SAM_USERS</h:li>
+							<h:li>SAM_MENU_HDR, SAM_MENU_DTL</h:li>
+							<h:li>TEL_SESSIONS</h:li>
+							<h:li>TEL_SESSION_PARTICIPANTS</h:li>
+							<h:li>VID_VIDEOS</h:li>
+						</h:ul>
+					</h:code>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-red">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-close p-r-10">
+						</h:i>
+						Don't
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ul class="clist clist-angle">
+						<h:li>
+							<h:code>USERS</h:code>
+							(tanpa prefix
+							<h:code>SAM_</h:code>
+							)
+						</h:li>
+						<h:li>
+							<h:code>
+								SAM_MENUS, SAM_MENU_FUNCTIONS
+							</h:code>
+							(master-detail tapi tanpa suffix _HDR /
+							_DTL)
+						</h:li>
+						<h:li>
+							<h:code>TEL_SESSION</h:code>
+							(bukan plural)
+						</h:li>
+						<h:li>
+							<h:code>SESSION_PTCPNT</h:code>
+							(tanpa prefix, tidak jelas menyimpan data
+							apa)
+						</h:li>
+						<h:li>
+							<h:code>MY_VIDEOS</h:code>
+							(prefix tidak sesuai dengan kode modul)
+						</h:li>
+					</h:ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

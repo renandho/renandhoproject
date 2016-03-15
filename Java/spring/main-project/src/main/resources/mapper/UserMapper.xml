@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.shop.main.mapper.UserMapper">
-
-
-
 	<select id="getCountMatchUserByExample" resultType="Integer">
 		select
 		count(user_id) as count_person_id
@@ -32,9 +29,9 @@
 
 	<insert id="insertDataUser" parameterType="com.shop.main.dto.UserDTO">
 		insert into
-		tblusers (user_name, user_password)
-		values (#{strUsername, jdbcType=VARCHAR},#{strPassword, jdbcType=VARCHAR})
+		tblusers
+		(user_name, user_password)
+		values (#{strUsername,
+		jdbcType=VARCHAR},#{strPassword, jdbcType=VARCHAR})
 	</insert>
-
-
 </mapper>

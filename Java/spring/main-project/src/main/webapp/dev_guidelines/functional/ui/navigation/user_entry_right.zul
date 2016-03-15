@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/shared/header.zul" />
+
+		<h:section id="main" data-layout="layout-1">
+			<include src="/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container">
+					<div sclass="row">
+						<div sclass="col-sm-12">
+							<div sclass="block-header">
+								<h:h2>
+									<a href="../ui_do_navigation.zul">
+										Kembali
+									</a>
+								</h:h2>
+							</div>
+						</div>
+					</div>
+					<div sclass="row">
+						<div sclass="col-sm-12">
+							<div sclass="card z-depth-1">
+								<div sclass="card-header bgm-green">
+									<h:h2>
+										<h:i
+											class="zmdi zmdi-hc-lg zmdi-check p-r-10">
+										</h:i>
+										<h:strong>
+											User Entry (benar : ada
+											button Cancel untuk kembali
+											ke inquiry)
+										</h:strong>
+									</h:h2>
+								</div>
+								<div sclass="card-body card-padding">
+									<div sclass="row">
+										<div
+											sclass="col-sm-2 text-right">
+											Nama
+											<label value="*"
+												style="color: red;" />
+										</div>
+										<div sclass="col-sm-10">
+											<textbox cols="40"
+												maxlength="50" />
+										</div>
+									</div>
+									<div sclass="row">
+										<div
+											sclass="col-sm-2 text-right p-t-10">
+											Tanggal lahir
+											<label value="*"
+												style="color: red;" />
+										</div>
+										<div
+											sclass="col-sm-10 p-t-10">
+											<datebox
+												format="dd-MMM-yyyy" />
+										</div>
+									</div>
+									<div sclass="row">
+										<div
+											sclass="col-sm-2 text-right p-t-10">
+											Alamat
+										</div>
+										<div
+											sclass="col-sm-10 p-t-10">
+											<textbox cols="40" rows="3"
+												maxlength="200" />
+										</div>
+									</div>
+									<div sclass="row">
+										<div
+											sclass="col-sm-2 text-right p-t-10">
+											Kode pos
+										</div>
+										<div
+											sclass="col-sm-10 p-t-10">
+											<textbox cols="10"
+												maxlength="10" />
+										</div>
+									</div>
+									<div sclass="row">
+										<div sclass="col-sm-2 p-t-10">
+										</div>
+										<div
+											sclass="col-sm-10 p-t-10">
+											<button
+												href="user_inquiry_right.zul"
+												image="/icons/Cancel-16.png">
+												Cancel
+											</button>
+											<space width="10px" />
+											<button
+												image="/icons/Plus-16.png">
+												Save
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</h:section>
+		</h:section>
+
+		<include src="/shared/html_body.zul" />
+	</h:body>
+</zk>

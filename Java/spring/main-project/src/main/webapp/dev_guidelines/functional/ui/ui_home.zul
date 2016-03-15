@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/shared/header.zul" />
+
+		<h:section id="main" data-layout="layout-1">
+			<include src="/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container">
+					<div sclass="card go-social z-depth-1">
+						<div sclass="card-header bgm-red">
+							<h:h2>
+								<h:i
+									class="zmdi zmdi-image-o p-r-10 zmdi-hc-lg">
+								</h:i>
+								<![CDATA[User Interface : Do & Don't]]>
+								</h:h2>
+						</div>
+						<div sclass="card-body card-padding">
+							<div sclass="row">
+								<a href="ui_do_layout.zul">
+									<div sclass="col-sm-4">
+										<div sclass="card z-depth-1">
+											<div
+												sclass="card-body card-padding bgm-green">
+												<h:h3
+													class="c-white text-center">
+													<h:i
+														class="zmdi zmdi-desktop-windows p-r-10 zmdi-hc-lg">
+													</h:i>
+													Layout
+												</h:h3>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="ui_do_navigation.zul">
+									<div sclass="col-sm-4">
+										<div sclass="card z-depth-1">
+											<div
+												sclass="card-body card-padding bgm-orange">
+												<h:h3
+													class="c-white text-center">
+													<h:i
+														class="zmdi zmdi-navigation p-r-10 zmdi-hc-lg">
+													</h:i>
+													Navigasi
+												</h:h3>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="ui_do_input.zul">
+									<div sclass="col-sm-4">
+										<div sclass="card z-depth-1">
+											<div
+												sclass="card-body card-padding bgm-indigo">
+												<h:h3
+													class="c-white text-center">
+													<h:i
+														class="zmdi zmdi-edit p-r-10 zmdi-hc-lg">
+													</h:i>
+													Komponen Input
+												</h:h3>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div sclass="row">
+								<a href="ui_do_output.zul">
+									<div sclass="col-sm-4">
+										<div sclass="card z-depth-1">
+											<div
+												sclass="card-body card-padding bgm-pink">
+												<h:h3
+													class="c-white text-center">
+													<h:i
+														class="zmdi zmdi-format-color-text p-r-10 zmdi-hc-lg">
+													</h:i>
+													Tampilan Output
+												</h:h3>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="ui_do_table_output.zul">
+									<div sclass="col-sm-4">
+										<div sclass="card z-depth-1">
+											<div
+												sclass="card-body card-padding bgm-brown">
+												<h:h3
+													class="c-white text-center">
+													<h:i
+														class="zmdi zmdi-grid p-r-10 zmdi-hc-lg">
+													</h:i>
+													Tabel / List Data (output)
+												</h:h3>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</h:section>
+		</h:section>
+
+		<include src="/shared/html_body.zul" />
+	</h:body>
+</zk>

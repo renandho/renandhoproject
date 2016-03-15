@@ -1,0 +1,89 @@
+<?page title=My Shop contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<h:ul class="clist clist-check">
+		<h:li>
+			Branch = membuat percabangan baru terhadap source code,
+			untuk dilakukan perubahan
+		</h:li>
+		<h:li>
+			Yang boleh dilakukan branching hanya source code, bukan
+			dokumentasi
+		</h:li>
+		<h:li>
+			Branch baru harus diletakkan di bawah folder
+			<h:em>branches</h:em>
+			pada SVN
+		</h:li>
+		<h:li>
+			<h:strong>Kapan dilakukan branch?</h:strong>
+			<h:ul class="clist clist-angle">
+				<h:li>
+					Kalau ada development pararel -antara maintenance
+					dengan enhancement- yang berjalan bersamaan
+				</h:li>
+			</h:ul>
+		</h:li>
+	</h:ul>
+	<h:p></h:p>
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header ch-alt">
+					<h:h2>Windows Explorer</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ol>
+						<h:li>
+							Klik kanan pada file / folder SVN (misal
+							pada
+							<h:em>trunk/Source Code</h:em>
+							) - Tortoise SVN - Branch/Tag
+						</h:li>
+						<h:li>
+							Pada bagian "To path", isi dengan
+							<h:em>
+								/<h:strong>branches</h:strong>/[nama branch]
+							</h:em>
+						</h:li>
+						<h:li>
+							Untuk nama branch, koordinasikan dengan PIC
+							Project
+						</h:li>
+						<h:li>Lakukan update pada local workspace</h:li>
+					</h:ol>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header ch-alt">
+					<h:h2>Eclipse</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ol>
+						<h:li>
+							Klik kanan pada file / folder SVN (misal
+							pada
+							<h:em>trunk/Source Code</h:em>
+							) - Team - Branch/Tag
+						</h:li>
+						<h:li>
+							Pada bagian "To path", isi dengan
+							<h:em>
+								[path SVN]/<h:strong>branches</h:strong>/[nama branch]
+							</h:em>
+						</h:li>
+						<h:li>
+							Untuk nama branch, koordinasikan dengan PIC
+							Project
+						</h:li>
+						<h:li>Lakukan update pada local workspace</h:li>
+					</h:ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<popup id="popSampleSvnComment">
+		<include src="/shared/sample_svn_comment.zul" />
+	</popup>
+</zk>

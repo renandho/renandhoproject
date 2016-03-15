@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/shared/header.zul" />
+
+		<h:section id="main" data-layout="layout-1">
+			<include src="/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container">
+					<div sclass="card go-social z-depth-1">
+						<div sclass="card-header bgm-teal">
+							<h:h2>
+								<h:i
+									class="zmdi zmdi-local-cafe p-r-10 zmdi-hc-lg">
+								</h:i>
+								Java Project
+							</h:h2>
+						</div>
+						<div sclass="card-body card-padding">
+							<div sclass="row">
+								<a href="java_technology.zul">
+									<div sclass="col-sm-4">
+										<div sclass="card z-depth-1">
+											<div
+												sclass="card-body card-padding bgm-orange">
+												<h:h3
+													class="c-white text-center">
+													<h:i
+														class="zmdi zmdi-view-list-alt p-r-10 zmdi-hc-lg">
+													</h:i>
+													Standard Teknologi
+												</h:h3>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="java_naming.zul">
+									<div sclass="col-sm-4">
+										<div sclass="card z-depth-1">
+											<div
+												sclass="card-body card-padding bgm-black">
+												<h:h3
+													class="c-white text-center">
+													<h:i
+														class="zmdi zmdi-comment-text p-r-10 zmdi-hc-lg">
+													</h:i>
+													<![CDATA[Structure & Naming]]>	
+												</h:h3>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</h:section>
+		</h:section>
+
+		<include src="/shared/html_body.zul" />
+	</h:body>
+</zk>

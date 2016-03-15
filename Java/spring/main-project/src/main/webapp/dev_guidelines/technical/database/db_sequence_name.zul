@@ -1,0 +1,68 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-green">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-check p-r-10">
+						</h:i>
+						<h:strong>Do : penamaan sequence</h:strong>
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ul class="clist clist-check">
+						<h:li>
+							Nama sequence diakhiri
+							<h:code>_S</h:code>
+						</h:li>
+						<h:li>
+							Pengisian primary key tabel menggunakan
+							sequence. Nama sequence nya adalah nama
+							tabel + akhiran
+							<h:code>_S</h:code>
+						</h:li>
+					</h:ul>
+					<h:code>
+						<h:ul>
+							<h:li>SAM_USERS_S</h:li>
+							<h:li>SAM_MENU_HDR_S, SAM_MENU_DTL_S</h:li>
+							<h:li>TEL_TELECONFERENCE_S</h:li>
+						</h:ul>
+					</h:code>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-red">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-close p-r-10">
+						</h:i>
+						Don't
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ul class="clist clist-angle">
+						<h:li>
+							<h:code>USERS_S</h:code>
+							(tidak sesuai nama tabel : SAM_USERS)
+						</h:li>
+						<h:li>
+							<h:code>
+								SAM_MENU_HDR_SEQ, SAM_MENU_DTL_SEQUENCE
+							</h:code>
+							(suffix bukan _S)
+						</h:li>
+						<h:li>
+							<h:code>TEL_TELECONFERENCE_ID</h:code>
+							(suffix bukan _S)
+						</h:li>
+					</h:ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

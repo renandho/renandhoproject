@@ -1,0 +1,66 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-green">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-check p-r-10">
+						</h:i>
+						<h:strong>Do : penamaan view</h:strong>
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ul class="clist clist-check">
+						<h:li>Mengikuti aturan penamaan tabel</h:li>
+						<h:li>
+							Nama view diakhiri
+							<h:code>_V</h:code>
+						</h:li>
+						<h:li>
+							Nama materialized view diakhiri
+							<h:code>_MV</h:code>
+						</h:li>
+					</h:ul>
+					<h:code>
+						<h:ul>
+							<h:li>SAM_ACTIVE_USERS_V</h:li>
+							<h:li>SAM_NEW_USERS_MV</h:li>
+							<h:li>TEL_ACTIVE_SESSIONS_V</h:li>
+							<h:li>VID_NEW_VIDEOS_MV</h:li>
+						</h:ul>
+					</h:code>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-red">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-close p-r-10">
+						</h:i>
+						Don't
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ul class="clist clist-angle">
+						<h:li>
+							<h:code>SAM_ACTIVE_USERS</h:code>
+							(view tapi tanpa suffix V)
+						</h:li>
+						<h:li>
+							<h:code>SAM_NEW_USERS_MV</h:code>
+							(materialized view tapi tanpa suffix MV)
+						</h:li>
+						<h:li>
+							<h:code>ACTIVE_SESSIONS_V</h:code>
+							(tanpa prefix VID)
+						</h:li>
+					</h:ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

@@ -1,0 +1,179 @@
+<?page title=My Shop contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<h:ul class="clist clist-angle">
+		<h:li>Misal ada system FIF-University</h:li>
+		<h:li>
+			Terdiri dari dua modul functional :
+			<h:code>Video</h:code>
+			dan
+			<h:code>Teleconference</h:code>
+			, berserta satu modul technical :
+			<h:code>System Administration</h:code>
+		</h:li>
+		<h:li>
+			Kode system yang digunakan untuk source code adalah
+			<h:strong>
+				<h:em>fifuniv</h:em>
+			</h:strong>
+		</h:li>
+	</h:ul>
+	<h:p></h:p>
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header ch-alt">
+					<h:h2 class="c-black">
+						<h:i class="zmdi zmdi-collection-text p-r-10">
+						</h:i>
+						Subversion (SVN)
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding" id="divTreeSvn"
+					apply="id.co.fifgroup.app.guidelines.controller.ProjectExampleSVNTreeComposer">
+					<h:ul class="clist clist-angle">
+						<h:li>
+							Untuk contoh, dapat dilihat di bawah (klik
+							tanda panah di samping text untuk
+							expand/collapse tree)
+						</h:li>
+						<h:li>
+							Perhatikan bahwa di
+							<h:code>trunk/Documentations/...</h:code>
+							, nama sub folder konsisten (selalu ada 3
+							sub folder yang sama):
+							<h:code>
+								System Administration, Teleconference,
+								Video
+							</h:code>
+						</h:li>
+						<h:li>
+							Perhatikan bahwa di
+							<h:code>trunk/Documentations/...</h:code>
+							, ada sub folder
+							<h:code>History</h:code>
+							. Gunanya untuk menyimpan document-document
+							yang tidak terpakai karena revisi. Dengan
+							demikian, misalnya ada 3 revisi FD,
+							strukturnya :
+							<h:ul class="clist clist-check">
+								<h:li>
+									03 Functional Design/Video/FD Video
+									v3.pdf
+								</h:li>
+								<h:li>
+									03 Functional Design/Video/
+									<h:strong>
+										<h:em>History</h:em>
+									</h:strong>
+									/FD Video v2.pdf
+								</h:li>
+								<h:li>
+									03 Functional Design/Video/
+									<h:strong>
+										<h:em>History</h:em>
+									</h:strong>
+									/FD Video v1.pdf
+								</h:li>
+							</h:ul>
+						</h:li>
+						<h:li>
+							<h:code>
+								trunk/Source Code, branches/test,
+								branches/production
+							</h:code>
+							adalah parent maven directory sehingga
+							memiliki file
+							<h:code>pom.xml</h:code>
+						</h:li>
+					</h:ul>
+					<h:p></h:p>
+					<h:p>
+						<h:h4 class="text-center">
+							<h:code>Contoh</h:code>
+						</h:h4>
+					</h:p>
+					<tree rows="12" id="treeSvn"
+						model="${divTreeSvn$composer.treeModel}">
+						<template name="model">
+							<treeitem
+								tooltiptext="${each.data.tooltip}">
+								<treerow>
+									<treecell>
+										${each.data.label}
+									</treecell>
+								</treerow>
+							</treeitem>
+						</template>
+					</tree>
+					<h:div class="text-center p-t-15">
+						<h:p>
+							Masih belum jelas? Download contoh struktur
+							nya di bawah.
+						</h:p>
+						<h:form method="get"
+							action="${p:encodeURL('/docs/project_preparation_structure.rar')}">
+							<h:button
+								sclass="btn bgm-pink btn-icon-text">
+								<h:i class="zmdi zmdi-download"></h:i>
+								Download Contoh Project Structure (SVN)
+							</h:button>
+						</h:form>
+					</h:div>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header ch-alt">
+					<h:h2 class="c-black">
+						<h:i
+							class="zmdi zmdi-assignment-check p-r-10">
+						</h:i>
+						Enterprise Architect (EA)
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding" id="divTreeEa"
+					apply="id.co.fifgroup.app.guidelines.controller.ProjectExampleEATreeComposer">
+					<h:ul class="clist clist-angle">
+						<h:li>
+							Untuk contoh, dapat dilihat di bawah (klik
+							tanda panah di samping text untuk
+							expand/collapse tree)
+						</h:li>
+						<h:li>
+							Perhatikan bahwa struktur folder mirip
+							dengan struktur SVN pada
+							<h:code>trunk/Documentations</h:code>
+						</h:li>
+						<h:li>
+							Perhatikan bahwa nama modul konsisten
+							(selalu ada 3 nama yang sama sesuai SVN):
+							<h:code>
+								System Administration, Teleconference,
+								Video
+							</h:code>
+						</h:li>
+					</h:ul>
+					<h:p>
+						<h:h4 class="text-center">
+							<h:code>Contoh</h:code>
+						</h:h4>
+					</h:p>
+					<tree rows="12" id="treeEa"
+						model="${divTreeEa$composer.treeModel}">
+						<template name="model">
+							<treeitem
+								tooltiptext="${each.data.tooltip}">
+								<treerow>
+									<treecell>
+										${each.data.label}
+									</treecell>
+								</treerow>
+							</treeitem>
+						</template>
+					</tree>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

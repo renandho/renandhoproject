@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/shared/header.zul" />
+
+		<h:section id="main" data-layout="layout-1">
+			<include src="/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container">
+					<div sclass="block-header">
+						<h:h2>
+							<a href="java_home.zul">Kembali</a>
+						</h:h2>
+					</div>
+					<div sclass="card go-social z-depth-1">
+						<div sclass="card-header bgm-orange">
+							<h:h2>
+								<h:i
+									class="zmdi zmdi-view-list-alt p-r-10 zmdi-hc-lg">
+								</h:i>
+								Standard Teknologi
+							</h:h2>
+						</div>
+						<div sclass="card-body card-padding">
+							<div class="table-responsive">
+								<h:table class="table table-striped">
+									<h:thead>
+										<h:tr>
+											<h:th width="30%">
+												Layer
+											</h:th>
+											<h:th>Teknologi</h:th>
+										</h:tr>
+									</h:thead>
+									<h:tbody>
+										<h:tr>
+											<h:td>
+												Programming language
+											</h:td>
+											<h:td>
+												<a
+													href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"
+													target="_blank">
+													Java (Oracle JDK)
+												</a>
+												.
+												Saat ini menggunakan
+												versi 7.
+												<h:br />
+												Penggunaan PL/SQL dihindari.
+											</h:td>
+										</h:tr>
+										<h:tr>
+											<h:td>
+												Dependency Management
+											</h:td>
+											<h:td>
+												<a
+													href="https://maven.apache.org/" target="_blank">
+													Maven
+												</a>
+											</h:td>
+										</h:tr>
+										<h:tr>
+											<h:td>
+												Java development
+												environment
+											</h:td>
+											<h:td>
+												<a
+													href="http://www.eclipse.org/" target="_blank">
+													Eclipse
+												</a>
+											</h:td>
+										</h:tr>
+										<h:tr>
+											<h:td>File Repository</h:td>
+											<h:td>
+												SVN (Subversion). Untuk
+												client bisa menggunakan
+												<a
+													href="http://tortoisesvn.net/" target="_blank">
+													tortoise SVN
+												</a>
+											</h:td>
+										</h:tr>
+										<h:tr>
+											<h:td>
+												Design tools dan central
+												knowledge
+											</h:td>
+											<h:td>
+												<a
+													href="http://www.sparxsystems.com/" target="_blank">
+													Enterprise Architect
+													(EA)
+												</a>
+											</h:td>
+										</h:tr>
+										<h:tr>
+											<h:td>
+												Application Server
+											</h:td>
+											<h:td>
+												<a
+													href="https://glassfish.java.net/" target="_blank">
+													Glassfish
+												</a>
+											</h:td>
+										</h:tr>
+										<h:tr>
+											<h:td>User Interface</h:td>
+											<h:td>
+												<a
+													href="http://zkoss.org" target="_blank">
+													ZK
+												</a>
+												dengan model
+												<a
+													href="http://books.zkoss.org/wiki/ZK_Developer's_Reference/MVC"
+													target="_blank">
+													MVC
+												</a>
+											</h:td>
+										</h:tr>
+										<h:tr>
+											<h:td>
+												Application integration
+											</h:td>
+											<h:td>
+												<a
+													href="http://spring.io" target="_blank">
+													Spring
+												</a>
+											</h:td>
+										</h:tr>
+										<h:tr>
+											<h:td>
+												Java to database mapper
+											</h:td>
+											<h:td>
+												<a
+													href="http://www.mybatis.org/mybatis-3/" target="_blank">
+													Mybatis
+												</a>
+											</h:td>
+										</h:tr>
+										<h:tr>
+											<h:td>Database</h:td>
+											<h:td>
+												<a
+													href="http://www.oracle.com" target="_blank">
+													Oracle
+												</a>
+											</h:td>
+										</h:tr>
+										<h:tr>
+											<h:td>
+												Java to Office File
+												Mapper
+											</h:td>
+											<h:td>
+												<a
+													href="https://poi.apache.org/" target="_blank">
+													Apache POI
+												</a>
+											</h:td>
+										</h:tr>
+										<h:tr>
+											<h:td>Java scheduler</h:td>
+											<h:td>
+												<a
+													href="https://quartz-scheduler.org/" target="_blank">
+													Quartz
+												</a>
+											</h:td>
+										</h:tr>
+										<h:tr>
+											<h:td>
+												Java document template
+											</h:td>
+											<h:td>
+												<a
+													href="http://freemarker.org" target="_blank">
+													Freemarker
+												</a>
+											</h:td>
+										</h:tr>
+										<h:tr>
+											<h:td>Report</h:td>
+											<h:td>
+												<a
+													href="http://community.jaspersoft.com/project/ireport-designer"
+													target="_blank">
+													iReport
+												</a>
+											</h:td>
+										</h:tr>
+									</h:tbody>
+								</h:table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</h:section>
+		</h:section>
+
+		<include src="/shared/html_body.zul" />
+	</h:body>
+</zk>

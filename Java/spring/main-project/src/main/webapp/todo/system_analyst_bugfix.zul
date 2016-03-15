@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/shared/header.zul" />
+
+		<h:section id="main" data-layout="layout-1">
+			<include src="/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container">
+					<include src="/shared/todo_dev_env_only.zul" />
+					<div sclass="row">
+						<div sclass="col-sm-12">
+							<div sclass="block-header">
+								<h:h2>
+									<h:i
+										class="zmdi zmdi-account p-r-10 zmdi-hc-lg">
+									</h:i>
+									System Analyst To-Do List (Bugfix)
+								</h:h2>
+							</div>
+						</div>
+						<div sclass="row">
+							<div sclass="col-sm-6">
+								<div sclass="card z-depth-1">
+									<div
+										sclass="card-header bgm-pink">
+										<h:h2>
+											01 - TSA (To System Analyst)
+										</h:h2>
+									</div>
+									<div
+										sclass="card-body card-padding bgm-pink c-white">
+										<h:ul
+											class="clist clist-check">
+											<h:li>
+												Register ticket di
+												repository :
+												<h:em>
+													IT-Project\trunk\_Projects\Non
+													Core\Operational\tahun\tahun.xlsx
+												</h:em>
+												, sheet "Worksheet"
+												(jangan lupa di-commit)
+											</h:li>
+											<h:li>
+												Ubah status ticket ke
+												WSA
+											</h:li>
+										</h:ul>
+									</div>
+								</div>
+							</div>
+
+							<div sclass="col-sm-6">
+								<div sclass="card z-depth-1">
+									<div
+										sclass="card-header bgm-indigo">
+										<h:h2>
+											02 - WSA (Work by System
+											Analyst)
+										</h:h2>
+									</div>
+									<div
+										sclass="card-body card-padding bgm-indigo c-white">
+										<h:ul
+											class="clist clist-check">
+											<h:li>
+												Crosscek hasil analisa
+												application support,
+												apakah memang bagian
+												tersebut yang bermasalah
+											</h:li>
+											<h:li>
+												Koordinasi dengan
+												application support
+												terkait akar masalah dan
+												perbaikan
+											</h:li>
+											<h:li>
+												Membuat Technical Design
+												sesuai template
+											</h:li>
+											<h:li>
+												Assign ticket ke
+												programmer, ubah status
+												ticket ke TPG
+											</h:li>
+										</h:ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div sclass="row">
+							<div sclass="col-sm-6">
+								<div sclass="card z-depth-1">
+									<div
+										sclass="card-header bgm-cyan">
+										<h:h2>
+											03 - TPG (To Programmer)
+										</h:h2>
+									</div>
+									<div
+										sclass="card-body card-padding bgm-cyan c-white">
+									</div>
+								</div>
+							</div>
+
+							<div sclass="col-sm-6">
+								<div sclass="card z-depth-1">
+									<div
+										sclass="card-header bgm-deeporange">
+										<h:h2>
+											04 - WPG (Work By
+											Programmer)
+										</h:h2>
+									</div>
+									<div
+										sclass="card-body card-padding bgm-deeporange c-white">
+										<h:ul
+											class="clist clist-check">
+											<h:li>
+												Support programmer untuk
+												pengerjaan ticket
+											</h:li>
+										</h:ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div sclass="row">
+							<div sclass="col-sm-6">
+								<div sclass="card z-depth-1">
+									<div
+										sclass="card-header bgm-green">
+										<h:h2>
+											05 - VSA (Validate by SA)
+										</h:h2>
+									</div>
+									<div
+										sclass="card-body card-padding bgm-green c-white">
+										<h:ul
+											class="clist clist-check">
+											<h:li>
+												Memastikan kualitas
+												teknis source code
+											</h:li>
+											<h:li>
+												Validasi unit testing,
+												memastikan perbaikan
+												berjalan untuk satu flow
+												normal
+											</h:li>
+											<h:li>
+												Memastikan bahwa source
+												code sudah di-merge di
+												SVN (termasuk comment
+												sudah sesuai)
+											</h:li>
+											<h:li>
+												Sign off Technical
+												Design
+											</h:li>
+											<h:li>
+												Assign ticket ke QA,
+												ubah status ticket ke
+												TDT
+											</h:li>
+										</h:ul>
+									</div>
+								</div>
+							</div>
+
+							<div sclass="col-sm-6">
+								<div sclass="card z-depth-1">
+									<div
+										sclass="card-header bgm-bluegray">
+										<h:h2>
+											06 - TDT, TQA, WQA (Jalur
+											QA)
+										</h:h2>
+									</div>
+									<div
+										sclass="card-body card-padding bgm-bluegray c-white">
+										<h:ul
+											class="clist clist-check">
+											<h:li>
+												Bersama programmer,
+												support QA untuk
+												pengerjaan ticket
+											</h:li>
+										</h:ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div sclass="row">
+							<div sclass="col-sm-6">
+								<div sclass="card z-depth-1">
+									<div
+										sclass="card-header bgm-blue">
+										<h:h2>
+											07 - UAT (User Acceptance
+											Test)
+										</h:h2>
+									</div>
+									<div
+										sclass="card-body card-padding bgm-blue c-white">
+										<h:ul
+											class="clist clist-check">
+											<h:li>
+												Melakukan UAT bersama
+												user
+											</h:li>
+											<h:li>
+												Memastikan antara
+												trunk/Source Code,
+												branches/test, dan
+												branches/production
+												sudah sama
+											</h:li>
+											<h:li>
+												Sign off berita acara
+												UAT
+											</h:li>
+										</h:ul>
+									</div>
+								</div>
+							</div>
+							<div sclass="col-sm-6">
+								<div sclass="card z-depth-1">
+									<div sclass="card-header bgm-red">
+										<h:h2>
+											08 - TDG (Jalur Deployment)
+										</h:h2>
+									</div>
+									<div
+										sclass="card-body card-padding bgm-red c-white">
+										<h:ul
+											class="clist clist-check">
+											<h:li>
+												Bersama programmer,
+												support deployer untuk
+												pengerjaan ticket
+											</h:li>
+											<h:li>
+												Sign off deployment
+												guide
+											</h:li>
+										</h:ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div sclass="row">
+							<div sclass="col-sm-12">
+								<div sclass="card z-depth-1">
+									<div
+										sclass="card-header bgm-black">
+										<h:h2>09 - CLS (Closed)</h:h2>
+									</div>
+									<div
+										sclass="card-body card-padding bgm-black c-white">
+										<h:ul
+											class="clist clist-check">
+											<h:li>
+												Update status ticket di
+												repository :
+												<h:em>
+													IT-Project\trunk\_Projects\Non
+													Core\Operational\tahun\tahun.xlsx
+												</h:em>
+												, sheet "Worksheet"
+												(jangan lupa di-commit)
+											</h:li>
+										</h:ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</h:section>
+		</h:section>
+
+		<include src="/shared/html_body.zul" />
+	</h:body>
+</zk>

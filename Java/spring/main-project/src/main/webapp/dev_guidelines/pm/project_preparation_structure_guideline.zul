@@ -1,0 +1,397 @@
+<?page title=My Shop contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<h:ul class="clist clist-angle">
+		<h:li>
+			Untuk struktur folder di Subversion maupun Enterprise
+			Architect, mengikuti standard di bawah
+		</h:li>
+		<h:li>
+			Struktur disamakan untuk menjaga konsistensi dan mempermudah
+			transfer knowledge
+		</h:li>
+		<h:li>
+			Untuk standard, dapat dilihat di bawah (klik tanda panah di
+			samping text untuk expand/collapse tree)
+		</h:li>
+		<h:li>
+			Untuk keterangan masing-masing folder, hover mouse pada tree
+		</h:li>
+		<h:li>
+			Untuk contoh, dapat dilihat di tab
+			<h:a href="#navTab">Contoh</h:a>
+		</h:li>
+		<h:li>
+			<h:strong>
+				Jika ada yang perlu disesuaikan, tolong koordinasi dulu
+				dengan PIC project
+			</h:strong>
+		</h:li>
+	</h:ul>
+	<h:p></h:p>
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header ch-alt">
+					<h:h2 class="c-black">
+						<h:i class="zmdi zmdi-collection-text p-r-10">
+						</h:i>
+						Subversion (SVN)
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ul class="clist clist-angle">
+						<h:li>
+							Struktur SVN mengikuti default svn
+							(branches, tags, trunk)
+						</h:li>
+					</h:ul>
+					<h:p></h:p>
+					<h:p>
+						<h:h4 class="text-center">
+							<h:code>Standard</h:code>
+						</h:h4>
+					</h:p>
+					<tree rows="12" id="treeSvn">
+						<treechildren>
+							<treeitem open="false">
+								<treerow tooltip="System name"
+									tooltiptext="${labels.svn.guideline.system_name}">
+									<treecell>Nama System</treecell>
+								</treerow>
+								<treechildren>
+									<treeitem open="false"
+										tooltiptext="${labels.svn.guideline.branches}">
+										<treerow>
+											<treecell
+												label="branches">
+											</treecell>
+										</treerow>
+										<treechildren>
+											<treeitem open="false"
+												tooltiptext="${labels.svn.guideline.branches_production}">
+												<treerow>
+													<treecell
+														label="production">
+													</treecell>
+												</treerow>
+											</treeitem>
+											<treeitem open="false"
+												tooltiptext="${labels.svn.guideline.branches_test}">
+												<treerow>
+													<treecell
+														label="test">
+													</treecell>
+												</treerow>
+											</treeitem>
+										</treechildren>
+									</treeitem>
+									<treeitem open="false"
+										tooltiptext="${labels.svn.guideline.tags}">
+										<treerow>
+											<treecell label="tags">
+											</treecell>
+										</treerow>
+									</treeitem>
+									<treeitem open="false"
+										tooltiptext="${labels.svn.guideline.trunk}">
+										<treerow>
+											<treecell label="trunk">
+											</treecell>
+										</treerow>
+										<treechildren>
+											<treeitem open="false"
+												tooltiptext="${labels.svn.guideline.trunk_documentations}">
+												<treerow>
+													<treecell
+														label="Documentations">
+													</treecell>
+												</treerow>
+												<treechildren>
+													<treeitem
+														tooltiptext="${labels.svn.guideline.trunk_documentations_01}">
+														<treerow>
+															<treecell
+																label="01 Preparation and Development Guidelines">
+															</treecell>
+														</treerow>
+													</treeitem>
+													<treeitem
+														tooltiptext="${labels.svn.guideline.trunk_documentations_02}">
+														<treerow>
+															<treecell
+																label="02 User Requirements">
+															</treecell>
+														</treerow>
+													</treeitem>
+													<treeitem
+														tooltiptext="${labels.svn.guideline.trunk_documentations_03}">
+														<treerow>
+															<treecell
+																label="03 Functional Design">
+															</treecell>
+														</treerow>
+													</treeitem>
+													<treeitem
+														tooltiptext="${labels.svn.guideline.trunk_documentations_04}">
+														<treerow>
+															<treecell
+																label="04 Technical Design">
+															</treecell>
+														</treerow>
+													</treeitem>
+													<treeitem
+														tooltiptext="${labels.svn.guideline.trunk_documentations_05}">
+														<treerow>
+															<treecell
+																label="05 Testing and QA">
+															</treecell>
+														</treerow>
+													</treeitem>
+													<treeitem
+														tooltiptext="${labels.svn.guideline.trunk_documentations_06}">
+														<treerow>
+															<treecell
+																label="06 Deployment">
+															</treecell>
+														</treerow>
+													</treeitem>
+													<treeitem
+														tooltiptext="${labels.svn.guideline.trunk_documentations_07}">
+														<treerow>
+															<treecell
+																label="07 Data Migration">
+															</treecell>
+														</treerow>
+													</treeitem>
+												</treechildren>
+											</treeitem>
+											<treeitem open="false"
+												tooltiptext="${labels.svn.guideline.trunk_source_code}">
+												<treerow>
+													<treecell
+														label="Source Code">
+													</treecell>
+												</treerow>
+											</treeitem>
+										</treechildren>
+									</treeitem>
+								</treechildren>
+							</treeitem>
+						</treechildren>
+					</tree>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header ch-alt">
+					<h:h2 class="c-black">
+						<h:i
+							class="zmdi zmdi-assignment-check p-r-10">
+						</h:i>
+						Enterprise Architect (EA)
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ul class="clist clist-angle">
+						<h:li>
+							Struktur folder EA berdasarkan struktur
+							folder Subversion pada bagian
+							<h:code>trunk/Documentations</h:code>
+						</h:li>
+					</h:ul>
+					<h:p></h:p>
+					<h:p>
+						<h:h4 class="text-center">
+							<h:code>Standard</h:code>
+						</h:h4>
+					</h:p>
+					<tree rows="12" id="treeEA">
+						<treechildren>
+							<treeitem open="false"
+								tooltiptext="${labels.ea.guideline.system_name}">
+								<treerow>
+									<treecell label="Nama System">
+									</treecell>
+								</treerow>
+								<treechildren>
+									<treeitem open="false"
+										tooltiptext="${labels.ea.guideline.ureq}">
+										<treerow>
+											<treecell
+												label="User Requirement">
+											</treecell>
+										</treerow>
+										<treechildren>
+											<treeitem open="false"
+												tooltiptext="${labels.ea.guideline.moduleName}">
+												<treerow>
+													<treecell>
+														Nama Modul
+													</treecell>
+												</treerow>
+												<treechildren>
+													<treeitem
+														tooltiptext="${labels.ea.guideline.ureq_end_to_end}">
+														<treerow>
+															<treecell>
+																End-To-End
+																Model
+															</treecell>
+														</treerow>
+													</treeitem>
+													<treeitem
+														tooltiptext="${labels.ea.guideline.ureq_requirement}">
+														<treerow>
+															<treecell>
+																Requirement
+																Model
+															</treecell>
+														</treerow>
+													</treeitem>
+													<treeitem
+														tooltiptext="${labels.ea.guideline.ureq_activity}">
+														<treerow>
+															<treecell>
+																Activity
+																Model
+															</treecell>
+														</treerow>
+													</treeitem>
+												</treechildren>
+											</treeitem>
+										</treechildren>
+									</treeitem>
+									<treeitem open="false"
+										tooltiptext="${labels.ea.guideline.fd}">
+										<treerow>
+											<treecell
+												label="Functional Design">
+											</treecell>
+										</treerow>
+										<treechildren>
+											<treeitem open="false"
+												tooltiptext="${labels.ea.guideline.moduleName}">
+												<treerow>
+													<treecell>
+														Nama Modul
+													</treecell>
+												</treerow>
+												<treechildren>
+													<treeitem
+														tooltiptext="${labels.ea.guideline.fd_end_to_end}">
+														<treerow>
+															<treecell>
+																End-To-End
+																Model
+															</treecell>
+														</treerow>
+													</treeitem>
+													<treeitem
+														tooltiptext="${labels.ea.guideline.fd_use_case}">
+														<treerow>
+															<treecell>
+																Use Case
+																Model
+															</treecell>
+														</treerow>
+													</treeitem>
+													<treeitem
+														tooltiptext="${labels.ea.guideline.fd_user_interface}">
+														<treerow>
+															<treecell>
+																User
+																Interface
+																Model
+															</treecell>
+														</treerow>
+													</treeitem>
+													<treeitem
+														tooltiptext="${labels.ea.guideline.fd_business_rules}">
+														<treerow>
+															<treecell>
+																Business
+																Rules
+																Model
+															</treecell>
+														</treerow>
+													</treeitem>
+													<treeitem
+														tooltiptext="${labels.ea.guideline.fd_batch_process}">
+														<treerow>
+															<treecell>
+																Batch
+																Process
+															</treecell>
+														</treerow>
+													</treeitem>
+												</treechildren>
+											</treeitem>
+										</treechildren>
+									</treeitem>
+									<treeitem open="false"
+										tooltiptext="${labels.ea.guideline.td}">
+										<treerow>
+											<treecell
+												label="Technical Design">
+											</treecell>
+										</treerow>
+										<treechildren>
+											<treeitem open="false"
+												tooltiptext="${labels.ea.guideline.moduleName}">
+												<treerow>
+													<treecell>
+														Nama Modul
+													</treecell>
+												</treerow>
+												<treechildren>
+													<treeitem
+														tooltiptext="${labels.ea.guideline.td_class}">
+														<treerow>
+															<treecell>
+																Class
+																Model
+															</treecell>
+														</treerow>
+													</treeitem>
+													<treeitem
+														tooltiptext="${labels.ea.guideline.td_data}">
+														<treerow>
+															<treecell>
+																Data
+																Model
+															</treecell>
+														</treerow>
+													</treeitem>
+													<treeitem
+														tooltiptext="${labels.ea.guideline.td_sequence}">
+														<treerow>
+															<treecell>
+																Sequence
+																Model
+															</treecell>
+														</treerow>
+													</treeitem>
+													<treeitem
+														tooltiptext="${labels.ea.guideline.td_technical_requirement}">
+														<treerow>
+															<treecell>
+																Technical
+																Requirement
+																Model
+															</treecell>
+														</treerow>
+													</treeitem>
+												</treechildren>
+											</treeitem>
+										</treechildren>
+									</treeitem>
+								</treechildren>
+							</treeitem>
+						</treechildren>
+					</tree>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

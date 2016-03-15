@@ -1,0 +1,16 @@
+<zk xmlns:h="native">
+<h:pre><h:code><h:em style="color: green;">// replace by TPS, ticket 1234567890, 23-jun-2016
+/*
+if (a == b) {
+   ...
+   ...
+}
+*/
+</h:em>
+<h:strong>if</h:strong> (a == b || c == d) {
+   ...
+   ...
+}
+<h:em style="color: green;">// end replace by TPS, ticket 1234567890-Perbaikan ABC, 23-jun-2016</h:em></h:code>
+</h:pre>
+</zk>

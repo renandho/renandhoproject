@@ -1,0 +1,70 @@
+<?page title=My Shop contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<h:ol>
+		<h:li>
+			Download Eclipse IDE for Java EE Developers di
+			<a target="_blank"
+				href="http://www.eclipse.org/downloads/">
+				sini
+			</a>
+		</h:li>
+		<h:li>Install Eclipse</h:li>
+		<h:li>
+			Buka Eclipse nya, kemudian install ZK Studio.
+			<a href="https://marketplace.eclipse.org/content/zk-studio"
+				target="_blank">
+				Caranya.
+			</a>
+			<h:br />
+			Kalau tidak bisa connect internet dari Eclipse,
+			<a
+				href="https://www.google.com/search?q=eclipse+proxy+settings"
+				target="_blank">
+				setting dulu
+			</a>
+			proxy nya
+		</h:li>
+	</h:ol>
+	<h:p></h:p>
+	<h:p></h:p>
+	<h:h4>Cheatsheet</h:h4>
+	<h:table class="table table-striped">
+		<h:thead>
+			<h:tr>
+				<h:th width="50%">Untuk</h:th>
+				<h:th>Cara</h:th>
+			</h:tr>
+		</h:thead>
+		<h:tbody>
+			<h:tr>
+				<h:td>Buka maven project</h:td>
+				<h:td>File - Import - Existing Maven Project</h:td>
+			</h:tr>
+			<h:tr>
+				<h:td>Find di banyak file</h:td>
+				<h:td>CTRL+H</h:td>
+			</h:tr>
+			<h:tr>
+				<h:td>
+					Cari file mana saja yang memanggil suatu
+					variable/method
+				</h:td>
+				<h:td>
+					letakkan cursor mouse di variable/method, tekan
+					CTRL+ALT+H
+				</h:td>
+			</h:tr>
+			<h:tr>
+				<h:td>Save all</h:td>
+				<h:td>CTRL+SHIFT+S</h:td>
+			</h:tr>
+			<h:tr>
+				<h:td>Refactor (rename variable/method/file)</h:td>
+				<h:td>
+					letakkan cursor mouse di variable/method, tekan
+					SHIFT+ALT+R
+				</h:td>
+			</h:tr>
+		</h:tbody>
+	</h:table>
+</zk>

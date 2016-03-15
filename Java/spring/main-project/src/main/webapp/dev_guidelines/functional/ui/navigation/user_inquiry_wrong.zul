@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/shared/header.zul" />
+
+		<h:section id="main" data-layout="layout-1">
+			<include src="/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container">
+					<div sclass="row">
+						<div sclass="col-sm-12">
+							<div sclass="block-header">
+								<h:h2>
+									<a href="../ui_do_navigation.zul">
+										Kembali
+									</a>
+								</h:h2>
+							</div>
+						</div>
+					</div>
+					<div sclass="row">
+						<div sclass="col-sm-12">
+							<div sclass="card z-depth-1">
+								<div sclass="card-header bgm-red">
+									<h:h2>
+										<h:i
+											class="zmdi zmdi-hc-lg zmdi-close p-r-10">
+										</h:i>
+										<h:strong>
+											User Inquiry (salah : tidak
+											ada navigasi ke form entry)
+										</h:strong>
+									</h:h2>
+								</div>
+								<div sclass="card-body card-padding">
+									<div sclass="row">
+										<div
+											sclass="col-sm-2 text-right">
+											Nama
+										</div>
+										<div sclass="col-sm-10">
+											<bandbox cols="40" />
+										</div>
+									</div>
+									<div sclass="row">
+										<div
+											sclass="col-sm-2 text-right p-t-10">
+											Tanggal lahir
+										</div>
+										<div
+											sclass="col-sm-10 p-t-10">
+											<datebox
+												format="dd-MMM-yyyy" />
+											<span
+												sclass="p-r-10 p-l-10">
+												s/d
+											</span>
+											<datebox
+												format="dd-MMM-yyyy" />
+										</div>
+									</div>
+									<div sclass="row">
+										<div sclass="col-sm-2 p-t-10">
+										</div>
+										<div sclass="col-sm-2 p-t-10">
+											<button
+												image="/icons/Search-16.png">
+												Find
+											</button>
+										</div>
+									</div>
+									<div sclass="row p-t-20">
+										<div sclass="col-sm-12">
+											<listbox width="100%"
+												style="overflow: scroll;">
+												<listhead menupopup="auto">
+													<listheader
+														label="Nama" sort="auto" />
+													<listheader
+														label="Tanggal lahir" sort="auto" />
+													<listheader
+														label="Alamat" sort="auto" />
+													<listheader
+														label="Kode pos" sort="auto" />
+													<listheader
+														label="Last update by" />
+													<listheader
+														label="Last update date" />
+												</listhead>
+												<listitem>
+													<listcell
+														label="Nama 1" />
+													<listcell
+														label="1-Jan-2016" />
+													<listcell
+														label="Alamat 1" />
+													<listcell
+														label="12345" />
+													<listcell
+														label="system.admin" />
+													<listcell
+														label="1-Jan-2016 00:01" />
+												</listitem>
+												<listitem>
+													<listcell
+														label="Nama 2" />
+													<listcell
+														label="1-Jan-2016" />
+													<listcell
+														label="Alamat 2" />
+													<listcell
+														label="12346" />
+													<listcell
+														label="system.admin" />
+													<listcell
+														label="1-Jan-2016 00:01" />
+												</listitem>
+												<listitem>
+													<listcell
+														label="Nama 3" />
+													<listcell
+														label="1-Jan-2016" />
+													<listcell
+														label="Alamat 3" />
+													<listcell
+														label="12347" />
+													<listcell
+														label="system.admin" />
+													<listcell
+														label="1-Jan-2016 00:01" />
+												</listitem>
+											</listbox>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</h:section>
+		</h:section>
+
+		<include src="/shared/html_body.zul" />
+	</h:body>
+</zk>

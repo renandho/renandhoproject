@@ -1,0 +1,91 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-green">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-check p-r-10">
+						</h:i>
+						<h:strong>
+							Do : lebar komponen cukup (tidak memotong
+							content)
+						</h:strong>
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<div sclass="row">
+						<div sclass="col-sm-4 text-right">
+							<label value="Nama" />
+						</div>
+						<div sclass="col-sm-8">
+							<textbox cols="40" disabled="true"
+								value="PT FIFGROUP - Member of Astra" />
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-4 text-right">
+							<label value="Alamat rumah" />
+						</div>
+						<div sclass="col-sm-8">
+							<textbox cols="40"
+								value="Jl TB Simatupang kav 15, Jakarta" disabled="true">
+							</textbox>
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-4 text-right">
+							<label value="Profil" />
+						</div>
+						<div sclass="col-sm-8">
+							<textbox cols="40" readonly="true"
+								value="Jika karena suatu hal, panjang kolom maupun tingginya tidak bisa disesuaikan (misal karena akan makan terlalu banyak tempat), pastikan user tetap mudah melihat keseluruhan isi text (set sebagai readonly, bukan disabled)" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-red">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-close p-r-10">
+						</h:i>
+						Don't
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<div sclass="row">
+						<div sclass="col-sm-4 text-right">
+							<label value="Nama" />
+						</div>
+						<div sclass="col-sm-8">
+							<textbox disabled="true"
+								value="PT FIFGROUP - Member of Astra" />
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-4 text-right">
+							<label value="Alamat rumah" />
+						</div>
+						<div sclass="col-sm-8">
+							<textbox
+								value="Jl TB Simatupang kav 15, Jakarta" disabled="true" />
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-4 text-right">
+							<label value="Profil" />
+						</div>
+						<div sclass="col-sm-8">
+							<textbox cols="40" disabled="true"
+								value="Jika karena suatu hal, panjang kolom maupun tingginya tidak bisa disesuaikan (misal karena akan makan terlalu banyak tempat), pastikan user tetap mudah melihat keseluruhan isi text (set sebagai readonly, bukan disabled)" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

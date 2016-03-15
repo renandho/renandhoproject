@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header ch-alt">
+					<h:h2 id="navTab">Maven Structure</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<include src="java_naming_guideline_maven.zul" />
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header ch-alt">
+					<h:h2 id="navTab">
+						<![CDATA[Java Naming & Packaging]]>
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<include src="java_naming_guideline_packaging.zul" />
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

@@ -10,7 +10,7 @@
 		<h:section id="main" data-layout="layout-1">
 			<include src="/shared/sidebar.zul" />
 			<h:section id="content">
-				<div sclass="container" apply="package com.shop.main.controller.IndexComposer">
+				<div sclass="container" apply="com.shop.main.controller.IndexComposer">
 					<div sclass="card go-social z-depth-1">
 						<div sclass="card-header bgm-red">
 							<h:h2>
