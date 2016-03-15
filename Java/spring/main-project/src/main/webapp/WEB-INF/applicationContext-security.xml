@@ -48,11 +48,11 @@
 		<beans:property name="userDetailsService" ref="userDetailsService" />
 	</beans:bean>
 
-	<beans:bean id="userDetailsService" class="com.fif.hcms.core.security.UserDetailsServiceImpl">
+	<beans:bean id="userDetailsService" class="com.shop.core.security.UserDetailsServiceImpl">
 		<beans:property name="ldapTemplate" ref="ldapTemplate" />
 	</beans:bean>
 	
-	<beans:bean id="ldapUserDetailsService" class="com.fif.hcms.core.security.LDAPUserDetailsService"/>
+	<beans:bean id="ldapUserDetailsService" class="com.shop.core.security.LDAPUserDetailsService"/>
 	
 	<beans:bean id="encoder" class="org.springframework.security.crypto.password.StandardPasswordEncoder" />
 

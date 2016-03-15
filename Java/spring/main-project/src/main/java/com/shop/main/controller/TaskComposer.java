@@ -1,4 +1,4 @@
-package com.fif.fifbook.main.controller;
+package com.shop.main.controller;
 
 import java.util.List;
 

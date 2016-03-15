@@ -1,6 +1,6 @@
-package com.fif.fifbook.main.mapper;
+package com.shop.main.mapper;
 
-import com.fif.fifbook.main.dto.UserDTO;
+import com.shop.main.dto.UserDTO;
 
 
 public interface UserMapper {

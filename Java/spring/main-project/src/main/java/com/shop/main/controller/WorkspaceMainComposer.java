@@ -1,4 +1,4 @@
-package com.fif.fifbook.main.controller;
+package com.shop.main.controller;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -38,19 +38,19 @@ import org.zkoss.zul.Treeitem;
 import org.zkoss.zul.TreeitemRenderer;
 import org.zkoss.zul.Window;
 
-import com.fif.hcms.core.constant.FunctionAccessType;
-import com.fif.hcms.core.constant.LoginStatus;
-import com.fif.hcms.core.constant.MenuItemType;
-import com.fif.hcms.core.security.FunctionPermission;
-import com.fif.hcms.core.security.Security;
-import com.fif.hcms.core.security.SecurityProfile;
-import com.fif.hcms.core.security.SimpleUserDetail;
-import com.fif.hcms.core.service.SecurityService;
-import com.fif.hcms.core.ui.AuthorizedMenuDTO;
-import com.fif.hcms.core.ui.NavigationTransactionForm;
-import com.fif.hcms.core.ui.TreeInfo;
-import com.fif.hcms.core.ui.lookup.KeyValue;
-import com.fif.hcms.core.util.DateUtil;
+import com.shop.core.constant.FunctionAccessType;
+import com.shop.core.constant.LoginStatus;
+import com.shop.core.constant.MenuItemType;
+import com.shop.core.security.FunctionPermission;
+import com.shop.core.security.Security;
+import com.shop.core.security.SecurityProfile;
+import com.shop.core.security.SimpleUserDetail;
+import com.shop.core.service.SecurityService;
+import com.shop.core.ui.AuthorizedMenuDTO;
+import com.shop.core.ui.NavigationTransactionForm;
+import com.shop.core.ui.TreeInfo;
+import com.shop.core.ui.lookup.KeyValue;
+import com.shop.core.util.DateUtil;
 
 
 @VariableResolver(DelegatingVariableResolver.class)

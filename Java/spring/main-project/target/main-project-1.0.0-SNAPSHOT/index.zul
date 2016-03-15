@@ -1,52 +1,116 @@
-<?page title="Medical Claim" contentType="text/html;charset=UTF-8"?>
-<?meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"?>
-<zk>
-	<window border="none" width="400px" height="20%" position="center"
-		mode="overlapped" style="margin: 70px 0px 0px 10px;"
-		apply="com.fif.fifbook.main.controller.IndexController">
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="IT Development Standard"?>
 
-		<borderlayout id="mainlayout">
-			<center border="normal">
-				<div id="Screen">
-					<grid style="border:none;">
-						<columns>
-							<column width="120px" align="right"
-								valign="top" />
-							<column />
-						</columns>
-						<rows>
-							<row spans="2">
-								<div style="text-align:center;">
-									<label id="l_us" 
-									sclass="form-label" style="font-size:20px; font-style: normal; font-weight: bold;" />
-								</div>
-							</row>
-							<row>
-								<label id="l_user" value="Username"
-									sclass="form-label" />
-								<textbox id="u" name="j_username"
-									focus="true" width="180px" maxlength="50" />
-							</row>
-							<row>
-								<label id="l_password" value="Password"
-									sclass="form-label" />
-								<textbox id="p" type="password"
-									name="j_password" width="180px" maxlength="50" />
-							</row>
-							<row>
-								<label></label>
-								<hbox id="hboxLogin">
-									<button id="btnLogin" label="Login"
-										width="80px"  />
-									<button id="btnSignup"
-										label="Sign Up" width="80px" />
-								</hbox>
-							</row>
-						</rows>
-					</grid>
+<zk xmlns:h="native">
+	<include src="/app/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/app/shared/header.zul" />
+
+		<h:section id="main" data-layout="layout-1">
+			<include src="/app/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container" apply="id.co.fifgroup.app.ui.home.controller.IndexComposer">
+					<div sclass="card go-social z-depth-1">
+						<div sclass="card-header bgm-red">
+							<h:h2>
+								<h:i
+									class="zmdi zmdi-image-o p-r-10 zmdi-hc-lg">
+								</h:i>
+								<![CDATA[My Product]]>
+								</h:h2>
+						</div>
+						<div sclass="card-body card-padding">
+							<div sclass="row">
+								<a href="ui_do_layout.zul">
+									<div sclass="col-sm-4">
+										<div sclass="card z-depth-1">
+											<div
+												sclass="card-body card-padding bgm-green">
+												<h:h3
+													class="c-white text-center">
+													<h:i
+														class="zmdi zmdi-desktop-windows p-r-10 zmdi-hc-lg">
+													</h:i>
+													Man Collection 
+												</h:h3>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="ui_do_navigation.zul">
+									<div sclass="col-sm-4">
+										<div sclass="card z-depth-1">
+											<div
+												sclass="card-body card-padding bgm-orange">
+												<h:h3
+													class="c-white text-center">
+													<h:i
+														class="zmdi zmdi-navigation p-r-10 zmdi-hc-lg">
+													</h:i>
+													Navigasi
+												</h:h3>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="ui_do_input.zul">
+									<div sclass="col-sm-4">
+										<div sclass="card z-depth-1">
+											<div
+												sclass="card-body card-padding bgm-indigo">
+												<h:h3
+													class="c-white text-center">
+													<h:i
+														class="zmdi zmdi-edit p-r-10 zmdi-hc-lg">
+													</h:i>
+													Komponen Input
+												</h:h3>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div sclass="row">
+								<a href="ui_do_output.zul">
+									<div sclass="col-sm-4">
+										<div sclass="card z-depth-1">
+											<div
+												sclass="card-body card-padding bgm-pink">
+												<h:h3
+													class="c-white text-center">
+													<h:i
+														class="zmdi zmdi-format-color-text p-r-10 zmdi-hc-lg">
+													</h:i>
+													Tampilan Output
+												</h:h3>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="ui_do_table_output.zul">
+									<div sclass="col-sm-4">
+										<div sclass="card z-depth-1">
+											<div
+												sclass="card-body card-padding bgm-brown">
+												<h:h3
+													class="c-white text-center">
+													<h:i
+														class="zmdi zmdi-grid p-r-10 zmdi-hc-lg">
+													</h:i>
+													Tabel / List Data (output)
+												</h:h3>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
-			</center>
+			</h:section>
+		</h:section>
 
-		</borderlayout>
-	</window>
+		<include src="/app/shared/html_body.zul" />
+	</h:body>
 </zk>

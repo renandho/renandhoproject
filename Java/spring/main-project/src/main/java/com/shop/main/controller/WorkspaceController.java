@@ -1,4 +1,4 @@
-package com.fif.fifbook.main.controller;
+package com.shop.main.controller;
 
 import org.zkoss.zk.ui.Executions;
 import org.zkoss.zk.ui.Sessions;
@@ -12,7 +12,7 @@ import org.zkoss.zul.Label;
 import org.zkoss.zul.Messagebox;
 import org.zkoss.zul.Window;
 
-import com.fif.fifbook.main.dto.UserDTO;
+import com.shop.main.dto.UserDTO;
 import com.google.common.base.Strings;
 
 @VariableResolver(DelegatingVariableResolver.class)

@@ -1,4 +1,4 @@
-package com.fif.fifbook.main.bootstrap;
+package com.shop.main.bootstrap;
 
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.select.SelectorComposer;

@@ -1,4 +1,4 @@
-package com.fif.fifbook.main.dto;
+package com.shop.main.dto;
 
 import java.io.Serializable;
 

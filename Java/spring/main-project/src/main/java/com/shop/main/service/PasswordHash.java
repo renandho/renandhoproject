@@ -1,4 +1,4 @@
-package com.fif.fifbook.main.service;
+package com.shop.main.service;
 
 /* 
  * Password Hashing With PBKDF2 (http://crackstation.net/hashing-security.htm).

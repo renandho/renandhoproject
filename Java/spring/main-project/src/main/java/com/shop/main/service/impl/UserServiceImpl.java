@@ -1,12 +1,12 @@
-package com.fif.fifbook.main.service.impl;
+package com.shop.main.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.fif.fifbook.main.dto.UserDTO;
-import com.fif.fifbook.main.mapper.UserMapper;
-import com.fif.fifbook.main.service.UserService;
+import com.shop.main.dto.UserDTO;
+import com.shop.main.mapper.UserMapper;
+import com.shop.main.service.UserService;
 
 @Transactional
 @Service

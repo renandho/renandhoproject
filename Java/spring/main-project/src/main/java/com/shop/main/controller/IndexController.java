@@ -1,4 +1,4 @@
-package com.fif.fifbook.main.controller;
+package com.shop.main.controller;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
@@ -16,9 +16,9 @@ import org.zkoss.zul.Messagebox;
 import org.zkoss.zul.Textbox;
 import org.zkoss.zul.Window;
 
-import com.fif.fifbook.main.dto.UserDTO;
-import com.fif.fifbook.main.service.PasswordHash;
-import com.fif.fifbook.main.service.UserService;
+import com.shop.main.dto.UserDTO;
+import com.shop.main.service.PasswordHash;
+import com.shop.main.service.UserService;
 import com.google.common.base.Strings;
 
 @VariableResolver(DelegatingVariableResolver.class)

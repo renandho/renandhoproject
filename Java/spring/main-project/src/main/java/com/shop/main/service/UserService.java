@@ -1,6 +1,6 @@
-package com.fif.fifbook.main.service;
+package com.shop.main.service;
 
-import com.fif.fifbook.main.dto.UserDTO;
+import com.shop.main.dto.UserDTO;
 
 public interface  UserService {
 	public Integer getCountMatchUserByExample(String strUserId);

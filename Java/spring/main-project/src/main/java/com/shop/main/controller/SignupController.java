@@ -1,4 +1,4 @@
-package com.fif.fifbook.main.controller;
+package com.shop.main.controller;
 
 import org.zkoss.zul.Textbox;
 import org.zkoss.zk.ui.select.SelectorComposer;
@@ -10,8 +10,8 @@ import org.zkoss.zul.Button;
 import org.zkoss.zul.Messagebox;
 import org.zkoss.zul.Window;
 
-import com.fif.fifbook.main.dto.UserDTO;
-import com.fif.fifbook.main.service.impl.UserServiceImpl;
+import com.shop.main.dto.UserDTO;
+import com.shop.main.service.impl.UserServiceImpl;
 
 @VariableResolver(DelegatingVariableResolver.class)
 public class SignupController extends SelectorComposer<Window> {

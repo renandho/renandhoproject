@@ -222,7 +222,7 @@
       <!-- Tab Tasks Content -->
       <tabpanel>
         <a label="Sortable Lists" iconSclass="z-icon-list" sclass="green lighter rcaption"/>
-        <listbox id="lb" sclass="task" checkmark="true" multiple="true" apply="com.fif.fifbook.main.controller.TaskComposer">
+        <listbox id="lb" sclass="task" checkmark="true" multiple="true" apply="com.shop.main.controller.TaskComposer">
           <listhead>
               <listheader/>
               <listheader width="100px"/>

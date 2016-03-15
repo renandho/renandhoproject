@@ -1,4 +1,4 @@
-package com.fif.fifbook.main.bootstrap;
+package com.shop.main.bootstrap;
 
 import java.util.List;
 
