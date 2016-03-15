@@ -21,7 +21,8 @@
 								</h:h2>
 						</div>
 						<div sclass="card-body card-padding">
-							<div sclass="row">
+							<div id="headerContent" sclass="row">
+								
 								<a href="ui_do_layout.zul">
 									<div sclass="col-sm-4">
 										<div sclass="card z-depth-1">

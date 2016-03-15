@@ -122,7 +122,11 @@
 			<groupId>org.zkoss.theme</groupId>
 			<artifactId>sapphire</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.zkoss.zk</groupId>
+			<artifactId>zhtml</artifactId>
+			<version>${zkoss.version}</version>
+		</dependency>
 		<!-- Logging Dependencies -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
