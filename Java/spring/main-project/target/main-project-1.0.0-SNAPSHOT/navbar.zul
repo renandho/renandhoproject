@@ -1,4 +1,4 @@
-<div sclass="navbar" apply="com.fif.fifbook.main.controller.NavbarComposer">
+<div sclass="navbar" apply="com.shop.main.controller.NavbarComposer">
 	<!-- Brand Logo -->
 	<a label="FIFBook " sclass="pull-left navbar-brand" iconSclass="z-icon-leaf"/>
 	<!-- Navbar -->

@@ -2,15 +2,15 @@
 <?page title="IT Development Standard"?>
 
 <zk xmlns:h="native">
-	<include src="/app/shared/html_head.zul" />
+	<include src="/shared/html_head.zul" />
 
 	<h:body>
-		<include src="/app/shared/header.zul" />
+		<include src="/shared/header.zul" />
 
 		<h:section id="main" data-layout="layout-1">
-			<include src="/app/shared/sidebar.zul" />
+			<include src="/shared/sidebar.zul" />
 			<h:section id="content">
-				<div sclass="container" apply="id.co.fifgroup.app.ui.home.controller.IndexComposer">
+				<div sclass="container" apply="package com.shop.main.controller.IndexComposer">
 					<div sclass="card go-social z-depth-1">
 						<div sclass="card-header bgm-red">
 							<h:h2>
@@ -111,6 +111,6 @@
 			</h:section>
 		</h:section>
 
-		<include src="/app/shared/html_body.zul" />
+		<include src="/shared/html_body.zul" />
 	</h:body>
 </zk>
