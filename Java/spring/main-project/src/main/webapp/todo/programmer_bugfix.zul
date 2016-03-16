@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/shared/header.zul" />
+
+		<h:section id="main" data-layout="layout-1">
+			<include src="/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container">
+					<include src="/shared/todo_dev_env_only.zul" />
+					<div sclass="row">
+						<div sclass="col-sm-12">
+							<div sclass="block-header">
+								<h:h2>
+									<h:i
+										class="zmdi zmdi-account p-r-10 zmdi-hc-lg">
+									</h:i>
+									Programmer To-Do List (Bugfix)
+								</h:h2>
+							</div>
+						</div>
+						<div sclass="row">
+							<div sclass="col-sm-6">
+								<div sclass="card z-depth-1">
+									<div
+										sclass="card-header bgm-pink">
+										<h:h2>
+											01 - TSA (To System Analyst)
+										</h:h2>
+									</div>
+									<div
+										sclass="card-body card-padding bgm-pink c-white">
+									</div>
+								</div>
+							</div>
+
+							<div sclass="col-sm-6">
+								<div sclass="card z-depth-1">
+									<div
+										sclass="card-header bgm-indigo">
+										<h:h2>
+											02 - WSA (Work by System
+											Analyst)
+										</h:h2>
+									</div>
+									<div
+										sclass="card-body card-padding bgm-indigo c-white">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div sclass="row">
+							<div sclass="col-sm-6">
+								<div sclass="card z-depth-1">
+									<div
+										sclass="card-header bgm-cyan">
+										<h:h2>
+											03 - TPG (To Programmer)
+										</h:h2>
+									</div>
+									<div
+										sclass="card-body card-padding bgm-cyan c-white">
+										<h:li>
+											Ubah status ticket ke WPG
+										</h:li>
+										<h:li>
+											Update status ticket di
+											repository :
+											<h:em>
+												IT-Project\trunk\_Projects\Non
+												Core\Operational\tahun\tahun.xlsx
+											</h:em>
+											, sheet "Worksheet" (jangan
+											lupa di-commit)
+										</h:li>
+									</div>
+								</div>
+							</div>
+
+							<div sclass="col-sm-6">
+								<div sclass="card z-depth-1">
+									<div
+										sclass="card-header bgm-deeporange">
+										<h:h2>
+											04 - WPG (Work By
+											Programmer)
+										</h:h2>
+									</div>
+									<div
+										sclass="card-body card-padding bgm-deeporange c-white">
+										<h:ul
+											class="clist clist-check">
+											<h:li>
+												Memberi saran/informasi
+												ke System Analyst
+												terkait Technical Design
+											</h:li>
+											<h:li>
+												Melakukan implementasi
+												(coding)
+											</h:li>
+											<h:li>
+												Pada source code yang
+												berubah, bagian yang
+												berubah di-comment,
+												kemudian perbaikannya
+												diberikan comment dengan
+												menyertakan nomor
+												ticket, tanggal
+												perubahan, dan PIC yang
+												melakukan perubahan.
+												<a
+													popup="popSampleCodeComment">
+													Contoh
+												</a>
+											</h:li>
+											<h:li>
+												Melakukan unit testing,
+												memastikan perbaikan
+												berjalan untuk satu flow
+												normal
+											</h:li>
+											<h:li>
+												Merge source code. Saat
+												commit, comment dengan
+												menyertakan nomor
+												ticket, tanggal
+												perubahan, dan PIC yang
+												melakukan perubahan.
+												<a
+													popup="popSampleSvnComment">
+													Contoh
+												</a>
+											</h:li>
+											<h:li>
+												Blast email ke team
+												developer dan QA untuk
+												daftar file-file yang
+												di-merge
+											</h:li>
+											<h:li>
+												Assign ticket ke System
+												Analyst untuk
+												divalidasi, ubah status
+												ticket ke VSA
+											</h:li>
+										</h:ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div sclass="row">
+							<div sclass="col-sm-6">
+								<div sclass="card z-depth-1">
+									<div
+										sclass="card-header bgm-green">
+										<h:h2>
+											05 - VSA (Validate by SA)
+										</h:h2>
+									</div>
+									<div
+										sclass="card-body card-padding bgm-green c-white">
+									</div>
+								</div>
+							</div>
+
+							<div sclass="col-sm-6">
+								<div sclass="card z-depth-1">
+									<div
+										sclass="card-header bgm-bluegray">
+										<h:h2>
+											06 - TDT, TQA, WQA (Jalur
+											QA)
+										</h:h2>
+									</div>
+									<div
+										sclass="card-body card-padding bgm-bluegray c-white">
+										<h:ul
+											class="clist clist-check">
+											<h:li>
+												Support QA untuk
+												pengerjaan ticket
+											</h:li>
+										</h:ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div sclass="row">
+							<div sclass="col-sm-6">
+								<div sclass="card z-depth-1">
+									<div
+										sclass="card-header bgm-blue">
+										<h:h2>
+											07 - UAT (User Acceptance
+											Test)
+										</h:h2>
+									</div>
+									<div
+										sclass="card-body card-padding bgm-blue c-white">
+									</div>
+								</div>
+							</div>
+							<div sclass="col-sm-6">
+								<div sclass="card z-depth-1">
+									<div sclass="card-header bgm-red">
+										<h:h2>
+											08 - TDG (Jalur Deployment)
+										</h:h2>
+									</div>
+									<div
+										sclass="card-body card-padding bgm-red c-white">
+										<h:ul
+											class="clist clist-check">
+											<h:li>
+												Support deployer untuk
+												deployment ticket
+											</h:li>
+										</h:ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div sclass="row">
+							<div sclass="col-sm-12">
+								<div sclass="card z-depth-1">
+									<div
+										sclass="card-header bgm-black">
+										<h:h2>09 - CLS (Closed)</h:h2>
+									</div>
+									<div
+										sclass="card-body card-padding bgm-black c-white">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</h:section>
+		</h:section>
+		<popup id="popSampleCodeComment">
+			<include src="/shared/sample_code_comment.zul" />
+		</popup>
+		<popup id="popSampleSvnComment">
+			<include src="/shared/sample_svn_comment.zul" />
+		</popup>
+		<include src="/shared/html_body.zul" />
+	</h:body>
+</zk>

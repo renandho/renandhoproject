@@ -1,0 +1,76 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-green">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-check p-r-10">
+						</h:i>
+						<h:strong>
+							Do : kolom create dan update
+						</h:strong>
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					Di setiap table selalu ada kolom :
+					<h:ul class="clist clist-check">
+						<h:li>
+							creation_date (tanggal pembuatan row)
+						</h:li>
+						<h:li>
+							created_by (user_id yang meng-create row)
+						</h:li>
+						<h:li>
+							last_update_date (tanggal perubahan terakhir
+							di row)
+						</h:li>
+						<h:li>last_update_by</h:li>
+					</h:ul>
+					<h:p></h:p>
+					Tabel
+					<h:code>sam_users</h:code>
+					memiliki kolom-kolom
+					<h:code>
+						<h:ul>
+							<h:li>user_id</h:li>
+							<h:li>user_name</h:li>
+							<h:li>password</h:li>
+							<h:li>is_active</h:li>
+							<h:li>creation_date</h:li>
+							<h:li>created_by</h:li>
+							<h:li>last_update_date</h:li>
+							<h:li>last_update_by</h:li>
+						</h:ul>
+					</h:code>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-red">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-close p-r-10">
+						</h:i>
+						Don't
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					Tabel
+					<h:code>sam_users</h:code>
+					hanya memiliki kolom-kolom
+					<h:code>
+						<h:ul class="clist clist-angle">
+							<h:li>user_id</h:li>
+							<h:li>user_name</h:li>
+							<h:li>password</h:li>
+							<h:li>active</h:li>
+						</h:ul>
+					</h:code>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

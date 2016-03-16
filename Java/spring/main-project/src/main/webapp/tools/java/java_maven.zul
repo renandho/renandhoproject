@@ -1,0 +1,83 @@
+<?page title=My Shop contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<h:ol>
+		<h:li>
+			Download Maven di
+			<a href="https://maven.apache.org/download.cgi"
+				target="_blank">
+				sini
+			</a>
+		</h:li>
+		<h:li>Install Maven</h:li>
+		<h:li>
+			Set environment variables M2_HOME.
+			<a target="_blank"
+				href="https://www.google.com/search?q=set+m2+home+maven">
+				Caranya
+			</a>
+		</h:li>
+		<h:li>
+			Tambahkan %M2_HOME%/bin di environment variable.
+			<a target="_blank"
+				href="https://www.google.com/search?q=set+windows+environment+variable+path">
+				Caranya
+			</a>
+		</h:li>
+	</h:ol>
+	<h:p></h:p>
+	<h:p></h:p>
+	<h:h4>Cheatsheet (via command prompt)</h:h4>
+	<h:table class="table table-striped">
+		<h:thead>
+			<h:tr>
+				<h:th width="50%">Untuk</h:th>
+				<h:th>Perintah</h:th>
+			</h:tr>
+		</h:thead>
+		<h:tbody>
+			<h:tr>
+				<h:td>Cek maven sudah berhasil install</h:td>
+				<h:td>mvn -v</h:td>
+			</h:tr>
+			<h:tr>
+				<h:td>
+					Recompile semua file, generate binary (jar / war)
+				</h:td>
+				<h:td>mvn clean install</h:td>
+			</h:tr>
+			<h:tr>
+				<h:td>
+					Recompile file yang berubah, tidak generate binary
+					(jar / war). Berguna untuk developer karena lebih
+					cepat compile
+				</h:td>
+				<h:td>mvn compile</h:td>
+			</h:tr>
+			<h:tr>
+				<h:td>
+					Menggunakan versi java yang berbeda untuk compile.
+					Kasusnya misal di komputer yang ada java 6 dan java
+					8, default java nya adalah java 6, tapi perlu java 8
+					untuk compile
+				</h:td>
+				<h:td>
+					1. set JAVA_HOME="[Path ke Java 8]"
+					<h:br />
+					2. mvn clean install
+				</h:td>
+			</h:tr>
+			<h:tr>
+				<h:td>
+					Run jetty web server
+				</h:td>
+				<h:td>mvn jetty:run</h:td>
+			</h:tr>
+			<h:tr>
+				<h:td>
+					Stop jetty web server
+				</h:td>
+				<h:td>mvn jetty:stop</h:td>
+			</h:tr>
+		</h:tbody>
+	</h:table>
+</zk>

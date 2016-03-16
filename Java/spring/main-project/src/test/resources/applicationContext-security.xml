@@ -22,7 +22,7 @@
 		<beans:property name="userDetailsService" ref="userDetailsService" />
 	</beans:bean>
 
-	<beans:bean id="userDetailsService" class="com.fif.hcms.core.security.UserDetailsServiceImpl">
+	<beans:bean id="userDetailsService" class="com.shop.core.security.UserDetailsServiceImpl">
 		
 	</beans:bean>
 	

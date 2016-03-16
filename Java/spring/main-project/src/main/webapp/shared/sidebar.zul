@@ -1,0 +1,217 @@
+<?page contentType="text/html;charset=UTF-8"?>
+<?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="p"?>
+
+<zk xmlns:h="native">
+	<h:aside id="sidebar" class="sidebar c-overflow">
+		<h:ul class="main-menu">
+			<h:li>
+				<h:a href="${p:encodeURL('/')}">
+					<h:i class="zmdi zmdi-home"></h:i>
+					Home
+				</h:a>
+			</h:li>
+
+			<h:li class="sub-menu">
+				<h:a href="">
+					<h:i class="zmdi zmdi-account"></h:i>
+					To-Do List
+				</h:a>
+
+				<h:ul>
+					<h:li class="sub-menu">
+						<h:a href="#">Business Analyst</h:a>
+						<h:ul>
+							<h:li>
+								<h:a
+									href="${p:encodeURL('/todo/business_analyst_vendor.zul')}">
+									<space width="10px" />
+									Project dengan Vendor
+								</h:a>
+							</h:li>
+							<h:li>
+								<h:a
+									href="${p:encodeURL('/todo/business_analyst_internal.zul')}">
+									<space width="10px" />
+									Project Internal
+								</h:a>
+							</h:li>
+						</h:ul>
+					</h:li>
+					<h:li class="sub-menu">
+						<h:a href="#">PIC Project</h:a>
+						<h:ul>
+							<h:li>
+								<h:a
+									href="${p:encodeURL('/todo/pic_project_internal.zul')}">
+									<space width="10px" />
+									Project Internal
+								</h:a>
+							</h:li>
+						</h:ul>
+					</h:li>
+					<h:li class="sub-menu">
+						<h:a href="#">Programmer</h:a>
+						<h:ul>
+							<h:li>
+								<h:a
+									href="${p:encodeURL('/todo/programmer_bugfix.zul')}">
+									<space width="10px" />
+									Bug fixing
+								</h:a>
+							</h:li>
+							<h:li>
+								<h:a
+									href="${p:encodeURL('/todo/programmer_internal.zul')}">
+									<space width="10px" />
+									Project Internal
+								</h:a>
+							</h:li>
+						</h:ul>
+					</h:li>
+					<h:li class="sub-menu">
+						<h:a href="#">System Analyst</h:a>
+						<h:ul>
+							<h:li>
+								<h:a
+									href="${p:encodeURL('/todo/system_analyst_bugfix.zul')}">
+									<space width="10px" />
+									Bug fixing
+								</h:a>
+							</h:li>
+							<h:li>
+								<h:a
+									href="${p:encodeURL('/todo/system_analyst_vendor.zul')}">
+									<space width="10px" />
+									Project dengan Vendor
+								</h:a>
+							</h:li>
+							<h:li>
+								<h:a
+									href="${p:encodeURL('/todo/system_analyst_internal.zul')}">
+									<space width="10px" />
+									Project Internal
+								</h:a>
+							</h:li>
+						</h:ul>
+					</h:li>
+				</h:ul>
+			</h:li>
+
+			<h:li class="sub-menu">
+				<h:a href="">
+					<h:i class="zmdi zmdi-compass"></h:i>
+					Development Guidelines
+				</h:a>
+
+				<h:ul>
+					<h:li class="sub-menu">
+						<h:a href="#">Project Management</h:a>
+						<h:ul>
+							<h:li>
+								<h:a
+									href="${p:encodeURL('/dev_guidelines/pm/project_list.zul')}">
+									<space width="10px" />
+									Daftar Project
+								</h:a>
+							</h:li>
+							<h:li>
+								<h:a
+									href="${p:encodeURL('/dev_guidelines/pm/project_preparation_structure.zul')}">
+									<space width="10px" />
+
+									
+									<![CDATA[Project Preparation &
+									Structure]]>
+									
+									
+								</h:a>
+							</h:li>
+						</h:ul>
+					</h:li>
+					<h:li class="sub-menu">
+						<h:a href="#">Functional</h:a>
+						<h:ul>
+							<h:li>
+								<h:a
+									href="${p:encodeURL('/dev_guidelines/functional/ui/ui_home.zul')}">
+									<space width="10px" />
+									User Interface Design
+								</h:a>
+							</h:li>
+						</h:ul>
+					</h:li>
+					<h:li class="sub-menu">
+						<h:a href="#">Technical</h:a>
+						<h:ul>
+							<h:li>
+								<h:a
+									href="${p:encodeURL('/dev_guidelines/technical/java/java_home.zul')}">
+									<space width="10px" />
+									Java Project
+								</h:a>
+							</h:li>
+							<h:li>
+								<h:a
+									href="${p:encodeURL('/dev_guidelines/technical/database/db_do.zul')}">
+									<space width="10px" />
+									Database Design
+								</h:a>
+							</h:li>
+						</h:ul>
+					</h:li>
+				</h:ul>
+			</h:li>
+
+			<h:li class="sub-menu">
+				<h:a href="#">
+					<h:i class="zmdi zmdi-assignment"></h:i>
+					Document Standard
+				</h:a>
+				<h:ul>
+					<h:li>
+						<h:a
+							href="${p:encodeURL('/doc_standard/doc_bugfix.zul')}">
+							Bug fixing
+						</h:a>
+					</h:li>
+					<h:li>
+						<h:a
+							href="${p:encodeURL('/doc_standard/doc_project.zul')}">
+							Project
+						</h:a>
+					</h:li>
+				</h:ul>
+			</h:li>
+
+			<h:li class="sub-menu">
+				<h:a href="#">
+					<h:i class="zmdi zmdi-collection-item"></h:i>
+					Tools
+				</h:a>
+				<h:ul>
+					<h:li>
+						<h:a
+							href="${p:encodeURL('/tools/java_maven_eclipse_home.zul')}">
+
+							
+							<![CDATA[Java, Maven & Eclipse]]>
+							
+							
+						</h:a>
+					</h:li>
+					<h:li>
+						<h:a
+							href="${p:encodeURL('/tools/subversion_home.zul')}">
+							Subversion (SVN)
+						</h:a>
+					</h:li>
+					<h:li>
+						<h:a href="image-logo.html">
+							Enterprise Architect (EA)
+						</h:a>
+					</h:li>
+				</h:ul>
+			</h:li>
+		</h:ul>
+	</h:aside>
+</zk>

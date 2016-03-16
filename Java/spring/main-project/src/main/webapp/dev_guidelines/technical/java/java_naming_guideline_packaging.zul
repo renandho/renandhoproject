@@ -1,0 +1,46 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<h:ul class="clist clist-check">
+		<h:li>
+			Java code convention sesuai
+			<a target="_blank"
+				href="/docs/java_code_conventions.pdf">
+				standard Oracle
+			</a>
+		</h:li>
+		<h:li>
+			Package utama adalah
+			<h:code>id.co.fifgroup</h:code>
+		</h:li>
+		<h:li>
+			Untuk standard, dapat dilihat di bawah (klik tanda panah di
+			samping text untuk expand/collapse tree)
+		</h:li>
+		<h:li>
+			Untuk keterangan masing-masing folder, hover mouse pada tree
+		</h:li>
+		<h:li>
+			Untuk contoh, dapat dilihat di tab
+			<h:a href="#navTab">Contoh</h:a>
+		</h:li>
+	</h:ul>
+	<h:p></h:p>
+	<h:p>
+		<h:h4 class="text-center">
+			<h:code>Standard</h:code>
+		</h:h4>
+	</h:p>
+	<div id="divTreeNaming"
+		apply="id.co.fifgroup.app.guidelines.controller.JavaNamingGuidelineTreeComposer">
+		<tree rows="18" id="treeNaming"
+			model="${divTreeNaming$composer.treeModel}">
+			<template name="model">
+				<treeitem tooltiptext="${each.data.tooltip}">
+					<treerow>
+						<treecell>${each.data.label}</treecell>
+					</treerow>
+				</treeitem>
+			</template>
+		</tree>
+	</div>
+</zk>

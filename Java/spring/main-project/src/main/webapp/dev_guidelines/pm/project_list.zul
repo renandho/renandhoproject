@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/shared/header.zul" />
+
+		<h:section id="main" data-layout="layout-1">
+			<include src="/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container">
+					<div sclass="row">
+						<div sclass="col-sm-12">
+							<div sclass="card z-depth-1">
+								<div sclass="card-header bgm-yellow">
+									<h:h2 class="c-indigo">
+										Daftar Project
+									</h:h2>
+								</div>
+								<div sclass="card-body card-padding"
+									id="divListProject"
+									apply="id.co.fifgroup.app.guidelines.controller.ProjectListComposer">
+									<div width="900px">
+										<listbox id="lstProject"
+											mold="paging" pageSize="20" pagingPosition="both"
+											model="${divListProject$composer.listModel}">
+											<listhead
+												menupopup="auto">
+												<listheader
+													label="System" sort="auto(systemName)" />
+												<listheader
+													label="URL SVN" width="300px" sort="auto(urlSvn)" />
+												<listheader
+													label="URL EA" width="300px" sort="auto(urlEa)" />
+											</listhead>
+											<template name="model">
+												<listitem>
+													<listcell
+														style="vertical-align: top;">
+														<h:strong>
+															${each.systemName}
+														</h:strong>
+													</listcell>
+													<listcell
+														style="vertical-align: top;">
+														${each.urlSvn}
+													</listcell>
+													<listcell
+														style="vertical-align: top;">
+														${each.urlEa}
+													</listcell>
+												</listitem>
+											</template>
+										</listbox>
+										<exporter
+											referenceId="lstProject" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</h:section>
+		</h:section>
+
+		<include src="/shared/html_body.zul" />
+	</h:body>
+</zk>

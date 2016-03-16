@@ -1,0 +1,28 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<h:ul class="clist clist-check">
+		<h:li>
+			Satu Maven Project terdiri dari satu atau lebih Maven
+			module. Setidaknya terdapat satu module main untuk digunakan
+			sebagai packaging war
+		</h:li>
+		<h:li>
+			Maven project hanya berfungsi sebagai packaging, sementara
+			business process dipisah di maven module.
+		</h:li>
+		<h:li>
+			Packaging dalam bentuk war, dimana satu war memiliki satu
+			atau lebih jar tergantung scope project. Setidaknya terdapat
+			satu module main untuk digunakan sebagai packaging war dan
+			satu module business process
+		</h:li>
+		<h:li>
+			Di masing-masing jar akan terdapat file zul, file binary
+			(class), file source (java) dan file-file pendukung lain
+		</h:li>
+		<h:li>
+			Untuk contoh, dapat dilihat di tab
+			<h:a href="#navTab">Contoh</h:a>
+		</h:li>
+	</h:ul>
+</zk>

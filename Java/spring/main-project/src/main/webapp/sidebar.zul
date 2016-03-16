@@ -1,4 +1,4 @@
-<div id="sidebar" sclass="sidebar" apply="com.fif.fifbook.main.controller.SidebarComposer">
+<div id="sidebar" sclass="sidebar" apply="com.shop.main.controller.SidebarComposer">
 	<!-- Shortcuts Button-->
 	<div class="shortcuts">
 		<!-- Display when expanded -->

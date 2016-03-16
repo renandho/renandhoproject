@@ -1,0 +1,116 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-green">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-check p-r-10">
+						</h:i>
+						<h:strong>
+							Do : inquiry sebagai landing page
+						</h:strong>
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<div sclass="row">
+						<div sclass="col-sm-6">
+							<tree>
+								<treechildren>
+									<treeitem open="true">
+										<treerow>
+											<treecell>Menu</treecell>
+										</treerow>
+										<treechildren>
+											<treeitem>
+												<treerow>
+													<treecell>
+														<a
+															href="navigation/user_inquiry_right.zul">
+															User
+															Maintenance
+														</a>
+													</treecell>
+												</treerow>
+											</treeitem>
+										</treechildren>
+									</treeitem>
+								</treechildren>
+							</tree>
+						</div>
+						<div sclass="col-sm-6">
+							<h:ul class="clist clist-check">
+								<h:li>
+									Pada tree menu, hanya ada satu link
+									ke form inquiry
+								</h:li>
+							</h:ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-red">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-close p-r-10">
+						</h:i>
+						Don't
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<div sclass="row">
+						<div sclass="col-sm-6">
+							<tree>
+								<treechildren>
+									<treeitem open="true">
+										<treerow>
+											<treecell>Menu</treecell>
+										</treerow>
+										<treechildren>
+											<treeitem>
+												<treerow>
+													<treecell>
+														<a
+															href="navigation/user_inquiry_wrong.zul">
+															User
+															Maintenance
+															- Inquiry
+														</a>
+													</treecell>
+												</treerow>
+											</treeitem>
+											<treeitem>
+												<treerow>
+													<treecell>
+														<a
+															href="navigation/user_entry_wrong.zul">
+															User
+															Maintenance
+															- Entry
+														</a>
+													</treecell>
+												</treerow>
+											</treeitem>
+										</treechildren>
+									</treeitem>
+								</treechildren>
+							</tree>
+						</div>
+						<div sclass="col-sm-6">
+							<h:ul class="clist clist-angle">
+								<h:li>
+									Pada tree menu, ada dua link
+									(satu ke form inquiry, satu ke form entry)
+								</h:li>
+							</h:ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

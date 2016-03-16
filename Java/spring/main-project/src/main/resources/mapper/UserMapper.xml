@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.fif.fifbook.main.mapper.UserMapper">
-
-
-
+<mapper namespace="com.shop.main.mapper.UserMapper">
 	<select id="getCountMatchUserByExample" resultType="Integer">
 		select
 		count(user_id) as count_person_id
@@ -12,7 +9,7 @@
 		#{strUserId, jdbcType=VARCHAR}
 	</select>
 
-	<select id="validateLogin" parameterType="com.fif.fifbook.main.dto.UserDTO"
+	<select id="validateLogin" parameterType="com.shop.main.dto.UserDTO"
 		resultType="Integer">
 		select count(user_id) as count_person_id
 		from tblusers
@@ -22,7 +19,7 @@
 		user_password=#{strPassword, jdbcType=VARCHAR}
 	</select>
 
-	<select id="getUserNameById" parameterType="com.fif.fifbook.main.dto.UserDTO"
+	<select id="getUserNameById" parameterType="com.shop.main.dto.UserDTO"
 		resultType="String">
 		select user_name
 		from tblusers
@@ -30,11 +27,11 @@
 		jdbcType=VARCHAR}
 	</select>
 
-	<insert id="insertDataUser" parameterType="com.fif.fifbook.main.dto.UserDTO">
+	<insert id="insertDataUser" parameterType="com.shop.main.dto.UserDTO">
 		insert into
-		tblusers (user_name, user_password)
-		values (#{strUsername, jdbcType=VARCHAR},#{strPassword, jdbcType=VARCHAR})
+		tblusers
+		(user_name, user_password)
+		values (#{strUsername,
+		jdbcType=VARCHAR},#{strPassword, jdbcType=VARCHAR})
 	</insert>
-
-
 </mapper>

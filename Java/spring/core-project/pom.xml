@@ -122,7 +122,11 @@
 			<groupId>org.zkoss.theme</groupId>
 			<artifactId>sapphire</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.zkoss.zk</groupId>
+			<artifactId>zhtml</artifactId>
+			<version>${zkoss.version}</version>
+		</dependency>
 		<!-- Logging Dependencies -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -174,11 +178,9 @@
 			<scope>compile</scope> </dependency> -->
 
 		<dependency>
-			<groupId>com.mysql</groupId>
+			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.6</version>
-			<type>jar</type>
-			<scope>compile</scope>
+			<version>5.1.22</version>
 		</dependency>
 
 		<!-- Utilities -->

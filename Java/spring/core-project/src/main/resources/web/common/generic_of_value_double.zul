@@ -1,5 +1,5 @@
 <window id="winGenericDoubleLov" title="${labels.common.listOfZipCode}" border="normal" width="500px" height="650px" closable="true"
-apply="com.fif.hcms.core.controller.ListOfValueDoubleComposer">
+apply="com.shop.core.controller.ListOfValueDoubleComposer">
 <groupbox>
 	<caption label="Filters" />
 	<grid>
@@ -10,11 +10,11 @@ apply="com.fif.hcms.core.controller.ListOfValueDoubleComposer">
 		<rows>
 			<row>
 				<label id="lblSearchText1" />
-				<textbox id="txtCode" use="com.fif.hcms.core.ui.Searchtextbox"/>
+				<textbox id="txtCode" use="com.shop.core.ui.Searchtextbox"/>
 			</row>
 			<row>
 				<label id="lblSearchText2" />
-				<textbox id="txtName" use="com.fif.hcms.core.ui.Searchtextbox"/>
+				<textbox id="txtName" use="com.shop.core.ui.Searchtextbox"/>
 			</row>
 			<row>
 				<label />

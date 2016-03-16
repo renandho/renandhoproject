@@ -37,6 +37,6 @@
 		<constructor-arg index="0" ref="sqlSessionFactory" />
 	</bean>
 	
-	<bean class="com.fif.hcms.core.dao.mybatis.StatementUtil"/>
+	<bean class="com.shop.core.dao.mybatis.StatementUtil"/>
 
 </beans>

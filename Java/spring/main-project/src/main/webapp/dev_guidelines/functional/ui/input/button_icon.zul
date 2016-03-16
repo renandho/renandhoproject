@@ -1,0 +1,57 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-green">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-check p-r-10">
+						</h:i>
+						<h:strong>
+							Do : button menggunakan icon
+						</h:strong>
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<div sclass="row text-center">
+						<div sclass="col-sm-12">
+							<button image="/icons/Search-16.png">
+								Find
+							</button>
+							<space width="10px" />
+							<button image="/icons/Download-16.png">
+								Download
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-red">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-close p-r-10">
+						</h:i>
+						Don't
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<div sclass="row text-center">
+						<div sclass="col-sm-12">
+							<button>
+								Find
+							</button>
+							<space width="10px" />
+							<button>
+								Download
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

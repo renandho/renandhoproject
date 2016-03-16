@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/shared/header.zul" />
+
+		<h:section id="main" data-layout="layout-1">
+			<include src="/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container">
+					<include src="/shared/todo_dev_env_only.zul" />
+					<div sclass="row">
+						<div sclass="col-sm-12">
+							<div sclass="block-header">
+								<h:h2>
+									<h:i
+										class="zmdi zmdi-account p-r-10 zmdi-hc-lg">
+									</h:i>
+									Business Analyst To-Do List (Project
+									dengan Vendor)
+								</h:h2>
+							</div>
+						</div>
+					</div>
+
+					<div sclass="row">
+						<div sclass="col-sm-6">
+							<div sclass="card z-depth-1">
+								<div sclass="card-header bgm-black">
+									<h:h2>01 - User Requirement</h:h2>
+								</div>
+								<div sclass="card-body card-padding">
+									<h:ul class="clist clist-check">
+										<h:li>
+											Bersama vendor, menggali
+											requirement dari user dan
+											memberikan alternatif
+											requirement yang mungkin
+											belum tertangkap oleh user
+										</h:li>
+										<h:li>
+											Memastikan isi dan format
+											User Requirement sesuai
+											standard
+										</h:li>
+										<h:li>
+											Sign off User Requirement
+										</h:li>
+									</h:ul>
+								</div>
+							</div>
+						</div>
+
+						<div sclass="col-sm-6">
+							<div sclass="card z-depth-1">
+								<div sclass="card-header bgm-teal">
+									<h:h2>02 - Functional Design</h:h2>
+								</div>
+								<div sclass="card-body card-padding">
+									<h:ul class="clist clist-check">
+										<h:li>
+											Review Functional Design
+											dan memberikan alternatif
+											solusi functional
+											berdasarkan User Requirement
+										</h:li>
+										<h:li>
+											Memastikan bahwa semua
+											requirement sudah
+											didetailkan di Functional
+											Design
+										</h:li>
+										<h:li>
+											Review dan memberikan
+											alternatif solusi mengenai
+											system integration
+											(keterkaitan antar modul
+											atau system)
+										</h:li>
+										<h:li>
+											Memastikan isi dan format
+											Functional Design sesuai
+											standard
+										</h:li>
+										<h:li>
+											Memastikan design user
+											interface sesuai standard
+										</h:li>
+										<h:li>
+											Bila diperlukan prototyping
+											user interface (display
+											screen aktual yang akan
+											tampil di user),
+											berkoordinasi dengan vendor
+											untuk proses pembuatan
+											prototyping dan approval ke
+											user
+										</h:li>
+										<h:li>
+											Sign off Functional Design
+										</h:li>
+									</h:ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div sclass="row">
+						<div sclass="col-sm-6">
+							<div sclass="card z-depth-1">
+								<div sclass="card-header bgm-green">
+									<h:h2>03 - Technical Design</h:h2>
+								</div>
+								<div sclass="card-body card-padding">
+									<h:ul class="clist clist-check">
+										<h:li>
+											Membantu System Analyst,
+											terutama bila ada issue
+											teknis yang menyangkut
+											ketidakjelasan atau
+											kemungkinan perubahan
+											functional system
+										</h:li>
+									</h:ul>
+								</div>
+							</div>
+						</div>
+
+						<div sclass="col-sm-6">
+							<div sclass="card z-depth-1">
+								<div sclass="card-header bgm-orange">
+									<h:h2>04 - Development</h:h2>
+								</div>
+								<div sclass="card-body card-padding">
+									<h:ul class="clist clist-check">
+										<h:li>
+											Screening hasil development
+											: memastikan form yang
+											dibuat vendor sudah sesuai
+											dengan Functional Design
+											(field, layout)
+										</h:li>
+										<h:li>
+											Screening hasil development
+											: memastikan security menu
+											sudah sesuai dengan
+											Functional Design (struktur
+											menu, nama menu, siapa yang
+											boleh akses)
+										</h:li>
+										<h:li>
+											Sign off document Screening
+										</h:li>
+									</h:ul>
+									<h:p></h:p>
+									<h:p>
+										Catatan : Screening dapat
+										dilakukan System Analyst atau
+										Business Analyst, tergantung
+										availability
+									</h:p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div sclass="row">
+						<div sclass="col-sm-6">
+							<div sclass="card z-depth-1">
+								<div sclass="card-header bgm-pink">
+									<h:h2>05 - Migrasi Data</h:h2>
+								</div>
+								<div sclass="card-body card-padding">
+									<h:ul class="clist clist-check">
+										<h:li>
+											Membantu System Analyst
+											terkait data template dan
+											content
+										</h:li>
+									</h:ul>
+								</div>
+							</div>
+						</div>
+						<div sclass="col-sm-6">
+							<div sclass="card z-depth-1">
+								<div sclass="card-header bgm-indigo">
+									<h:h2>06 - QA</h:h2>
+								</div>
+								<div sclass="card-body card-padding">
+									<h:ul class="clist clist-check">
+										<h:li>
+											Support QA untuk pengerjaan
+											ticket
+										</h:li>
+									</h:ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div sclass="row">
+						<div sclass="col-sm-6">
+							<div sclass="card z-depth-1">
+								<div sclass="card-header bgm-brown">
+									<h:h2>07 - UAT</h:h2>
+								</div>
+								<div sclass="card-body card-padding">
+									<h:ul class="clist clist-check">
+										<h:li>
+											Mempersiapkan environment
+											dan scenario UAT
+										</h:li>
+										<h:li>
+											Bersama user memastikan
+											bahwa yang system dibuat
+											sudah sesuai dengan scope
+											pada functional design
+										</h:li>
+										<h:li>
+											Sign off dokumen UAT
+										</h:li>
+									</h:ul>
+								</div>
+							</div>
+						</div>
+						<div sclass="col-sm-6">
+							<div sclass="card z-depth-1">
+								<div
+									sclass="card-header bgm-deeporange">
+									<h:h2>08 - Deployment</h:h2>
+								</div>
+								<div sclass="card-body card-padding">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</h:section>
+		</h:section>
+
+		<include src="/shared/html_body.zul" />
+	</h:body>
+</zk>

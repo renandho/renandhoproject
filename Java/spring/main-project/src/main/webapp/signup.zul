@@ -2,7 +2,7 @@
 <zk>
 	<window id="signupWindow" title="Sign Up, only for Employee" border="solid"
 	
-		apply="com.fif.fifbook.main.controller.SignupController" width="400px" height="300px">
+		apply="com.shop.main.controller.SignupController" width="400px" height="300px">
 		<grid>
 			<columns>
 				<column width="120px" />

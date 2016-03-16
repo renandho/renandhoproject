@@ -1,0 +1,171 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-green">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-check p-r-10">
+						</h:i>
+						<h:strong>
+							Do : employee number dan nama
+						</h:strong>
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<div sclass="row">
+						<div sclass="col-sm-4 text-right">
+							<label value="Nama" />
+							<label value="*" style="color: red;" />
+						</div>
+						<div sclass="col-sm-8">
+							<listbox mold="select">
+								<listitem>
+									<listcell
+										label="12345 - Nama Employee 1" />
+								</listitem>
+								<listitem>
+									<listcell
+										label="22345 - Nama Employee 2" />
+								</listitem>
+								<listitem>
+									<listcell
+										label="32345 - Nama Employee 3" />
+								</listitem>
+								<listitem>
+									<listcell
+										label="42345 - Nama Employee 4" />
+								</listitem>
+							</listbox>
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-1"></div>
+						<div sclass="col-sm-11">
+							<h:ul class="clist clist-check">
+								<h:li>
+									Berlaku untuk semua jenis input
+									(bandbox, popup, LOV, dll)
+								</h:li>
+								<h:li>
+									Employee number dan nama, merupakan
+									satu kesatuan
+								</h:li>
+								<h:li>
+									Urut employee number (ascending)
+								</h:li>
+							</h:ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-red">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-close p-r-10">
+						</h:i>
+						Don't
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<div sclass="row">
+						<div sclass="col-sm-4 text-right">
+							<label value="Nama" />
+							<label value="*" style="color: red;" />
+						</div>
+						<div sclass="col-sm-8">
+							<listbox mold="select">
+								<listitem>
+									<listcell label="12345" />
+								</listitem>
+								<listitem>
+									<listcell label="22345" />
+								</listitem>
+								<listitem>
+									<listcell label="32345" />
+								</listitem>
+								<listitem>
+									<listcell label="42345" />
+								</listitem>
+							</listbox>
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-2"></div>
+						<div sclass="col-sm-10">
+							<h:ul class="clist clist-angle">
+								<h:li>Hanya employee number saja</h:li>
+							</h:ul>
+						</div>
+					</div>
+					<separator bar="true" />
+					<div sclass="row p-t-15">
+						<div sclass="col-sm-4 text-right">
+							<label value="Nama" />
+							<label value="*" style="color: red;" />
+						</div>
+						<div sclass="col-sm-8">
+							<listbox mold="select">
+								<listitem>
+									<listcell label="Nama Employee 1" />
+								</listitem>
+								<listitem>
+									<listcell label="Nama Employee 2" />
+								</listitem>
+								<listitem>
+									<listcell label="Nama Employee 3" />
+								</listitem>
+								<listitem>
+									<listcell label="Nama Employee 4" />
+								</listitem>
+							</listbox>
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-2"></div>
+						<div sclass="col-sm-10">
+							<h:ul class="clist clist-angle">
+								<h:li>Hanya nama saja</h:li>
+							</h:ul>
+						</div>
+					</div>
+					<separator bar="true" />
+					<div sclass="row p-t-15">
+						<div sclass="col-sm-4 text-right">
+							<label value="Nama" />
+							<label value="*" style="color: red;" />
+						</div>
+						<div sclass="col-sm-8">
+							<listbox mold="select">
+								<listitem>
+									<listcell label="32345 - Nama Employee 3" />
+								</listitem>
+								<listitem>
+									<listcell label="22345 - Nama Employee 2" />
+								</listitem>
+								<listitem>
+									<listcell label="12345 - Nama Employee 1" />
+								</listitem>
+								<listitem>
+									<listcell label="42345 - Nama Employee 4" />
+								</listitem>
+							</listbox>
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-2"></div>
+						<div sclass="col-sm-10">
+							<h:ul class="clist clist-angle">
+								<h:li>Tidak urut</h:li>
+							</h:ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

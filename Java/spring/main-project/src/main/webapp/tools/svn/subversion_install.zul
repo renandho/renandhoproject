@@ -1,0 +1,84 @@
+<?page title=My Shop contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<h:ul class="clist clist-angle">
+		<h:li>
+			Kalau penasaran apa itu subversion (SVN), baca di
+			<a
+				href="https://www.google.com/search?q=what+is+svn+subversion"
+				target="_blank">
+				sini
+			</a>
+		</h:li>
+		<h:li>Subversion server tidak usah diinstall</h:li>
+	</h:ul>
+	<h:p></h:p>
+
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header ch-alt">
+					<h:h2>Windows Explorer</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ol>
+						<h:li>
+							Download TortoiseSVN di
+							<a
+								href="https://tortoisesvn.net/downloads.html" target="_blank">
+								sini
+							</a>
+						</h:li>
+						<h:li>
+							Install TortoiseSVN. Kalau tidak punya
+							password administrator untuk install,
+							hubungi team IT yang berwenang
+						</h:li>
+						<h:li>Restart Windows</h:li>
+						<h:li>
+							Klik kanan di Windows Explorer, akan ada
+							menu
+							<h:strong>TortoiseSVN</h:strong>
+							di popup
+						</h:li>
+					</h:ol>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header ch-alt">
+					<h:h2>Eclipse</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ol>
+						<h:li>
+							Buka Eclipse nya, kemudian install
+							Subclipse.
+							<a
+								href="https://marketplace.eclipse.org/content/subclipse"
+								target="_blank">
+								Caranya.
+							</a>
+							<h:br />
+							Kalau tidak bisa connect internet dari
+							Eclipse,
+							<a
+								href="https://www.google.com/search?q=eclipse+proxy+settings"
+								target="_blank">
+								setting dulu
+							</a>
+							proxy nya
+						</h:li>
+						<h:li>
+							Buka SVN Window dari Menu
+							<h:strong>
+								Window - Perspective - Open Perspective
+								- SVN Repository Exploring
+							</h:strong>
+						</h:li>
+					</h:ol>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/shared/header.zul" />
+
+		<h:section id="main" data-layout="layout-1">
+			<include src="/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container">
+					<div sclass="row">
+						<div sclass="col-sm-12">
+							<div sclass="block-header">
+								<h:h2>
+									<h:i
+										class="zmdi zmdi-edit p-r-10 zmdi-hc-lg">
+									</h:i>
+									UI Design Guideline - Komponen Input
+									<space width="25px" />
+									<a href="ui_home.zul">Kembali</a>
+								</h:h2>
+							</div>
+						</div>
+					</div>
+					<include src="input/text_input_width.zul" />
+					<include src="input/input_mandatory.zul" />
+					<include src="input/input_maxlength.zul" />
+					<include src="input/input_format.zul" />
+					<include src="input/input_employee_number.zul" />
+					<include src="input/button_icon.zul" />
+				</div>
+			</h:section>
+		</h:section>
+
+		<include src="/shared/html_body.zul" />
+	</h:body>
+</zk>

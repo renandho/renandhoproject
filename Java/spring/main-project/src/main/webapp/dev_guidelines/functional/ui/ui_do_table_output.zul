@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/shared/header.zul" />
+
+		<h:div id="menu" />
+		<h:section id="main" data-layout="layout-1">
+			<include src="/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container">
+					<div sclass="block-header">
+						<h:h2>
+							<h:i
+								class="zmdi zmdi-grid p-r-10 zmdi-hc-lg">
+							</h:i>
+							UI Design Guideline - Tabel / List Data
+							(Output)
+							<space width="25px" />
+							<a href="ui_home.zul">Kembali</a>
+						</h:h2>
+					</div>
+
+					<div sclass="card z-depth-1" id="menu">
+						<div sclass="card-header bgm-brown">
+							<h:h2 id="navTab">Menu</h:h2>
+						</div>
+						<div sclass="card-body card-padding">
+							<h:a href="#header_sort_popup"
+								class="btn bgm-cyan">
+								Header kolom
+							</h:a>
+							<space width="20px" />
+							<h:a href="#export_to_xls_pdf"
+								class="btn bgm-green">
+								Export to Excel/PDF
+							</h:a>
+							<space width="20px" />
+							<h:a href="#action_on_left"
+								class="btn bgm-deeporange">
+								Action di kiri
+							</h:a>
+							<space width="20px" />
+							<h:a href="#pagination"
+								class="btn bgm-deeppurple">
+								Pagination
+							</h:a>
+							<space width="20px" />
+							<h:a href="#header_with_invoice"
+								class="btn bgm-pink">
+								Informasi invoice / payment
+							</h:a>
+							<space width="20px" />
+							<h:a href="#employee_number"
+								class="btn bgm-teal">
+								Employee number / name
+							</h:a>
+						</div>
+					</div>
+
+					<h:div id="header_sort_popup">
+						<include
+							src="/dev_guidelines/functional/ui/table/header_sort_popup.zul" />
+						<h:a href="#menu" class="btn btn-info">
+							<h:i
+								class="zmdi zmdi-long-arrow-left p-r-10">
+							</h:i>
+							Kembali ke Menu
+						</h:a>
+					</h:div>
+
+					<h:div id="export_to_xls_pdf" class="p-t-25">
+						<include
+							src="/dev_guidelines/functional/ui/table/export_to_xls_pdf.zul" />
+						<h:a href="#menu" class="btn bgm-green">
+							<h:i
+								class="zmdi zmdi-long-arrow-left p-r-10">
+							</h:i>
+							Kembali ke Menu
+						</h:a>
+					</h:div>
+
+					<h:div id="action_on_left" class="p-t-25">
+						<include
+							src="/dev_guidelines/functional/ui/table/action_on_left.zul" />
+						<h:a href="#menu" class="btn bgm-deeporange">
+							<h:i
+								class="zmdi zmdi-long-arrow-left p-r-10">
+							</h:i>
+							Kembali ke Menu
+						</h:a>
+					</h:div>
+
+					<h:div id="pagination" class="p-t-25">
+						<include
+							src="/dev_guidelines/functional/ui/table/pagination.zul" />
+						<h:a href="#menu" class="btn bgm-deeppurple">
+							<h:i
+								class="zmdi zmdi-long-arrow-left p-r-10">
+							</h:i>
+							Kembali ke Menu
+						</h:a>
+					</h:div>
+
+					<h:div id="header_with_invoice" class="p-t-25">
+						<include
+							src="/dev_guidelines/functional/ui/table/header_with_invoice.zul" />
+						<h:a href="#menu" class="btn bgm-pink">
+							<h:i
+								class="zmdi zmdi-long-arrow-left p-r-10">
+							</h:i>
+							Kembali ke Menu
+						</h:a>
+					</h:div>
+
+					<h:div id="employee_number" class="p-t-25">
+						<include
+							src="/dev_guidelines/functional/ui/table/employee_number.zul" />
+						<h:a href="#menu" class="btn bgm-teal">
+							<h:i
+								class="zmdi zmdi-long-arrow-left p-r-10">
+							</h:i>
+							Kembali ke Menu
+						</h:a>
+					</h:div>
+				</div>
+			</h:section>
+		</h:section>
+
+		<include src="/shared/html_body.zul" />
+	</h:body>
+</zk>

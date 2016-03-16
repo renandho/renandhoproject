@@ -1,0 +1,174 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<div id="divEmployeeNumber"
+		apply="id.co.fifgroup.app.ui.table.controller.EmployeeNumberComposer">
+		<div sclass="row">
+			<div sclass="col-sm-12">
+				<div sclass="card z-depth-1">
+					<div sclass="card-header bgm-teal">
+						<h:h2 sclass="text-center">
+							<h:strong>Employee Number / Name</h:strong>
+						</h:h2>
+					</div>
+					<div sclass="card-body card-padding" id="myDivDo">
+						<h:div role="tabpanel">
+							<h:ul class="tab-nav" role="tablist"
+								data-tab-color="cyan">
+								<h:li class="active">
+									<h:a href="#tabDo_employee_number_A"
+										class="c-green" aria-controls="tabDo_employee_number_A"
+										role="tab" data-toggle="tab">
+										<h:i
+											class="zmdi zmdi-hc-lg zmdi-check p-r-10">
+										</h:i>
+										Do
+									</h:a>
+								</h:li>
+								<h:li role="presentation">
+									<h:a
+										href="#tabDont_employee_number_A" class="c-red"
+										aria-controls="tabDont_employee_number_A" role="tab"
+										data-toggle="tab">
+										<h:i
+											class="zmdi zmdi-hc-lg zmdi-close p-r-10">
+										</h:i>
+										Don't
+									</h:a>
+								</h:li>
+							</h:ul>
+							<h:div class="tab-content">
+								<h:div role="tabpanel"
+									class="tab-pane active animated bounceIn in"
+									id="tabDo_employee_number_A">
+									<h:p>
+										<h:ul
+											class="clist clist-check">
+											<h:li>
+												Employee number dan nama
+												merupakan satu kesatuan
+											</h:li>
+										</h:ul>
+									</h:p>
+
+									<h:h5>
+										Alternatif 1 : dalam dua kolom
+									</h:h5>
+									<div width="550px">
+										<listbox id="lstDataDo_B"
+											hflex="min">
+											<listhead
+												menupopup="auto">
+												<listheader
+													label="Action" hflex="min" />
+												<listheader label="NPK"
+													sort="auto(employeeNumber)" hflex="min" />
+												<listheader label="Nama"
+													sort="auto(name)" hflex="min" />
+												<listheader label="Gaji"
+													sort="auto(salary)" align="right" hflex="min" />
+												<listheader
+													label="Last update by" hflex="min" />
+												<listheader
+													label="Last update date" hflex="min" />
+											</listhead>
+										</listbox>
+										<exporter
+											referenceId="lstDataDo_B" />
+									</div>
+
+									<h:br />
+									<h:h5>
+										Alternatif 2 : dalam satu kolom
+									</h:h5>
+									<div width="550px">
+										<listbox id="lstDataDo_A"
+											hflex="min">
+											<listhead
+												menupopup="auto">
+												<listheader
+													label="Action" hflex="min" />
+												<listheader label="Nama"
+													sort="auto(name)" hflex="min" />
+												<listheader label="Gaji"
+													sort="auto(salary)" align="right" hflex="min" />
+												<listheader
+													label="Last update by" hflex="min" />
+												<listheader
+													label="Last update date" hflex="min" />
+											</listhead>
+										</listbox>
+										<exporter
+											referenceId="lstDataDo_A" />
+									</div>
+								</h:div>
+
+
+								<h:div role="tabpanel"
+									class="tab-pane animated bounceIn"
+									id="tabDont_employee_number_A">
+									<h:p>
+										<h:ul
+											class="clist clist-angle">
+											<h:li>
+												Hanya menampilkan employee number
+											</h:li>
+										</h:ul>
+									</h:p>
+
+									<div width="400px">
+										<listbox id="lstDataDont_A"
+											hflex="min">
+											<listhead>
+												<listheader
+													label="Action" hflex="min" />
+												<listheader label="NPK"
+													sort="auto(employeeNumber)" hflex="min" />
+												<listheader label="Gaji"
+													sort="auto(salary)" align="right" hflex="min" />
+												<listheader
+													label="Last update by" hflex="min" />
+												<listheader
+													label="Last update date" hflex="min" />
+											</listhead>
+										</listbox>
+										<exporter
+											referenceId="lstDataDont_A" />
+									</div>
+
+									<h:br />
+
+									<h:p>
+										<h:ul
+											class="clist clist-angle">
+											<h:li>Hanya menampilkan nama</h:li>
+										</h:ul>
+									</h:p>
+
+									<div width="500px">
+										<listbox id="lstDataDont_B"
+											hflex="min">
+											<listhead>
+												<listheader
+													label="Action" hflex="min" />
+												<listheader label="Nama"
+													sort="auto(name)" hflex="min" />
+												<listheader label="Gaji"
+													sort="auto(salary)" align="right" hflex="min" />
+												<listheader
+													label="Last update by" hflex="min" />
+												<listheader
+													label="Last update date" hflex="min" />
+											</listhead>
+										</listbox>
+										<exporter
+											referenceId="lstDataDont_B" />
+									</div>
+								</h:div>
+							</h:div>
+						</h:div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

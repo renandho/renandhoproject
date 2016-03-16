@@ -1,0 +1,44 @@
+<?page title=My Shop contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<h:ul class="clist clist-check">
+		<h:li>
+			Revert = membatalkan perubahan pada local workspace
+		</h:li>
+	</h:ul>
+	<h:p></h:p>
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header ch-alt">
+					<h:h2>Windows Explorer</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ol>
+						<h:li>
+							Klik kanan pada file / folder SVN - Tortoise
+							SVN - Revert
+						</h:li>
+					</h:ol>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header ch-alt">
+					<h:h2>Eclipse</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ol>
+						<h:li>
+							Klik kanan pada file/folder SVN - Team -
+							Revert
+						</h:li>
+					</h:ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<popup id="popSampleSvnComment">
+		<include src="/shared/sample_svn_comment.zul" />
+	</popup>
+</zk>

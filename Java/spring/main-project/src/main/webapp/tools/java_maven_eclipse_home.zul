@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/shared/header.zul" />
+
+		<h:section id="main" data-layout="layout-1">
+			<include src="/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container">
+					<div sclass="card z-depth-1">
+						<div sclass="card-header bgm-green">
+							<h:h2 id="navTab">
+								<![CDATA[Java, Maven & Eclipse]]>
+							</h:h2>
+						</div>
+						<div sclass="card-body card-padding">
+							<h:div role="tabpanel">
+								<h:ul class="tab-nav" role="tablist"
+									data-tab-color="green">
+									<h:li class="active">
+										<h:a href="#tabJava"
+											aria-controls="tabJava" role="tab" data-toggle="tab">
+											Java
+										</h:a>
+									</h:li>
+									<h:li role="presentation">
+										<h:a href="#tabMaven"
+											aria-controls="tabMaven" role="tab" data-toggle="tab">
+											Maven
+										</h:a>
+									</h:li>
+									<h:li role="presentation">
+										<h:a href="#tabEclipse"
+											aria-controls="tabEclipse" role="tab" data-toggle="tab">
+											Eclipse
+										</h:a>
+									</h:li>
+								</h:ul>
+								<h:div class="tab-content">
+									<h:div role="tabpanel"
+										class="tab-pane active animated fadeIn in" id="tabJava">
+										<include src="java/java_se.zul" />
+									</h:div>
+									<h:div role="tabpanel"
+										class="tab-pane animated fadeIn" id="tabMaven">
+										<include
+											src="java/java_maven.zul" />
+									</h:div>
+									<h:div role="tabpanel"
+										class="tab-pane animated fadeIn" id="tabEclipse">
+										<include
+											src="java/java_eclipse.zul" />
+									</h:div>
+								</h:div>
+							</h:div>
+						</div>
+					</div>
+				</div>
+			</h:section>
+		</h:section>
+
+		<include src="/shared/html_body.zul" />
+	</h:body>
+</zk>

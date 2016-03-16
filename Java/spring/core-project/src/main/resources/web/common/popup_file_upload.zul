@@ -1,4 +1,4 @@
-<window id="winFileAttachment" title="${labels.upload.fileAttachments}" width="500px" border="normal" apply="com.fif.hcms.core.upload.PopupFileUploadComposer" closable="true">
+<window id="winFileAttachment" title="${labels.upload.fileAttachments}" width="500px" border="normal" apply="com.shop.core.upload.PopupFileUploadComposer" closable="true">
 <listbox id="lstMedia">
 	<listhead>
 		<listheader label="File" />

@@ -1,0 +1,100 @@
+<?page title=My Shop contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<h:ul class="clist clist-check">
+		<h:li>
+			Commit = refresh server workspace dengan local workspace
+			(jika ada file local yang lebih update)
+		</h:li>
+		<h:li>
+			Jika ada file yang conflict, harus direkonsiliasi manual
+		</h:li>
+		<h:li>
+			<h:strong>Kapan melakukan commit?</h:strong>
+			<h:ul class="clist clist-angle">
+				<h:li>Jika sudah selesai satu fungsi / project</h:li>
+				<h:li>Tidak boleh ada error compile</h:li>
+			</h:ul>
+		</h:li>
+	</h:ul>
+	<h:p></h:p>
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header ch-alt">
+					<h:h2>Windows Explorer</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ol>
+						<h:li>
+							Commit dilakukan untuk banyak file
+							sekaligus, per satu nomor ticket. Jadi jika
+							ticket 1234567890 mengubah file A.java,
+							B.zul, dan C.xml, maka commit hanya
+							dilakukan satu kali atas tiga file tersebut
+						</h:li>
+						<h:li>
+							Pilih file-file / folder yang akan di-commit
+						</h:li>
+						<h:li>
+							Untuk file-file baru :
+							<h:ol>
+								<h:li>
+									Klik kanan pada file/folder SVN -
+									SVN Add
+								</h:li>
+								<h:li>
+									Klik kanan pada file/folder SVN -
+									SVN Commit
+								</h:li>
+							</h:ol>
+						</h:li>
+						<h:li>
+							Untuk file yang sudah ada sebelumnya : Klik
+							kanan pada file/folder SVN - SVN Commit
+						</h:li>
+						<h:li>
+							Saat commit, comment dengan menyertakan
+							nomor ticket, tanggal perubahan, dan PIC
+							yang melakukan perubahan.
+							<a popup="popSampleSvnComment">Contoh</a>
+						</h:li>
+					</h:ol>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header ch-alt">
+					<h:h2>Eclipse</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ol>
+						<h:li>
+							Commit dilakukan untuk banyak file
+							sekaligus, per satu nomor ticket. Jadi jika
+							ticket 1234567890 mengubah file A.java,
+							B.zul, dan C.xml, maka commit hanya
+							dilakukan satu kali atas tiga file tersebut
+						</h:li>
+						<h:li>
+							Pilih file-file / folder yang akan di-commit
+						</h:li>
+						<h:li>
+							Klik kanan pada file/folder SVN - Team -
+							Commit
+						</h:li>
+						<h:li>
+							Saat commit, comment dengan menyertakan
+							nomor ticket, tanggal perubahan, dan PIC
+							yang melakukan perubahan.
+							<a popup="popSampleSvnComment">Contoh</a>
+						</h:li>
+					</h:ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<popup id="popSampleSvnComment">
+		<include src="/shared/sample_svn_comment.zul" />
+	</popup>
+</zk>

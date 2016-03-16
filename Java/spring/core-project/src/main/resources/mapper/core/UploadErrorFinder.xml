@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.fif.hcms.core.finder.UploadErrorFinder">
+<mapper namespace="com.shop.core.finder.UploadErrorFinder">
 
-	<resultMap type="com.fif.hcms.core.domain.UploadError" id="BaseResultMap">
+	<resultMap type="com.shop.core.domain.UploadError" id="BaseResultMap">
 		<id column="ERROR_ID" property="errorId" jdbcType="DECIMAL"/>
 		<result column="UPLOAD_ID" property="uploadId" jdbcType="DECIMAL"/>
 		<result column="ROW_NUMBER" property="rowNumber" jdbcType="DECIMAL"/>
 		<result column="RAW_DATA" property="rawData" jdbcType="VARCHAR"/>
 		<result column="ERROR_MESSAGE" property="errorMessage" jdbcType="VARCHAR"/>
-		<result column="SOURCE" property="source" jdbcType="VARCHAR" javaType="com.fif.hcms.core.constant.UploadErrorStatus"/>
+		<result column="SOURCE" property="source" jdbcType="VARCHAR" javaType="com.shop.core.constant.UploadErrorStatus"/>
 		<result column="IS_CLOSED" property="isClosed" jdbcType="DECIMAL"/>
 		<result column="CREATED_BY" property="createdBy" jdbcType="DECIMAL"/>
 		<result column="CREATION_DATE" property="creationDate" jdbcType="TIMESTAMP"/>

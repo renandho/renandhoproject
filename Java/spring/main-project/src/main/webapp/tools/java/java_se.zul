@@ -1,0 +1,41 @@
+<?page title=My Shop contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<h:ol>
+		<h:li>
+			Download java di
+			<a target="_blank"
+				href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">
+				sini
+			</a>
+			<h:br />
+			<div sclass="c-red">
+				Catatan : Per Februari 2016, Java yang dipakai di
+				FIFGroup adalah Java 7, jadi kalau tidak ada installer
+				nya di
+				<a target="_blank"
+					href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">
+					situs tadi
+				</a>
+				, cari installer di internal FIFGroup
+			</div>
+		</h:li>
+		<h:li>
+			Install java. Kalau tidak punya password administrator untuk
+			install, hubungi team IT yang berwenang
+		</h:li>
+		<h:li>
+			Set environment variables JAVA_HOME.
+			<a target="_blank"
+				href="https://www.google.com/search?q=set+java+home">
+				Caranya
+			</a>
+		</h:li>
+		<h:li>
+			Tambahkan %JAVA_HOME%/bin di environment variable.
+			<a target="_blank"
+				href="https://www.google.com/search?q=set+windows+environment+variable+path">
+				Caranya
+			</a>
+		</h:li>
+	</h:ol>
+</zk>

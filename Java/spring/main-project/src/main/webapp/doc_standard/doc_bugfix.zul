@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/shared/header.zul" />
+
+		<h:section id="main" data-layout="layout-1">
+			<include src="/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container">
+					<div sclass="card z-depth-1">
+						<div sclass="card-header bgm-orange">
+							<h:h2>Document - bug fixing</h:h2>
+						</div>
+						<div
+							sclass="card-body card-padding bgm-orange c-white">
+							<h:form method="get"
+								action="${p:encodeURL('/docs/template_td_bugfix.rar')}">
+								<h:button
+									sclass="btn btn-default btn-icon-text">
+									<h:i class="zmdi zmdi-download"></h:i>
+									Template Technical Design Bug Fixing
+								</h:button>
+							</h:form>
+						</div>
+					</div>
+				</div>
+			</h:section>
+		</h:section>
+
+		<include src="/shared/html_body.zul" />
+	</h:body>
+</zk>

@@ -52,7 +52,7 @@
 		<constructor-arg index="1" value="BATCH" />
 	</bean>
 	
-	<bean class="com.fif.hcms.core.dao.mybatis.StatementUtil"/>
+	<bean class="com.shop.core.dao.mybatis.StatementUtil"/>
 	
 	<bean id="userAccessRecordInterceptor" class="com.fif.hcms.main.service.UserAccessRecordInterceptor" />
 	

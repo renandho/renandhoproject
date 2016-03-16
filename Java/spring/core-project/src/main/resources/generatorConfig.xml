@@ -20,7 +20,7 @@
 		
 	   
 			
-		<javaModelGenerator targetPackage="com.fif.hcms.core.domain" targetProject="src/main/java">
+		<javaModelGenerator targetPackage="com.shop.core.domain" targetProject="src/main/java">
 			<property name="enableSubPackages" value="true" />
 			<property name="trimStrings" value="true" />
 		</javaModelGenerator>
@@ -29,7 +29,7 @@
 			<property name="enableSubPackages" value="true" />
 		</sqlMapGenerator>
 
-		<javaClientGenerator targetPackage="com.fif.hcms.core.dao" 
+		<javaClientGenerator targetPackage="com.shop.core.dao" 
 			targetProject="src/main/java" type="XMLMAPPER">
 			<property name="enableSubPackages" value="true" />	
 		</javaClientGenerator>

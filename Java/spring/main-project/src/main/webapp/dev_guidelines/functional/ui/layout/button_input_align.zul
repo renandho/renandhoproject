@@ -1,0 +1,90 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-green">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-check p-r-10">
+						</h:i>
+						<h:strong>
+							Do : button sejajar dengan input component
+						</h:strong>
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<div sclass="row">
+						<div sclass="col-sm-4 text-right">
+							<label value="Nama" />
+						</div>
+						<div sclass="col-sm-8">
+							<textbox cols="40" />
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-4 text-right">
+							<label value="Tanggal lahir" />
+						</div>
+						<div sclass="col-sm-8">
+							<datebox format="dd-MMM-yyyy" />
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-4"></div>
+						<div sclass="col-sm-8">
+							<button image="/icons/Search-16.png">
+								Find
+							</button>
+							<space width="10px" />
+							<button image="/icons/Plus-16.png">
+								Submit
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header bgm-red">
+					<h:h2 sclass="text-center">
+						<h:i
+							class="zmdi zmdi-hc-lg zmdi-close p-r-10">
+						</h:i>
+						Don't
+					</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<div sclass="row">
+						<div sclass="col-sm-4 text-right">
+							<label value="Nama" />
+						</div>
+						<div sclass="col-sm-8">
+							<textbox cols="40" />
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-4 text-right">
+							<label value="Tanggal lahir" />
+						</div>
+						<div sclass="col-sm-8">
+							<datebox format="dd-MMM-yyyy" />
+						</div>
+					</div>
+					<div sclass="row p-t-10">
+						<div sclass="col-sm-12">
+							<button image="/icons/Search-16.png">
+								Find
+							</button>
+							<space width="10px" />
+							<button image="/icons/Plus-16.png">
+								Submit
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</zk>

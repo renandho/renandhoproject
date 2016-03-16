@@ -1,0 +1,122 @@
+<?page title=My Shop contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native">
+	<h:ul class="clist clist-check">
+		<h:li>
+			Merge = menggabungkan perubahan dari satu branch ke branch
+			lain
+		</h:li>
+		<h:li>
+			<h:strong>Kapan dilakukan merge?</h:strong>
+			<h:ul class="clist clist-angle">
+				<h:li>
+					Kalau dari development sudah siap untuk assign ke QA
+					(deploy ke test) : merge dari
+					<h:em>trunk/Source Code</h:em>
+					ke
+					<h:em>branches/test</h:em>
+				</h:li>
+				<h:li>
+					Kalau dari QA sudah pass dan siap deploy ke
+					production : merge dari
+					<h:em>branches/test</h:em>
+					ke
+					<h:em>branches/production</h:em>
+				</h:li>
+			</h:ul>
+		</h:li>
+	</h:ul>
+	<h:p></h:p>
+	<div sclass="row">
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header ch-alt">
+					<h:h2>Windows Explorer</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					<h:ol>
+						<h:li>
+							Contoh berikut ini untuk merge dari
+							<h:em>trunk/Source Code</h:em>
+							ke
+							<h:em>branches/test</h:em>
+						</h:li>
+						<h:li>
+							Pastikan perubahan di file / folder SVN asal (misal 
+							<h:em>trunk/Source Code/fifuniv-video</h:em>) sudah di-commit
+						</h:li>
+						<h:li>
+							Klik kanan pada file / folder SVN tujuan (misal
+							pada
+							<h:em>branches/test/fifuniv-video</h:em>
+							) - Tortoise SVN - Merge
+						</h:li>
+						<h:li>
+							Pilih <h:em>Merge a range of revisions</h:em>
+						</h:li>
+						<h:li>
+							Pada bagian <h:em>URL to merge from</h:em>, 
+							isi dengan folder asal
+						</h:li>
+						<h:li>
+							Pada bagian <h:em>Revision range to merge</h:em>,
+							isi dengan specific range, kemudian pilih revisi 
+							yang akan di-merge melalui button <h:em>Show log</h:em>
+						</h:li>
+						<h:li>
+							Lakukan merge
+						</h:li>
+						<h:li>
+							Commit perubahan pada file / folder SVN tujuan (misal
+							pada <h:em>branches/test/fifuniv-video</h:em>
+							)
+						</h:li>
+						<h:li>
+							Blast email ke team developer dan QA untuk daftar file-file 
+							yang di-merge
+						</h:li>
+					</h:ol>
+				</div>
+			</div>
+		</div>
+		<div sclass="col-sm-6">
+			<div sclass="card z-depth-1">
+				<div sclass="card-header ch-alt">
+					<h:h2>Eclipse</h:h2>
+				</div>
+				<div sclass="card-body card-padding">
+					Pada dasarnya caranya sama dengan merge pada Windows Explorer. 
+					Untuk melakukan merge, maka project di Eclipse  (misal
+					<h:em>branches/test/fifuniv-video</h:em>) harus dibuka dulu.
+					<h:p></h:p>
+					<h:ol>
+						<h:li>
+							File - Import - Existing Maven Projects
+						</h:li>
+						<h:li>
+							Kalau project tidak bisa di-import, mungkin karena sudah 
+							ada project dengan nama yang sama (misal dari <h:em>
+							trunk/Source Code/fifuniv-video</h:em>)
+						</h:li>
+						<h:li>
+							Agar project dari <h:em>branches/test</h:em> bisa di-import, 
+							pada saat import project, isi bagian Advanced - Profiles
+						</h:li>
+						<h:li>
+							Untuk merge, klik kanan di file / folder SVN tujuan - Team - Merge
+						</h:li>
+						<h:li>
+							Cara merge mirip dengan merge pada Windows Explorer
+						</h:li>
+						<h:li>
+							Blast email ke team developer dan QA untuk daftar file-file 
+							yang di-merge
+						</h:li>
+					</h:ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<popup id="popSampleSvnComment">
+		<include src="/shared/sample_svn_comment.zul" />
+	</popup>
+</zk>

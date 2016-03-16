@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title=My Shop?>
+
+<zk xmlns:h="native">
+	<include src="/shared/html_head.zul" />
+
+	<h:body>
+		<include src="/shared/header.zul" />
+
+		<h:section id="main" data-layout="layout-1">
+			<include src="/shared/sidebar.zul" />
+			<h:section id="content">
+				<div sclass="container">
+					<div sclass="card z-depth-1">
+						<div sclass="card-header bgm-orange">
+							<h:h2>Project Status Report (PSR)</h:h2>
+						</div>
+						<div sclass="card-body card-padding">
+							<h:ul class="clist clist-angle">
+								<h:li>
+									Digunakan oleh PIC Project untuk
+									kontrol internal masing-masing
+									project
+								</h:li>
+								<h:li>
+									Koordinasi dengan Project Manager
+									terkait Project Status Report bila
+									diperlukan
+								</h:li>
+								<h:li>Update di weekly review</h:li>
+								<h:li>
+									Simpan di folder yang sesuai dengan
+									ITSM di
+									<h:code>
+										<![CDATA[\\fif-ho-150\Data\Information
+										& Technology Division\All\IT
+										Documentation\NON
+										CORE\Documents]]>
+									</h:code>
+								</h:li>
+							</h:ul>
+							<h:form method="get"
+								action="/docs/project_status_report.xlsx">
+								<h:button
+									sclass="btn bgm-orange btn-icon-text">
+									<h:i class="zmdi zmdi-download">
+									</h:i>
+									Download Template PSR
+								</h:button>
+							</h:form>
+						</div>
+					</div>
+				</div>
+			</h:section>
+		</h:section>
+
+		<include src="/shared/html_body.zul" />
+	</h:body>
+</zk>

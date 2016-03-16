@@ -1,6 +1,6 @@
 <?page title="" contentType="text/html;charset=UTF-8"?>
 <zk>
-<window title="${labels.common.listOfEmployee}" border="normal" width="500px" height="650px" closable="true" apply="com.fif.hcms.core.controller.EmployeeNumberListOfValueComposer">
+<window title="${labels.common.listOfEmployee}" border="normal" width="500px" height="650px" closable="true" apply="com.shop.core.controller.EmployeeNumberListOfValueComposer">
 <groupbox>
 	<caption label="Filters" />
 	<grid>
@@ -11,11 +11,11 @@
 		<rows>
 			<row>
 				<label value="${labels.common.lovEmployeeNumber}"/>
-				<textbox id="txtEmployeeNumber" use="com.fif.hcms.core.ui.Searchtextbox"/>
+				<textbox id="txtEmployeeNumber" use="com.shop.core.ui.Searchtextbox"/>
 			</row>
 			<row>
 				<label value="${labels.common.lovEmployeeName}"></label>
-				<textbox id="txtEmployeeName" use="com.fif.hcms.core.ui.Searchtextbox"/>
+				<textbox id="txtEmployeeName" use="com.shop.core.ui.Searchtextbox"/>
 			</row>
 			<row>
 				<label />
